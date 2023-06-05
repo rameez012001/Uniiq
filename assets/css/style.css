@@ -14,6 +14,7 @@ html, body {
   overflow-x: hidden;
   background: rgb(10, 10, 10);
   background-image: url(../images/lines.png);
+  background-size: 100%;
 }
 
 .content header {
@@ -111,7 +112,7 @@ html, body {
   grid-template-columns: auto auto;
   justify-content: center;
   gap: 24px;
-  grid-template-areas: ". img2 img2" ". img2 img2" "img1 img2 img2" "img1 . .";
+  grid-template-areas: ". img2 img2" "img1 img2 img2" "img1 . .";
 }
 .content main #sec3 .items:nth-child(1) {
   max-width: 400px;
