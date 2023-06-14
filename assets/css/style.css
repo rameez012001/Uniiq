@@ -10,46 +10,102 @@ html, body {
   font-size: 16px;
   font-weight: 400;
   line-height: 32px;
-  padding: 15px 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   background: rgb(10, 10, 10);
   background-image: url(../images/lines.png);
   background-size: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
 .content header {
-  margin: 0 125px;
+  margin: 40px 124px 170px 124px;
 }
-.content header .menu-icon span {
-  height: 3px;
-  display: block;
-  background-color: #fff;
-  margin-bottom: 9px;
+.content header .menu-icon-wrapper {
+  margin: 20px 0;
+  background-color: #0A0A0A;
 }
-.content header .menu-icon span:nth-child(1) {
-  width: 28px;
-}
-.content header .menu-icon span:nth-child(2) {
-  width: 20px;
-}
-.content header .menu-icon span:nth-child(3) {
+.content header .menu-icon-wrapper .menu-icon {
   width: 38px;
+  cursor: pointer;
+  gap: 9px;
 }
-.content header #logo {
-  border: 3px solid #f9f9f9;
+.content header .menu-icon-wrapper .menu-icon span {
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #fff;
 }
-.content header #logo h1 {
-  color: #f9f9f9;
-  font-size: 36px;
+.content header .menu-icon-wrapper .menu-icon span:nth-child(1) {
+  width: 28px;
+  transition: all 0.3s ease-in-out;
+}
+.content header .menu-icon-wrapper .menu-icon span:nth-child(2) {
+  width: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.content header .menu-icon-wrapper .menu-icon span:nth-child(3) {
+  width: 38px;
+  transition: all 0.3s ease-in-out;
+}
+.content header .menu-icon-wrapper .menu-icon.active span:nth-child(1) {
+  width: 38px;
+  transform: rotate(40deg) translate(0px, 15px);
+}
+.content header .menu-icon-wrapper .menu-icon.active span:nth-child(3) {
+  width: 38px;
+  transform: rotate(-40deg) translate(0px, -15px);
+}
+.content header .menu-icon-wrapper .menu-icon.active span:nth-child(2) {
+  opacity: 0;
+}
+.content header .menu-icon-wrapper .left-sidebar {
+  display: none;
+}
+.content header .menu-icon-wrapper .left-sidebar li {
+  margin-bottom: 58px;
+}
+.content header .menu-icon-wrapper .left-sidebar li a {
+  color: rgba(249, 249, 249, 0.5019607843);
+  font-size: 24px;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
-  margin: 11px 20px;
+  text-transform: uppercase;
+}
+.content header .menu-icon-wrapper .left-sidebar li a:hover {
+  color: #f9f9f9;
+  text-decoration: underline;
+  text-decoration-color: #D7B065;
+  text-decoration-thickness: 6px;
+}
+.content header .menu-icon-wrapper .left-sidebar.active {
+  display: block;
+}
+.content header #logo {
+  width: 75px;
+}
+.content header #logo img {
+  max-width: 153px;
+}
+.content header .contact {
+  margin: 22px 0;
+  gap: 23px;
 }
 .content header .contact svg {
-  margin: 0 13px;
+  cursor: pointer;
 }
-.content main {
-  margin: 100px 0;
+.content header .contact svg path {
+  transition: all 0.5s ease-in-out;
+}
+.content header .contact svg:hover path {
+  stroke-opacity: 1;
 }
 .content main #sec1 {
   display: grid;
@@ -76,6 +132,7 @@ html, body {
   font-weight: 600;
   font-size: 18px;
   color: #f9f9f9;
+  letter-spacing: 2px;
 }
 .content main #sec2 {
   display: grid;
@@ -106,6 +163,7 @@ html, body {
   font-weight: 600;
   font-size: 18px;
   color: #f9f9f9;
+  letter-spacing: 2px;
 }
 .content main #sec3 {
   display: grid;
@@ -132,6 +190,7 @@ html, body {
   font-weight: 600;
   font-size: 18px;
   color: #f9f9f9;
+  letter-spacing: 2px;
 }
 .content footer {
   margin: 100px 0 0;
