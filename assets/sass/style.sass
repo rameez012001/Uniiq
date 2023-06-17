@@ -9,121 +9,170 @@ html,body
     font-size: 16px
     font-weight: 400
     line-height: 32px
-    padding: 15px 0
     overflow-x: hidden
+    scroll-behavior: smooth
     background: rgb(10, 10, 10)
     background-image: url(../images/lines.png)
     background-size: 100%
+a
+    text-decoration: none
+ul,li
+    list-style: none
+    
 .content
-    header
-        margin: 0 125px
-        .menu-icon
+    .about-text
+        display: none
+        position: relative
+        h3
+            position: absolute
+            top: 450px
+            left: 840px
+            width: 590px
+            font-weight: 600
+            font-family: 'montserrat'
+            font-size: 30px
+            line-height: 46px
+            color: #F9F9F9
             span
-                height: 3px
-                display: block
-                background-color: #fff
-                margin-bottom: 9px 
-                &:nth-child(1)
-                    width: 28px
-                &:nth-child(2)
-                    width: 20px
-                &:nth-child(3)
-                    width: 38px
+                color: #D7B065
+        &.active
+                display: flex 
+    header
+        margin: 40px 124px 170px 124px
+        position: relative
+        .menu-icon-wrapper
+            margin: 20px 0
+            position: relative
+            .menu-icon
+                width: 38px
+                cursor: pointer
+                gap: 9px
+                position: relative
+                z-index: 100
+                span
+                    width: 100%
+                    height: 3px
+                    border-radius: 5px
+                    background-color: #fff 
+                    &:nth-child(1)
+                        width: 28px
+                        transition: all 0.3s ease-in-out
+                    &:nth-child(2)
+                        width: 20px
+                        transition: all 0.3s ease-in-out
+                    &:nth-child(3)
+                        width: 38px
+                        transition: all 0.3s ease-in-out
+                &.active
+                    span
+                        &:nth-child(1)
+                            width: 38px
+                            transform: rotate(40deg) translate(0px, 15px)
+                        &:nth-child(3)
+                            width: 38px
+                            transform: rotate(-40deg) translate(0px, -15px)
+                        &:nth-child(2)
+                            opacity: 0
+            .left-sidebar
+                display: none
+                position: fixed
+                left: 0
+                top: 0
+                z-index: 99
+                padding: 372px 314px 60px 272px
+                overflow: auto
+                height: 100%
+                background-color: #131313
+                transition: .25s ease-in
+                flex-direction: column
+                overflow-x: hidden
+                li
+                    margin-bottom: 40px
+                    a
+                        color: #f9f9f980
+                        font-size: 24px
+                        font-weight: 600
+                        font-family: 'Montserrat', sans-serif
+                        text-transform: uppercase
+                        &:hover
+                            color: #f9f9f9
+                            text-decoration: underline
+                            text-decoration-color: #D7B065
+                            text-decoration-thickness: 6px
+                &.active
+                    display: flex
         #logo
-            border: 3px solid #f9f9f9
-            h1
-                color: #f9f9f9
-                font-size: 36px
-                font-weight: 600
-                font-family: 'Montserrat', sans-serif
-                margin: 11px 20px
+            width: 75px
+            img
+               max-width: 153px
+            &.inactive
+                display: none
+               
         .contact
-            svg
-                margin: 0 13px
+            margin: 22px 0
+            gap: 23px
+            svg     
+                cursor: pointer       
+                path
+                    transition: all .5s ease-in-out
+                &:nth-child(1)
+                    // margin: 0 10px 0 0
+                &:nth-child(2)
+                    // margin: 0 23px
+                &:nth-child(3)
+                    // margin: 0 0 0 10px
+                &:hover
+                    path
+                        stroke-opacity: 1                   
     main
-        margin: 100px 0 
-        #sec1
+        .item-wrapper
             display: grid
-            grid-template-columns: auto auto
             justify-content: center
-            gap: 24px
-            grid-template-areas: "img1 . ." "img1 . ." "img1 img2 img2" ". img2 img2"
+            grid-template-areas: 'img1 . .' 'img1 . .' 'img1 img2 img2' '. img2 img2'  'img3 img3 .' 'img3 img3 .' 'img3 img3 img4' '. . img4' 'img5 img5 img4' 'img5 img5 .'  '. img7 img7' '. img7 img7' 'img6 img7 img7' 'img6 . .' 'img6 . .'
+            column-gap: 24px
+            row-gap: -24px
+            &.inactive
+                display: none
+            .potrait
+                max-width: 400px
+            .landscape
+                max-width: 682px       
             .items
                 &:nth-child(1)
-                    max-width: 400px
                     grid-area: img1
                 &:nth-child(2)
-                    max-width: 682px  
-                    grid-area: img2                  
+                    grid-area: img2
+                &:nth-child(3)
+                    grid-area: img3
+                &:nth-child(4)
+                    grid-area: img4
+                &:nth-child(5)
+                    grid-area: img5
+                &:nth-child(6)
+                    grid-area: img6
+                &:nth-child(7)
+                    grid-area: img7
                 img
                     width: 100%
                     height: 100%
                 p
-                    margin: 15px 0 
+                    margin: 15px 0 0    
                     font-family:'Montserrat', sans-serif
                     font-weight: 600
                     font-size: 18px
                     color:#f9f9f9
-        #sec2
-            display: grid
-            grid-template-columns: auto auto
-            justify-content: center
-            gap: 24px
-            grid-template-areas: "img1 img1 ." "img1 img1 ." "img1 img1 img2" ". . img2" ". . img2" "img3 img3 img2" "img3 img3 img2" "img3 img3 ." "img3 img3 ."
-            .items
-                &:nth-child(1)
-                    max-width: 682px  
-                    grid-area: img1                      
-                &:nth-child(2)
-                    max-width: 400px
-                    grid-area: img2   
-                &:nth-child(3)
-                    max-width: 682px  
-                    grid-area: img3           
-                img
-                    width: 100%
-                    height: 100%
-                p
-                    margin: 15px 0 
-                    font-family:'Montserrat', sans-serif
-                    font-weight: 600
-                    font-size: 18px
-                    color:#f9f9f9     
-        #sec3
-            display: grid
-            grid-template-columns: auto auto
-            justify-content: center
-            gap: 24px
-            grid-template-areas: ". img2 img2" "img1 img2 img2" "img1 . ."
-            .items
-                &:nth-child(1)
-                    max-width: 400px
-                    grid-area: img1
-                &:nth-child(2)
-                    max-width: 682px  
-                    grid-area: img2                  
-                img
-                    width: 100%
-                    height: 100%
-                p
-                    margin: 15px 0 
-                    font-family:'Montserrat', sans-serif
-                    font-weight: 600
-                    font-size: 18px
-                    color:#f9f9f9                   
+                    letter-spacing: 2px   
 
     footer
+        display: flex
         margin: 100px 0 0
+        &.inactive
+            display: none
         #logo
-            border: 3px solid #f9f9f9
-            margin-top: 20px
-            h1
-                color: #f9f9f9
-                font-size: 36px
-                font-weight: 600
-                font-family: 'Montserrat', sans-serif
-                margin: 11px 20px
+            img
+               max-width: 153px
         p
+            text-align: center
             margin-top: 20px
             color: #f9f9f980
             font-weight: 600
