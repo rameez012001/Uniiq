@@ -1,47 +1,38 @@
-// @media (max-width: 1750px)
-//     .content
-//         header
-//             margin: 40px 85px 116px 84px
-//             .menu-icon-wrapper 
-//                 .left-sidebar
-//                     display: none
-//                     position: fixed
-//                     left: 0
-//                     top: 0
-//                     z-index: 99
-//                     padding: 40px 114px 40px 172px
-//                     overflow: auto
-//                     height: 100%
-//                     background-color: #131313
-//                     transition: .25s ease-in
-//                     flex-direction: column
-//                     justify-content: center
-//                     overflow-x: hidden
-//                     li
-//                         margin-bottom: 32px
-//         main
-//             .about-text
-//                 display: none
-//                 position: relative
-//                 h3
-//                     position: absolute
-//                     left: 40%
-//                     transform: translateY(-30px)
-//                     width: 577px
-//             .item-wrapper
-//                 .potrait
-//                     max-width: 287px
-//                 .landscape
-//                     max-width: 476px
-@media (max-width: 1350px)
+@media (max-width: 1440px)
     .content
         .about-text
             h3
-                top: 300px
-                left: 500px
-                max-width: 577px
+                left: 650px
+                max-width: 590px
         header
-            margin: 40px 85px 116px 84px
+            .menu-icon-wrapper 
+                .left-sidebar
+                    display: none
+                    position: fixed
+                    padding: 372px 264px 60px 222px
+                    left: 0
+                    top: 0
+                    z-index: 99
+                    overflow: auto
+                    height: 100%
+                    background-color: #131313
+                    transition: .25s ease-in
+                    flex-direction: column
+                    overflow-x: hidden
+        main
+            .item-wrapper
+                .potrait
+                    max-width: 287px
+                .landscape
+                    max-width: 476px 
+@media (max-width: 1280px)
+    .content
+        .about-text
+            h3
+                width: 490px
+                top: 350px
+                left: 490px
+        header
             .menu-icon-wrapper 
                 .left-sidebar
                     display: none
@@ -49,13 +40,12 @@
                     left: 0
                     top: 0
                     z-index: 99
-                    padding: 40px 114px 40px 172px
+                    padding: 300px 174px 0
                     overflow: auto
                     height: 100%
                     background-color: #131313
                     transition: .25s ease-in
                     flex-direction: column
-                    justify-content: center
                     overflow-x: hidden
                     li
                         margin-bottom: 32px
@@ -70,22 +60,22 @@
     .content
         .about-text
             h3
-                top: 200px
-                left: 500px
-                width: 287px
+                top: 300px
+                width: 370px
         header
-            margin: 40px 1em 70px
         main
             .about-text
                 &.active
                     display: none
             .item-wrapper
                 grid-template-areas: 'img1 . .' 'img1 img2 img2'   'img3 img3 .' 'img3 img3 img4' 'img3 img3 img4' 'img5 img5 img4' 'img5 img5 .'  'img6 img7 img7' 'img6 . .' 'img6 . .'                        
-@media (max-width: 800px)
+@media (max-width: 850px)
     .content
         .about-text
             &.active
                 display: none
+@media (max-width: 800px)
+    .content
         main
             padding: 0 .5em
             .item-wrapper
@@ -98,7 +88,7 @@
 @media (max-width: 568px)
     .content
         header
-            margin: 40px 35px 80px 34px
+            margin: 40px 45px
             #logo
                 width: 123px
                 img
@@ -115,3 +105,12 @@
                     max-width: 400px
                 .landscape
                     max-width: 400px            
+
+@media (max-width: 420px)
+     .content
+        header
+            margin: 40px 45px
+            .menu-icon-wrapper 
+                .left-sidebar
+                    z-index: 99
+                    padding: 300px 100px 0
