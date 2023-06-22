@@ -32,6 +32,9 @@
   #page1 main .item-wrapper .landscape {
     max-width: 476px;
   }
+  #about main .item-wrapper {
+    max-width: 920px;
+  }
   #page2 main .item-wrapper .owl-carousel .item {
     max-width: 920px;
   }
@@ -110,6 +113,9 @@
     top: 300px;
     width: 370px;
   }
+  .content .caption h2 {
+    padding: 0 0.3em;
+  }
   .content .blContent .blContent-wrapper {
     width: 700px;
   }
@@ -133,6 +139,9 @@
   }
   #page1 main .item-wrapper {
     grid-template-areas: "img1 . ." "img1 img2 img2" "img3 img3 ." "img3 img3 img4" "img3 img3 img4" "img5 img5 img4" "img5 img5 ." "img6 img7 img7" "img6 . ." "img6 . .";
+  }
+  #about main .item-wrapper {
+    max-width: 700px;
   }
   #page2 main .item-wrapper .owl-carousel .item {
     max-width: 700px;
@@ -191,6 +200,9 @@
   #page1 main .item-wrapper .landscape {
     max-width: 600px;
   }
+  #about main .item-wrapper {
+    max-width: 520px;
+  }
   #page2 main .item-wrapper .owl-carousel .item {
     max-width: 520px;
   }
@@ -242,6 +254,9 @@
   .content .blContent .blContent-wrapper .det_des .description {
     width: 390px;
   }
+  .content .caption h2 {
+    padding: 0 0.5em;
+  }
   #page1 main .item-wrapper {
     grid-template-areas: "img1 . ." "img1 img2 img2" "img3 img3 ." "img3 img3 img4" "img3 img3 img4" "img5 img5 img4" "img5 img5 ." "img6 img7 img7" "img6 . ." "img6 . .";
     grid-template-areas: ". img1 ." ". img2 ." ". img3 ." ". img4 ." ". img5 ." ". img6 ." ". img7 .";
@@ -254,6 +269,9 @@
   }
   #page1 main .item-wrapper .landscape {
     max-width: 400px;
+  }
+  #about main .item-wrapper {
+    max-width: 390px;
   }
   #page2 main .item-wrapper .owl-carousel .item {
     max-width: 390px;
@@ -307,6 +325,9 @@
   }
   .content .blContent .blContent-wrapper .det_des .description {
     width: 320px;
+  }
+  #about main .item-wrapper .about-image {
+    padding: 0 1em;
   }
   #page2 main .item-wrapper .owl-carousel .item {
     max-width: 320px;

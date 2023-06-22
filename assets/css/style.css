@@ -303,6 +303,41 @@ ul, li {
   letter-spacing: 2px;
 }
 
+#about main .item-wrapper {
+  max-width: 1106px;
+}
+#about main .item-wrapper.inactive {
+  display: none;
+}
+#about main .item-wrapper .about-image {
+  margin: 80px 0;
+}
+#about main .item-wrapper .about-image img {
+  width: 100%;
+}
+#about main .item-wrapper .blContent .blContent-wrapper .about-det {
+  font-size: 16px;
+  margin-bottom: 100px;
+}
+#about main .item-wrapper .blContent .blContent-wrapper .about-det .details .detail-items {
+  margin-bottom: 30px;
+}
+#about main .item-wrapper .blContent .blContent-wrapper .about-det .details .detail-items p {
+  margin: 0;
+}
+#about main .item-wrapper .blContent .blContent-wrapper .about-det .details .detail-items p:nth-child(1) {
+  color: #d7b065;
+  font-weight: 600;
+}
+#about main .item-wrapper .blContent .blContent-wrapper .about-det .details .detail-items p:nth-child(2) {
+  color: #f9f9f9;
+  font-weight: 500;
+}
+#about main .item-wrapper .blContent .blContent-wrapper .about-det .details .detail-items p:nth-child(3) {
+  color: rgba(249, 249, 249, 0.6);
+  font-weight: 500;
+}
+
 #page2 main .item-wrapper {
   font-family: "montserrat";
 }
