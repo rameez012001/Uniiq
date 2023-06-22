@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
 }
 
 html, body {
@@ -15,6 +16,26 @@ html, body {
   background: rgb(10, 10, 10);
   background-image: url(../images/lines.png);
   background-size: 100%;
+}
+
+.cursor {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #f9f9f9;
+  border-radius: 50%;
+  transform: translate(-23px, -23px);
+  pointer-events: none;
+  z-index: 10000;
+}
+.cursor .dot {
+  position: absolute;
+  top: 43%;
+  left: 43%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #d7b065;
 }
 
 a {
@@ -68,7 +89,6 @@ ul, li {
 }
 .content header .menu-icon-wrapper .menu-icon {
   width: 38px;
-  cursor: pointer;
   gap: 9px;
   position: relative;
   z-index: 100;
@@ -154,9 +174,6 @@ ul, li {
   margin: 22px 0;
   gap: 23px;
 }
-.content header .contact svg {
-  cursor: pointer;
-}
 .content header .contact svg path {
   transition: all 0.5s ease-in-out;
 }
@@ -182,7 +199,6 @@ ul, li {
 }
 .content footer p a {
   color: #f9f9f9 !important;
-  cursor: pointer;
 }
 .content footer p a:hover {
   text-decoration: underline !important;

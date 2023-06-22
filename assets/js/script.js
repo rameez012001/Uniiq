@@ -28,4 +28,8 @@ $(document).ready(()=>{
         autoplayTimeout:3000,
     });
 })
+$(document).mousemove(function(e) {
+    var roundCursor = $('.cursor');
+    roundCursor.css({ top: e.clientY, left: e.clientX });
+  });
 AOS.init();
