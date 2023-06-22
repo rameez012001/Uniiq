@@ -5,6 +5,7 @@
                 left: 650px
                 max-width: 590px
         header
+            margin: 40px 64px 170px
             .menu-icon-wrapper 
                 .left-sidebar
                     display: none
@@ -19,6 +20,12 @@
                     transition: .25s ease-in
                     flex-direction: column
                     overflow-x: hidden
+        .blContent
+            .blContent-wrapper
+                width: 920px
+                .det_des
+                    .description
+                        width: 632px
     #page1
         main
             .item-wrapper
@@ -32,12 +39,30 @@
                 .owl-carousel
                     .item
                         max-width: 920px
-                .blContent
-                    .blContent-wrapper
-                        width: 920px
-                        .det_des
-                            .description
-                                width: 632px
+    #page3
+        main
+            .item-wrapper
+                .grid
+                    gap: 80px 0px
+                    .image-l
+                        width: 480px
+                    .image-m
+                        width: 380px
+    
+    #page4
+        main
+            .item-wrapper
+                .grid
+                    grid-template-areas: '. . img2' 'img1 . img2' 'img3 img3 img3'
+                    gap: 80px 20px
+                    justify-content: center
+                    .image-s
+                        max-width: 400px
+                    .image-m
+                        max-width: 500px
+                    .image-l
+                        max-width: 920px
+                             
 @media (max-width: 1280px)
     .content
         .about-text
@@ -75,19 +100,39 @@
                 .owl-carousel
                     .item
                         max-width: 820px
-                .blContent
-                    .blContent-wrapper
-                        width: 820px
-                        .det_des
-                            .description
-                                width: 600px
-
+    #page3
+        main
+            .item-wrapper
+                .grid
+                    grid-template-areas:  'img1 . .'  'img1 . img2' '. . img2' 'img3 . img2' 'img3 . .' 'img3 . img4' '. . img4' '. . img4'
+                    gap: 0px
+                    .image-l
+                        width: 420px
+                    .image-m
+                        width: 320px
 @media (max-width: 992px)
     .content
+        header
+            margin: 40px 34px 170px
         .about-text
             h3
                 top: 300px
                 width: 370px
+        .blContent
+            .blContent-wrapper
+                width: 700px
+                .det_des
+                    grid-template-columns: auto 
+                    justify-content: center
+                    .details
+                        margin: 0 auto
+                        margin-bottom: 50px
+                        width: 100%
+                        display: flex
+                        flex-wrap: wrap
+                        justify-content: space-between
+                    .description
+                        width: 700px   
     #page1
         main
             .about-text
@@ -100,28 +145,47 @@
             .item-wrapper
                 .owl-carousel
                     .item
+                        max-width: 700px                               
+    #page3
+        main
+            .item-wrapper
+                .grid
+                    grid-template-areas:  'img1 .'  'img1 img2' '. img2' 'img3 img2' 'img3 .' 'img3 img4' '. img4'
+                    .image-l
+                        width: 380px
+                    .image-m
+                        width: 280px
+    #page4
+        main
+            .item-wrapper
+                .grid
+                    justify-content: center
+                    .image-s
+                        max-width: 300px
+                    .image-m
+                        max-width: 400px
+                    .image-l
                         max-width: 700px
-                .blContent
-                    .blContent-wrapper
-                        width: 700px
-                        .det_des
-                            grid-template-columns: auto 
-                            justify-content: center
-                            .details
-                                margin: 0 auto
-                                text-align: center
-                                margin-bottom: 50px
-                            .description
-                                width: 700px                      
 @media (max-width: 850px)
     .content
         .about-text
             &.active
                 display: none
 @media (max-width: 800px)
+    .caption
+        h2
+            font-size: 20px
+            padding: 0  10px
+        
     .content
         header
             margin: 40px 20px 140px 24px
+        .blContent
+            .blContent-wrapper
+                width: 520px
+                .det_des
+                    .description
+                        width: 520px
     #page1
         main
             padding: 0 .5em
@@ -138,15 +202,35 @@
                 .owl-carousel
                     .item
                         max-width: 520px
-                .blContent
-                    .blContent-wrapper
-                        width: 520px
-                        .det_des
-                            .description
-                                width: 520px                                            
+                                            
+    #page3
+        main
+            .item-wrapper
+                .grid
+                    grid-template-areas: 'img1 .' 'img1 img2' 'img3 img2' 'img3 .' 'img3 img4' '. img4'
+                    gap: 20px
+                    .image-l
+                        width: 250px
+                    .image-m
+                        width: 250px
+                    .grid-item
+                        height: fit-content
+                        &:nth-child(2)
+                            justify-self: normal
+    #page4
+        main
+            .item-wrapper
+                .grid
+                    justify-content: center
+                    .image-s
+                        max-width: 220px
+                    .image-m
+                        max-width: 280px
+                    .image-l
+                        max-width: 520px                       
 @media (max-width: 568px)
     .content
-         header
+        header
             margin: 40px 45px
             #logo
                 width: 123px
@@ -154,6 +238,12 @@
                     width: 100%
             .contact
                 display: none !important
+        .blContent
+                    .blContent-wrapper
+                        width: 390px
+                        .det_des
+                            .description
+                                width: 390px  
     #page1
         main
             .item-wrapper
@@ -172,14 +262,36 @@
                     .item
                         max-width: 390px
                 .slider
-                    margin: 40px 0
-                .blContent
-                    .blContent-wrapper
-                        width: 390px
-                        .det_des
-                            .description
-                                width: 390px                                    
-
+                    margin: 40px 0                                  
+    #page3
+        main
+            .item-wrapper
+                .grid
+                    grid-template-areas: 'img1' 'img2' 'img3' 'img4'
+                    gap: 20px
+                    .image-l
+                       width: calc( 100% - 140px )
+                       min-width: 300px
+                    .image-m
+                       width: calc( 100% - 100px )
+                       min-width: 300px
+                    .grid-item
+                        justify-self: center
+                        &:nth-child(2)
+                            justify-self: center
+    #page4
+        main
+            .item-wrapper
+                .grid
+                    justify-content: center
+                    grid-template-areas: 'img1' 'img2' 'img3'
+                    gap: 20px
+                    .image-s
+                        max-width: 400px
+                    .image-m
+                        max-width: 400px
+                    .image-l
+                        max-width: 400px                                
 @media (max-width: 420px)
     .content
         header
@@ -188,15 +300,29 @@
                 .left-sidebar
                     z-index: 99
                     padding: 300px 100px 0
+        .blContent
+            .blContent-wrapper
+                width: 320px
+                .det_des
+                    .description
+                        width: 320px                       
     #page2
         main
             .item-wrapper
                 .owl-carousel
                     .item
-                        max-width: 320px
-                .blContent
-                    .blContent-wrapper
-                        width: 320px
-                        .det_des
-                            .description
-                                width: 320px                        
+                        max-width: 320px   
+
+    #page4
+        main
+            .item-wrapper
+                .grid
+                    justify-content: center
+                    grid-template-areas: 'img1' 'img2' 'img3'
+                    padding: 0 1em
+                    .image-s
+                        max-width: 400px
+                    .image-m
+                        max-width: 400px
+                    .image-l
+                        max-width: 400px                                                    
