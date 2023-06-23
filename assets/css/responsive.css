@@ -273,6 +273,12 @@
   #contact main .item-wrapper .form-content {
     margin: 0 0 100px;
   }
+  #contact main .item-wrapper footer {
+    row-gap: 45px;
+  }
+  #contact main .item-wrapper footer .reach {
+    width: fit-content;
+  }
   #page2 main .item-wrapper .owl-carousel .item {
     max-width: 520px;
   }
