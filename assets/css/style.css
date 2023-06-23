@@ -338,6 +338,102 @@ ul, li {
   font-weight: 500;
 }
 
+#skills .item-wrapper {
+  width: 1106px;
+}
+#skills .item-wrapper.inactive {
+  display: none;
+}
+#skills .item-wrapper .skill1 {
+  margin: 0 0 130px;
+}
+#skills .item-wrapper .skill1 .skill-image1 {
+  max-width: 400px;
+}
+#skills .item-wrapper .skill1 .skill-image1 img {
+  width: 100%;
+}
+#skills .item-wrapper .skill1 .skills-lists1 {
+  gap: 50px;
+}
+#skills .item-wrapper .skill1 .skills-lists1 .circle-container {
+  color: #f9f9f9;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+#skills .item-wrapper .skill1 .skills-lists1 .circle-container .circle-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#skills .item-wrapper .skill1 .skills-lists1 .circle-container .circle-wrapper .circle-progress {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 170px;
+  background: conic-gradient(rgba(249, 249, 249, 0.5019607843) 32deg, #D7B065 0deg);
+  border-radius: 50%;
+}
+#skills .item-wrapper .skill1 .skills-lists1 .circle-container .circle-wrapper .circle-progress::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-color: #000;
+  position: absolute;
+  border-radius: 50%;
+}
+#skills .item-wrapper .skill1 .skills-lists1 .circle-container .circle-wrapper .circle-progress .progress-value {
+  font-size: 30px;
+  position: relative;
+}
+#skills .item-wrapper .skill1 .skills-lists1 .circle-container .circle-wrapper .circle-text {
+  font-size: 18px;
+  margin: 20px 0 0;
+}
+#skills .item-wrapper .skill2 {
+  margin: 130px 0;
+}
+#skills .item-wrapper .skill2 .skills-lists {
+  max-width: 400px;
+  background: transparent;
+}
+#skills .item-wrapper .skill2 .skills-lists .skill + .skill {
+  margin-top: 60px;
+}
+#skills .item-wrapper .skill2 .skills-lists .skill .skill-label {
+  font-family: "Montserrat";
+  color: #F9F9F9;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+#skills .item-wrapper .skill2 .skills-lists .skill .progress {
+  height: 8px;
+  border-radius: 0;
+  background: #878c98;
+}
+#skills .item-wrapper .skill2 .skills-lists .skill .progress .progress-bar {
+  background: #d7b065;
+  transition: width 0.7s;
+  width: 0%;
+}
+#skills .item-wrapper .skill-image2 {
+  max-width: 541px;
+}
+#skills .item-wrapper .skill-image2 img {
+  width: 100%;
+  height: 100%;
+}
+
 #page2 main .item-wrapper {
   font-family: "montserrat";
 }

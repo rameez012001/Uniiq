@@ -284,6 +284,84 @@ ul,li
                                         color: #f9f9f999 
                                         font-weight: 500                    
 // BLOG-SINGLE 1
+#skills
+    .item-wrapper
+        width: 1106px
+        &.inactive
+            display: none
+        .skill1
+            margin: 0 0 130px
+            .skill-image1
+                max-width: 400px
+                img
+                    width: 100%
+            .skills-lists1
+                gap: 50px
+                .circle-container
+                    color: #f9f9f9
+                    font-family: 'Montserrat'
+                    font-weight: 600
+                    .circle-wrapper
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        .circle-progress
+                            position: relative
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            width: 170px
+                            height:  170px
+                            background: conic-gradient(#f9f9f980 32deg,#D7B065 0deg,)
+                            border-radius: 50%
+                            &::before
+                                content: ''
+                                width: 150px
+                                height: 150px
+                                background-color: #000
+                                position: absolute
+                                border-radius: 50%
+                            .progress-value
+                                font-size: 30px
+                                position: relative
+                        .circle-text
+                            font-size: 18px
+                            margin: 20px 0 0
+                            
+        .skill2
+            margin: 130px 0
+            .skills-lists
+                max-width: 400px
+                background: transparent
+                .skill
+                    &+.skill
+                        margin-top: 60px
+                    .skill-label
+                        font-family: 'Montserrat'
+                        color: #F9F9F9
+                        font-size: 16px
+                        text-transform: uppercase
+                        letter-spacing: 5px
+                        font-weight: 400
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        margin-bottom: 30px
+                        line-height: 1.2
+                        margin-bottom: 30px
+                    .progress
+                        height: 8px
+                        border-radius: 0
+                        background: #878c98
+                        .progress-bar
+                            background: #d7b065
+                            transition: width .7s
+                            width: 0%
+        .skill-image2
+            max-width: 541px
+            img
+                width: 100%
+                height: 100%
 #page2
     main
         .item-wrapper

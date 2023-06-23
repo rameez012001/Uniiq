@@ -35,6 +35,9 @@
   #about main .item-wrapper {
     max-width: 920px;
   }
+  #skills main .item-wrapper {
+    width: 920px;
+  }
   #page2 main .item-wrapper .owl-carousel .item {
     max-width: 920px;
   }
@@ -143,6 +146,55 @@
   #about main .item-wrapper {
     max-width: 700px;
   }
+  #skills main .item-wrapper {
+    width: 700px;
+  }
+  #skills main .item-wrapper .skill1 .skill-image1 {
+    max-width: 100%;
+    margin-bottom: 70px;
+  }
+  #skills main .item-wrapper .skill1 .skill-image1 img {
+    width: 100%;
+  }
+  #skills main .item-wrapper .skill1 .skills-lists1 {
+    gap: 10px;
+  }
+  #skills main .item-wrapper .skill1 .skills-lists1 .circle-container {
+    color: #f9f9f9;
+    font-family: "Montserrat";
+    font-weight: 600;
+  }
+  #skills main .item-wrapper .skill1 .skills-lists1 .circle-container .circle-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #skills main .item-wrapper .skill1 .skills-lists1 .circle-container .circle-wrapper .circle-progress {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 170px;
+    background: conic-gradient(rgba(249, 249, 249, 0.5019607843) 32deg, #D7B065 0deg);
+    border-radius: 50%;
+  }
+  #skills main .item-wrapper .skill1 .skills-lists1 .circle-container .circle-wrapper .circle-progress::before {
+    content: "";
+    width: 150px;
+    height: 150px;
+    background-color: #000;
+    position: absolute;
+    border-radius: 50%;
+  }
+  #skills main .item-wrapper .skill2 .skills-lists {
+    max-width: 100%;
+    margin: 20px 0 40px;
+  }
+  #skills main .item-wrapper .skill2 .skill-image2 {
+    max-width: 100%;
+    margin: 20px 0;
+  }
   #page2 main .item-wrapper .owl-carousel .item {
     max-width: 700px;
   }
@@ -202,6 +254,9 @@
   }
   #about main .item-wrapper {
     max-width: 520px;
+  }
+  #skills main .item-wrapper {
+    width: 520px;
   }
   #page2 main .item-wrapper .owl-carousel .item {
     max-width: 520px;
@@ -273,6 +328,9 @@
   #about main .item-wrapper {
     max-width: 390px;
   }
+  #skills main .item-wrapper {
+    width: 390px;
+  }
   #page2 main .item-wrapper .owl-carousel .item {
     max-width: 390px;
   }
@@ -328,6 +386,9 @@
   }
   #about main .item-wrapper .about-image {
     padding: 0 1em;
+  }
+  #skills main .item-wrapper {
+    width: 320px;
   }
   #page2 main .item-wrapper .owl-carousel .item {
     max-width: 320px;
