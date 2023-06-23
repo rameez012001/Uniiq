@@ -10,6 +10,7 @@ html,body
     height: 100%
     font-size: 16px
     font-weight: 400
+    font-family: 'Montserrat'
     line-height: 32px
     overflow-x: hidden
     scroll-behavior: smooth
@@ -215,7 +216,7 @@ ul,li
                     font-weight: 500
                     margin-bottom: 60px
                     text-align: justify
-#page1
+#index
     main
         .item-wrapper
             display: grid
@@ -362,7 +363,64 @@ ul,li
             img
                 width: 100%
                 height: 100%
-#page2
+
+#contact
+    main
+        .item-wrapper
+            max-width: 1106px
+            &.inactive
+                display: none
+            .about-image
+                margin: 80px 0
+                // max-height: 499px
+                img
+                    width: 100%
+            .form-content
+                row-gap: 60px
+                margin: 0 0 200px
+                form
+                    input,textarea
+                        margin: 0 0 40px
+                        background-color: transparent
+                        border: none
+                        border-bottom: 1px solid #f9f9f9
+                        color: #f9f9f9
+                        &:focus
+                            outline: none
+                        &::placeholder
+                            font-weight: 900
+                            color: #ffffff
+                            opacity: 1
+                    textarea
+                        height: 130px
+                    button
+                        color: #0A0A0A
+                        background-color: #f9f9f9
+                        border: 1px solid #f9f9f9
+                        border-radius: 10px
+                        padding: 10px 0
+                        font-weight: 600
+                        &:hover
+                            color: #f9f9f9
+                            background-color: transparent
+            .para
+                color: #f9f9f9
+                p
+                    text-align: justify
+                    line-height: 36px
+        
+        footer
+            .reach
+                div
+                    font-size: 16px
+                    line-height: 36px 
+                    color: #f9f9f9
+                    &:first-child
+                        color: #D7B065
+                        font-weight: 600
+                        margin: 0 0 10px                        
+                        
+#page2                            
     main
         .item-wrapper
             font-family: 'montserrat'

@@ -11,6 +11,7 @@ html, body {
   height: 100%;
   font-size: 16px;
   font-weight: 400;
+  font-family: "Montserrat";
   line-height: 32px;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -253,48 +254,48 @@ ul, li {
   text-align: justify;
 }
 
-#page1 main .item-wrapper {
+#index main .item-wrapper {
   display: grid;
   justify-content: center;
   grid-template-areas: "img1 . ." "img1 . ." "img1 img2 img2" ". img2 img2" "img3 img3 ." "img3 img3 ." "img3 img3 img4" ". . img4" "img5 img5 img4" "img5 img5 ." ". img7 img7" ". img7 img7" "img6 img7 img7" "img6 . ." "img6 . .";
   column-gap: 24px;
   row-gap: -24px;
 }
-#page1 main .item-wrapper.inactive {
+#index main .item-wrapper.inactive {
   display: none;
 }
-#page1 main .item-wrapper .potrait {
+#index main .item-wrapper .potrait {
   max-width: 400px;
 }
-#page1 main .item-wrapper .landscape {
+#index main .item-wrapper .landscape {
   max-width: 682px;
 }
-#page1 main .item-wrapper .items:nth-child(1) {
+#index main .item-wrapper .items:nth-child(1) {
   grid-area: img1;
 }
-#page1 main .item-wrapper .items:nth-child(2) {
+#index main .item-wrapper .items:nth-child(2) {
   grid-area: img2;
 }
-#page1 main .item-wrapper .items:nth-child(3) {
+#index main .item-wrapper .items:nth-child(3) {
   grid-area: img3;
 }
-#page1 main .item-wrapper .items:nth-child(4) {
+#index main .item-wrapper .items:nth-child(4) {
   grid-area: img4;
 }
-#page1 main .item-wrapper .items:nth-child(5) {
+#index main .item-wrapper .items:nth-child(5) {
   grid-area: img5;
 }
-#page1 main .item-wrapper .items:nth-child(6) {
+#index main .item-wrapper .items:nth-child(6) {
   grid-area: img6;
 }
-#page1 main .item-wrapper .items:nth-child(7) {
+#index main .item-wrapper .items:nth-child(7) {
   grid-area: img7;
 }
-#page1 main .item-wrapper .items img {
+#index main .item-wrapper .items img {
   width: 100%;
   height: 100%;
 }
-#page1 main .item-wrapper .items p {
+#index main .item-wrapper .items p {
   margin: 15px 0 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -432,6 +433,70 @@ ul, li {
 #skills .item-wrapper .skill-image2 img {
   width: 100%;
   height: 100%;
+}
+
+#contact main .item-wrapper {
+  max-width: 1106px;
+}
+#contact main .item-wrapper.inactive {
+  display: none;
+}
+#contact main .item-wrapper .about-image {
+  margin: 80px 0;
+}
+#contact main .item-wrapper .about-image img {
+  width: 100%;
+}
+#contact main .item-wrapper .form-content {
+  row-gap: 60px;
+  margin: 0 0 200px;
+}
+#contact main .item-wrapper .form-content form input, #contact main .item-wrapper .form-content form textarea {
+  margin: 0 0 40px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #f9f9f9;
+  color: #f9f9f9;
+}
+#contact main .item-wrapper .form-content form input:focus, #contact main .item-wrapper .form-content form textarea:focus {
+  outline: none;
+}
+#contact main .item-wrapper .form-content form input::placeholder, #contact main .item-wrapper .form-content form textarea::placeholder {
+  font-weight: 900;
+  color: #ffffff;
+  opacity: 1;
+}
+#contact main .item-wrapper .form-content form textarea {
+  height: 130px;
+}
+#contact main .item-wrapper .form-content form button {
+  color: #0A0A0A;
+  background-color: #f9f9f9;
+  border: 1px solid #f9f9f9;
+  border-radius: 10px;
+  padding: 10px 0;
+  font-weight: 600;
+}
+#contact main .item-wrapper .form-content form button:hover {
+  color: #f9f9f9;
+  background-color: transparent;
+}
+#contact main .item-wrapper .para {
+  color: #f9f9f9;
+}
+#contact main .item-wrapper .para p {
+  text-align: justify;
+  line-height: 36px;
+}
+#contact main footer .reach div {
+  font-size: 16px;
+  line-height: 36px;
+  color: #f9f9f9;
+}
+#contact main footer .reach div:first-child {
+  color: #D7B065;
+  font-weight: 600;
+  margin: 0 0 10px;
 }
 
 #page2 main .item-wrapper {
