@@ -601,6 +601,10 @@ ul, li {
   grid-area: img3;
 }
 
+#blogwp1 main .item-wrapper.inactive {
+  display: none;
+}
+
 .breadcrumb-area .breadcrumb-content {
   color: #BCBCBC;
   margin-bottom: 24px;
@@ -639,14 +643,13 @@ ul, li {
 .blog-area {
   padding-top: 130px;
 }
-.blog-area .blog-items {
-  padding-right: 85px;
-}
 .blog-area .blog-item + .blog-item {
   margin-top: 70px;
 }
+.blog-area .blog-item {
+  padding-right: 85px;
+}
 .blog-area .blog-item .img-box {
-  height: 400px;
   position: relative;
   margin-bottom: 70px;
 }

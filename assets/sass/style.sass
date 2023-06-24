@@ -502,6 +502,12 @@ ul,li
                     &:nth-child(3)
                         grid-area: img3    
 
+
+#blogwp1
+    main
+        .item-wrapper
+            &.inactive
+                display: none
 .breadcrumb-area
     .breadcrumb-content 
         color: #BCBCBC
@@ -531,13 +537,11 @@ ul,li
         background-color: #f9f9f9
 .blog-area
     padding-top: 130px  
-    .blog-items
-        padding-right: 85px
     .blog-item + .blog-item
         margin-top: 70px
     .blog-item
+        padding-right: 85px
         .img-box
-            height: 400px
             position: relative
             margin-bottom: 70px  
             img
@@ -577,8 +581,7 @@ ul,li
             margin-bottom: 40px
         
         .blog-sidebar-widget-inner
-            padding: 46px 30px 62px 30px
-        
+            padding: 46px 30px 62px 30px        
         
         .search-widget
             .blog-sidebar-widget-inner
@@ -586,9 +589,7 @@ ul,li
             form
                 position: relative
                 border-radius: 30px
-            
-            &::before,
-            &::after
+            &::before,&::after
                 border-radius: 30px
  
             input
@@ -725,10 +726,7 @@ ul,li
 
                 .children 
                     padding-left: 80px
-          
-        
-      
-      
+              
             .comment-form 
                 form 
                     .input-group 
@@ -755,9 +753,3 @@ ul,li
                         box-shadow: none
                         outline: none
           
-        
-      
-    
-  
-
-               

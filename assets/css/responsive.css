@@ -308,13 +308,14 @@
   #page4 main .item-wrapper .grid .image-l {
     max-width: 520px;
   }
-  .blog-details-area,
-  .blog-area {
+  .blog-details-area, .blog-area {
     padding-top: 40px;
   }
-  .blog-details-area .blog-details-content,
-  .blog-area .blog-items {
+  .blog-details-area .blog-details-content, .blog-area .blog-items {
     padding-right: 0;
+  }
+  .blog-area .blog-items .blog-item {
+    padding: 0;
   }
   .blog-area .blog-items .blog-item .img-box {
     margin-bottom: 50px;
@@ -408,15 +409,15 @@
   .blog-area .blog-items .blog-item .img-box {
     height: 300px;
   }
-  .blog-area .blog-details-area .blog-details-content .comments-and-form-wrap .comments .children {
-    padding-left: 40px;
-  }
-  .blog-area .blog-details-area .blog-details-content .comments-and-form-wrap .comments .comment-list {
+  .blog-details-area .blog-details-content .comments-and-form-wrap .comments .comment-list {
     gap: 20px;
   }
-  .blog-area .blog-details-area .blog-details-content .comments-and-form-wrap .comments .comment-list .comment-avatar {
+  .blog-details-area .blog-details-content .comments-and-form-wrap .comments .comment-list .comment-avatar {
     width: 70px;
     height: 70px;
+  }
+  .blog-details-area .blog-details-content .comments-and-form-wrap .comments .children {
+    padding-left: 40px;
   }
 }
 @media (max-width: 420px) {
