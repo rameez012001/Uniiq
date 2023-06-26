@@ -2,23 +2,52 @@
     margin: 0
     padding: 0
     box-sizing: border-box
+    scroll-behavior: smooth
+    cursor: none
 
 html,body
     width: 100%
     height: 100%
     font-size: 16px
     font-weight: 400
+    font-family: 'Montserrat'
     line-height: 32px
     overflow-x: hidden
     scroll-behavior: smooth
     background: rgb(10, 10, 10)
     background-image: url(../images/lines.png)
     background-size: 100%
+.cursor
+    position: absolute
+    width: 50px
+    height: 50px
+    border: 3px solid #f9f9f9
+    border-radius: 50%
+    transform: translate(-23px,-23px)
+    pointer-events: none
+    z-index: 10000
+    .dot
+        position: absolute
+        top: 43%
+        left: 43%
+        width: 6px 
+        height: 6px
+        border-radius: 50%
+        background-color: #d7b065
 a
     text-decoration: none
 ul,li
     list-style: none
-    
+.caption
+    h2
+        text-align: center
+        font-size: 30px
+        font-weight: 600
+        color: #f9f9f9
+        line-height: 46px
+        padding: 0 117px
+        span
+            color: #d7b065    
 .content
     .about-text
         display: none
@@ -45,7 +74,6 @@ ul,li
             position: relative
             .menu-icon
                 width: 38px
-                cursor: pointer
                 gap: 9px
                 position: relative
                 z-index: 100
@@ -63,6 +91,13 @@ ul,li
                     &:nth-child(3)
                         width: 38px
                         transition: all 0.3s ease-in-out
+                &:hover
+                    span
+                        &:nth-child(1)
+                            transform: translateX(7px)   
+                        &:nth-child(2)
+                            transform: translateX(10px)                         
+                            
                 &.active
                     span
                         &:nth-child(1)
@@ -112,7 +147,6 @@ ul,li
             margin: 22px 0
             gap: 23px
             svg     
-                cursor: pointer       
                 path
                     transition: all .5s ease-in-out
                 &:nth-child(1)
@@ -123,7 +157,66 @@ ul,li
                     // margin: 0 0 0 10px
                 &:hover
                     path
-                        stroke-opacity: 1                   
+                        stroke-opacity: 1
+    footer
+        display: flex
+        margin: 100px 0 0
+        &.inactive
+            display: none
+        #logo
+            img
+               max-width: 153px
+        p
+            text-align: center
+            margin-top: 20px
+            color: #f9f9f980
+            font-weight: 600
+            font-family: 'Montserrat', sans-serif     
+            a
+                color: #f9f9f9 !important
+                &:hover
+                    text-decoration: underline !important
+    .blContent
+        width: 100%
+        .blContent-wrapper
+            width: 1106px
+            .det_des
+                display: grid
+                grid-template-columns: auto auto
+                justify-content: space-between
+                font-size: 16px
+                font-weight: 600
+                margin-bottom: 100px
+                .details
+                    .detail-items
+                        margin-bottom: 30px 
+                        p
+                            margin: 0
+                            &:first-child
+                                color: #d7b065
+                        p
+                            &:last-child
+                                color: #f9f9f9
+                .description
+                    width: 682px
+                    line-height: 36px
+                    text-align: justify
+                    h3
+                        font-weight: 600
+                        font-size: 16px
+                        color: #d7b065
+                    p
+                        color: #f9f9f9
+                        font-size: 16px
+                        font-weight: 500
+            .para
+                p
+                    color: #f9f9f9
+                    font-size: 16px
+                    font-weight: 500
+                    margin-bottom: 60px
+                    text-align: justify
+#index
     main
         .item-wrapper
             display: grid
@@ -162,20 +255,538 @@ ul,li
                     font-size: 18px
                     color:#f9f9f9
                     letter-spacing: 2px   
-
-    footer
-        display: flex
-        margin: 100px 0 0
+#about
+    main
+        .item-wrapper
+            max-width: 1106px
+            &.inactive
+                display: none
+            .about-image
+                margin: 80px 0
+                img
+                    width: 100%
+            .blContent
+                .blContent-wrapper
+                    .about-det
+                        font-size: 16px
+                        margin-bottom: 100px
+                        .details
+                            .detail-items
+                                margin-bottom: 30px 
+                                p
+                                    margin: 0
+                                    &:nth-child(1)                                        
+                                        color: #d7b065
+                                        font-weight: 600
+                                    &:nth-child(2)                                        
+                                        color: #f9f9f9
+                                        font-weight: 500
+                                    &:nth-child(3)                                        
+                                        color: #f9f9f999 
+                                        font-weight: 500                    
+// BLOG-SINGLE 1
+#skills
+    .item-wrapper
+        width: 1106px
         &.inactive
             display: none
-        #logo
+        .skill1
+            margin: 0 0 130px
+            .skill-image1
+                max-width: 400px
+                img
+                    width: 100%
+            .skills-lists1
+                gap: 50px
+                .circle-container
+                    color: #f9f9f9
+                    font-family: 'Montserrat'
+                    font-weight: 600
+                    .circle-wrapper
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        .circle-progress
+                            position: relative
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            width: 170px
+                            height:  170px
+                            background: conic-gradient(#f9f9f980 32deg,#D7B065 0deg,)
+                            border-radius: 50%
+                            &::before
+                                content: ''
+                                width: 150px
+                                height: 150px
+                                background-color: #000
+                                position: absolute
+                                border-radius: 50%
+                            .progress-value
+                                font-size: 30px
+                                position: relative
+                        .circle-text
+                            font-size: 18px
+                            margin: 20px 0 0
+                            
+        .skill2
+            margin: 130px 0
+            .skills-lists
+                max-width: 400px
+                background: transparent
+                .skill
+                    &+.skill
+                        margin-top: 60px
+                    .skill-label
+                        font-family: 'Montserrat'
+                        color: #F9F9F9
+                        font-size: 16px
+                        text-transform: uppercase
+                        letter-spacing: 5px
+                        font-weight: 400
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        margin-bottom: 30px
+                        line-height: 1.2
+                        margin-bottom: 30px
+                    .progress
+                        height: 8px
+                        border-radius: 0
+                        background: #878c98
+                        .progress-bar
+                            background: #d7b065
+                            transition: width .7s
+                            width: 0%
+        .skill-image2
+            max-width: 541px
             img
-               max-width: 153px
-        p
-            text-align: center
-            margin-top: 20px
-            color: #f9f9f980
+                width: 100%
+                height: 100%
+
+#contact
+    main
+        .item-wrapper
+            max-width: 1106px
+            &.inactive
+                display: none
+            .about-image
+                margin: 80px 0 176px
+                img
+                    width: 100%
+            .form-content
+                row-gap: 60px
+                margin: 0 0 200px
+                form
+                    input,textarea
+                        margin: 0 0 40px
+                        background-color: transparent
+                        border: none
+                        border-bottom: 1px solid #f9f9f9
+                        color: #f9f9f9
+                        &:focus
+                            outline: none
+                        &::placeholder
+                            font-weight: 900
+                            color: #ffffff
+                            opacity: 1
+                    textarea
+                        height: 130px
+                    button
+                        color: #0A0A0A
+                        background-color: #f9f9f9
+                        border: 1px solid #f9f9f9
+                        border-radius: 10px
+                        padding: 10px 0
+                        font-weight: 600
+                        &:hover
+                            color: #f9f9f9
+                            background-color: transparent
+            .para
+                color: #f9f9f9
+                p
+                    text-align: justify
+                    line-height: 36px
+        
+        footer
+            margin: 0
+            .reach
+                div
+                    font-size: 16px
+                    line-height: 36px 
+                    color: #f9f9f9
+                    &:first-child
+                        color: #D7B065
+                        font-weight: 600
+                        margin: 0 0 10px                        
+                        
+#page2                            
+    main
+        .item-wrapper
+            font-family: 'montserrat'
+            &.inactive
+                display: none
+            .owl-carousel
+                .item
+                    max-width: 1106px
+            .slider
+                margin: 80px 0 160px
+                .slider-items
+                    img
+                        width: 100%
+                        border-radius: 10px
+
+#page3
+    main
+        .item-wrapper
+            max-width: 1106px
+            font-family: 'montserrat'
+            &.inactive
+                display: none
+            .grid
+                display: grid
+                grid-template-areas: 'img1 . .' 'img1 . .'  'img1 . img2' '. . img2' 'img3 . img2' 'img3 . .' 'img3 . img4' '. . img4' '. . img4'
+                gap: 80px 20px
+                margin: 80px 0
+                justify-content: center
+                .image-l
+                    max-width: 541px
+                .image-m
+                    max-width: 400px
+                .grid-item
+                    max-height: 499px
+                    img
+                        width: 100%
+                        border-radius: 10px
+                    &:nth-child(1)
+                        grid-area: img1
+                    &:nth-child(2)
+                        grid-area: img2
+                        justify-self: end
+                    &:nth-child(3)
+                        grid-area: img3
+                    &:nth-child(4)
+                        grid-area: img4
+                        
+#page4
+    main
+        .item-wrapper
+            max-width: 1106px
+            font-family: 'montserrat'
+            &.inactive
+                display: none
+            .grid
+                display: grid
+                grid-template-areas: '. . img2' 'img1 . img2' 'img3 img3 img3'
+                gap: 80px 20px
+                margin: 80px 0
+                justify-content: center
+                .image-s
+                    max-width: 424px
+                    max-height: 600px
+                .image-m
+                    max-width: 541px
+                    max-height: 840px
+                .image-l
+                    max-width: 1106px
+                .grid-item
+                    img
+                        width: 100%
+                        border-radius: 10px
+                        object-fit: cover
+                    &:nth-child(1)
+                        grid-area: img1
+                    &:nth-child(2)
+                        grid-area: img2
+                        justify-self: end
+                    &:nth-child(3)
+                        grid-area: img3    
+
+
+#blogwp1
+    main
+        .item-wrapper
+            &.inactive
+                display: none
+.breadcrumb-area
+    .breadcrumb-content 
+        color: #BCBCBC
+        margin-bottom: 24px
+        .section-heading
+            color: #f9f9f9
+            text-transform: uppercase
+            font-size: 56px
+            position: relative
+            display: block
+            margin-bottom: 30px
+            img
+                display: initial    
+.shadow-box
+    position: relative
+    border-radius: 10px
+    background: #131313
+.theme-btn
+    border: none
+    border-radius: 10px
+    background-color: #2C2C2C
+    color: #f9f9f9
+    padding: 12px 30px
+    font-weight: 600
+    &:hover
+        color: #2C2C2C!important
+        background-color: #f9f9f9
+.blog-area
+    padding-top: 130px  
+    .blog-item + .blog-item
+        margin-top: 70px
+    .blog-item
+        padding-right: 85px
+        .img-box
+            position: relative
+            margin-bottom: 70px  
+            img
+                display: block
+                width: 100%
+                height: 100%
+                object-fit: cover
+                border-radius: 10px
+        .content
+            .meta
+                display: block
+                color: #D7B065
+                font-weight: 600
+                font-size: 16px
+                letter-spacing: -1%
+                line-height: 16.8px
+                margin-bottom: 10px  
+            h1
+                font-weight: 600
+                font-size: 24px
+                line-height: 26.8px
+                text-transform: uppercase
+                margin-bottom: 24px
+                a
+                    color: #ffffff
+            p
+                font-size: 16px
+                line-height: 25px
+                color: #ffffff
+                opacity: 0.8
+                font-weight: 400
+                margin-bottom: 30px
+                text-align: justify
+.blog-sidebar
+    .blog-sidebar-inner
+        .blog-sidebar-widget
+            margin-bottom: 40px
+        
+        .blog-sidebar-widget-inner
+            padding: 46px 30px 62px 30px        
+        
+        .search-widget
+            .blog-sidebar-widget-inner
+                padding: 0            
+            form
+                position: relative
+                border-radius: 30px
+            &::before,&::after
+                border-radius: 30px
+ 
+            input
+                width: 100%
+                border: none
+                background: transparent
+                padding: 19px 20px
+                border-radius: 30px
+                color: #ffffff
+                &:focus
+                    outline: none
+                    box-shadow: none
+            .theme-btn
+                border: none
+                position: absolute
+                right: 6px
+                top: 6px
+        ul 
+            padding-left: 0
+            display: flex
+            flex-wrap: wrap
+            gap: 0 10px
+
+            li
+                display: block
+                margin-bottom: 24px
+                &:last-child
+                    margin-bottom: 0   
+                a
+                    display: block
+                    line-height: 25px
+                    font-size: 16px
+                    font-weight: 500
+                    color: #f9f9f9
+ 
+        h3
             font-weight: 600
-            font-family: 'Montserrat', sans-serif     
-            span
-                color: #f9f9f9       
+            color: #D7B065
+            font-size: 18px
+            text-transform: uppercase
+            margin-bottom: 30px 
+
+.blog-details-area 
+    padding-top: 130px  
+    .blog-details-content 
+        padding-right: 85px
+        .img-box 
+            margin-bottom: 70px
+            img 
+                display: block
+                width: 100%   
+                border-radius: 10px
+        .meta
+            display: block
+            color: #D7B065
+            font-weight: 600
+            font-size: 16px
+            letter-spacing: -1%
+            line-height: 16.8px
+            margin-bottom: 10px 
+        h1,p
+            color: #ffffff
+        p
+            text-align: justify
+        .list 
+            margin-bottom: 30px
+      
+            li 
+                color: #a0a0a0
+                font-size: 16px
+                line-height: 25px
+                margin-bottom: 24px 
+                &:last-child 
+                    margin-bottom: 0
+        
+    .comments-and-form-wrap 
+        margin-top: 70px
+        .comments-and-form-wrap-inner 
+            padding: 40px 30px 40px 30px
+            h2 
+                font-size: 24px
+                line-height: 26.8px
+                color: #ffffff
+                letter-spacing: -1%
+                margin-bottom: 40px
+        
+        
+            .comments 
+                .comment-list 
+                    display: flex
+                    align-items: flex-start
+                    gap: 40px
+                    padding-bottom: 40px
+                    margin-bottom: 40px
+                    border-bottom: 1px solid #323232
+            
+                .comment-avatar 
+                    width: 100px
+                    height: 100px
+                    position: relative
+                    flex: none  
+                    img 
+                        display: block
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                        border-radius: 50px
+  
+                .comment-body 
+                    .date 
+                        line-height: 16.8px
+                        color: var(--primary_color)
+                        letter-spacing: -1%
+                        font-size: 16px
+                        font-weight: 500
+                        display: block
+                        margin-bottom: 10px
+                        color: #D7B065
+                    h3 
+                        font-size: 24px
+                        line-height: 26.8px
+                        color: #ffffff
+                        letter-spacing: -1%
+
+                    p 
+                        color: #898989
+                        font-size: 16px
+                        line-height: 25px
+              
+              
+                        .reply-btn 
+                            padding: 10px 22px
+                            font-size: 14px
+
+                .children 
+                    padding-left: 80px
+              
+            .comment-form 
+                form 
+                    .input-group 
+                        margin-bottom: 16px
+                        input ,textarea
+                            width: 100%
+                            border: none
+                            background: linear-gradient(120deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01))
+                            border-radius: 10px
+                            padding: 17px 20px
+                            font-size: 14px
+                            display: block
+                            color: #fff
+                        textarea 
+                            resize: none
+                            height: 145px
+                        &:last-child 
+                            margin-bottom: 0
+                    button 
+                        border: none
+                        width: 100%
+                        padding: 18px 30px
+                    textarea:focus,input:focus 
+                        box-shadow: none
+                        outline: none
+
+#blogMain
+    main
+        .item-wrapper
+            width: 1106px
+            overflow: hidden
+            &.inactive
+                display: none           
+            .articles
+                article
+                    font-family: 'Montserrat'
+                    border-bottom:  2px solid #d9d9d980
+                    padding: 30px 0
+                    &:first-child
+                        border-top: 2px solid #d9d9d980
+                    &:hover
+                        .left
+                            transform: translateX(0)
+                        .hover-img
+                            margin-right: 40px
+                    .left
+                        transform: translateX(-142px)
+                        transition: all .5s ease-in
+                        .hover-img
+                            width: 141px
+                            height: 89px
+                            transition: all .5s ease-in-out
+                            img
+                                width: 100%
+                                height: 100%
+                        h1
+                            color: #f9f9f9
+                            font-size: 30px
+                            font-weight: 600
+                            line-height: 46px
+                    .date
+                        color: #D7B065
+                        font-size: 16px
