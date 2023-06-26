@@ -882,4 +882,49 @@ ul, li {
 .blog-details-area .comments-and-form-wrap .comments-and-form-wrap-inner .comment-form form textarea:focus, .blog-details-area .comments-and-form-wrap .comments-and-form-wrap-inner .comment-form form input:focus {
   box-shadow: none;
   outline: none;
+}
+
+#blogMain main .item-wrapper {
+  width: 1106px;
+  overflow: hidden;
+}
+#blogMain main .item-wrapper.inactive {
+  display: none;
+}
+#blogMain main .item-wrapper .articles article {
+  font-family: "Montserrat";
+  border-bottom: 2px solid rgba(217, 217, 217, 0.5019607843);
+  padding: 30px 0;
+}
+#blogMain main .item-wrapper .articles article:first-child {
+  border-top: 2px solid rgba(217, 217, 217, 0.5019607843);
+}
+#blogMain main .item-wrapper .articles article:hover .left {
+  transform: translateX(0);
+}
+#blogMain main .item-wrapper .articles article:hover .hover-img {
+  margin-right: 40px;
+}
+#blogMain main .item-wrapper .articles article .left {
+  transform: translateX(-142px);
+  transition: all 0.5s ease-in;
+}
+#blogMain main .item-wrapper .articles article .left .hover-img {
+  width: 141px;
+  height: 89px;
+  transition: all 0.5s ease-in-out;
+}
+#blogMain main .item-wrapper .articles article .left .hover-img img {
+  width: 100%;
+  height: 100%;
+}
+#blogMain main .item-wrapper .articles article .left h1 {
+  color: #f9f9f9;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 46px;
+}
+#blogMain main .item-wrapper .articles article .date {
+  color: #D7B065;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */

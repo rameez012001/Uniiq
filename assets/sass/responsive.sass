@@ -70,7 +70,10 @@
                         max-width: 500px
                     .image-l
                         max-width: 920px
-                             
+    #blogMain
+        main
+            .item-wrapper
+                max-width: 920px                        
 @media (max-width: 1280px)
     .content
         .about-text
@@ -234,6 +237,27 @@
                         max-width: 400px
                     .image-l
                         max-width: 700px
+    #blogMain
+        main
+            .item-wrapper
+                max-width: 700px          
+                .articles
+                    article
+                        flex-direction: column
+                        &:hover
+                            .left
+                                transform: translateX(0)
+                            .hover-img
+                                margin-right: 0px
+                        .left
+                            flex-direction: column   
+                            transform: translateX(0)     
+                            .hover-img
+                                width: auto
+                                max-width: 700px
+                                height: auto   
+                            h1
+                                font-size: 25px
 @media (max-width: 850px)
     .content
         .about-text
@@ -279,8 +303,6 @@
                 .about-image, .form-content
                     width: 100%
                     margin: 0 0 100px
-                // .form-content
-                //     margin: 0 0 100px
                 footer
                     row-gap: 45px
                     .reach
@@ -332,6 +354,11 @@
     
     .blog-sidebar
         margin-top: 50px
+
+    #blogMain
+        main
+            .item-wrapper
+                max-width: 520px             
     
 @media (max-width: 568px)
     .content
@@ -429,7 +456,10 @@
                             height: 70px
                     .children 
                         padding-left: 40px
-                                                         
+    #blogMain
+        main
+            .item-wrapper
+                max-width: 390px                                                                                   
 @media (max-width: 420px)
     .content
         header
@@ -487,4 +517,16 @@
                         align-items: center
                         text-align: center
                     .children
-                        padding-left: 0                                                                           
+                        padding-left: 0   
+
+    #blogMain
+        main
+            .item-wrapper
+                padding: 0 .5em  
+                .articles
+                    article
+                        .left
+                            h1
+                                font-size: 20px  
+                                line-height:  20px
+                                margin: 10px 0                                                                                            
