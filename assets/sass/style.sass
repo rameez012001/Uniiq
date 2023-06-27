@@ -1,31 +1,45 @@
+// $bgColor: #0a0a0a
+// $highLight:#D7B065
+// $textColor: #f9f9f9
+// $textGrey1: #f9f9f980
+// $sidebarBg: #131313
+// light mode
+$bgColor: #f9f9f9
+$highLight:#D7B065
+$textColor: #2c2c2c
+$textGrey1: #2c2c2c80
+$sidebarBg: #F4F4F4
 *,*::before,*::after
     margin: 0
     padding: 0
     box-sizing: border-box
     scroll-behavior: smooth
-    cursor: none
-
 html,body
     width: 100%
     height: 100%
     font-size: 16px
     font-weight: 400
-    font-family: 'Montserrat'
+    font-family: 'Montserrat', sans-serif
     line-height: 32px
     overflow-x: hidden
     scroll-behavior: smooth
-    background: rgb(10, 10, 10)
+    background: $bgColor
     background-image: url(../images/lines.png)
     background-size: 100%
+a
+    text-decoration: none
+ul,li
+    list-style: none
 .cursor
     position: absolute
     width: 50px
     height: 50px
-    border: 3px solid #f9f9f9
+    border: 3px solid  $textColor
     border-radius: 50%
     transform: translate(-23px,-23px)
     pointer-events: none
     z-index: 10000
+    transition: .1s 
     .dot
         position: absolute
         top: 43%
@@ -33,37 +47,32 @@ html,body
         width: 6px 
         height: 6px
         border-radius: 50%
-        background-color: #d7b065
-a
-    text-decoration: none
-ul,li
-    list-style: none
+        background-color: $highLight
 .caption
     h2
         text-align: center
         font-size: 30px
         font-weight: 600
-        color: #f9f9f9
+        color:  $textColor
         line-height: 46px
         padding: 0 117px
         span
-            color: #d7b065    
+            color: $highLight    
 .content
     .about-text
         display: none
         position: relative
         h3
             position: absolute
-            top: 450px
+            top: 50px
             left: 840px
             width: 590px
             font-weight: 600
-            font-family: 'montserrat'
             font-size: 30px
             line-height: 46px
-            color: #F9F9F9
+            color:  $textColor
             span
-                color: #D7B065
+                color: $highLight
         &.active
                 display: flex 
     header
@@ -81,7 +90,7 @@ ul,li
                     width: 100%
                     height: 3px
                     border-radius: 5px
-                    background-color: #fff 
+                    background-color: $textColor
                     &:nth-child(1)
                         width: 28px
                         transition: all 0.3s ease-in-out
@@ -114,25 +123,25 @@ ul,li
                 left: 0
                 top: 0
                 z-index: 99
-                padding: 372px 314px 60px 272px
+                padding: 0px 314px 0px 272px
                 overflow: auto
                 height: 100%
-                background-color: #131313
+                background-color: $sidebarBg
                 transition: .25s ease-in
                 flex-direction: column
+                justify-content: center
                 overflow-x: hidden
                 li
                     margin-bottom: 40px
                     a
-                        color: #f9f9f980
+                        color:  $textGrey1
                         font-size: 24px
                         font-weight: 600
-                        font-family: 'Montserrat', sans-serif
                         text-transform: uppercase
                         &:hover
-                            color: #f9f9f9
+                            color:  $textColor
                             text-decoration: underline
-                            text-decoration-color: #D7B065
+                            text-decoration-color: $highLight
                             text-decoration-thickness: 6px
                 &.active
                     display: flex
@@ -140,6 +149,11 @@ ul,li
             width: 75px
             img
                max-width: 153px
+            svg
+                path
+                    fill: $textColor
+                rect
+                    stroke: $textColor
             &.inactive
                 display: none
                
@@ -149,6 +163,7 @@ ul,li
             svg     
                 path
                     transition: all .5s ease-in-out
+                    stroke: $textColor
                 &:nth-child(1)
                     // margin: 0 10px 0 0
                 &:nth-child(2)
@@ -158,22 +173,27 @@ ul,li
                 &:hover
                     path
                         stroke-opacity: 1
+                        stroke: $textColor
     footer
         display: flex
         margin: 100px 0 0
         &.inactive
             display: none
         #logo
-            img
+            img 
                max-width: 153px
+            svg
+                path
+                    fill: $textColor
+                rect
+                    stroke: $textColor
         p
             text-align: center
             margin-top: 20px
-            color: #f9f9f980
+            color:  $textGrey1
             font-weight: 600
-            font-family: 'Montserrat', sans-serif     
             a
-                color: #f9f9f9 !important
+                color:  $textColor !important
                 &:hover
                     text-decoration: underline !important
     .blContent
@@ -193,10 +213,10 @@ ul,li
                         p
                             margin: 0
                             &:first-child
-                                color: #d7b065
+                                color: $highLight
                         p
                             &:last-child
-                                color: #f9f9f9
+                                color:  $textColor
                 .description
                     width: 682px
                     line-height: 36px
@@ -204,14 +224,14 @@ ul,li
                     h3
                         font-weight: 600
                         font-size: 16px
-                        color: #d7b065
+                        color: $highLight
                     p
-                        color: #f9f9f9
+                        color:  $textColor
                         font-size: 16px
                         font-weight: 500
             .para
                 p
-                    color: #f9f9f9
+                    color:  $textColor
                     font-size: 16px
                     font-weight: 500
                     margin-bottom: 60px
@@ -250,10 +270,9 @@ ul,li
                     height: 100%
                 p
                     margin: 15px 0 0    
-                    font-family:'Montserrat', sans-serif
                     font-weight: 600
                     font-size: 18px
-                    color:#f9f9f9
+                    color: $textColor
                     letter-spacing: 2px   
 #about
     main
@@ -276,13 +295,13 @@ ul,li
                                 p
                                     margin: 0
                                     &:nth-child(1)                                        
-                                        color: #d7b065
+                                        color: $highLight
                                         font-weight: 600
                                     &:nth-child(2)                                        
-                                        color: #f9f9f9
+                                        color:  $textColor
                                         font-weight: 500
                                     &:nth-child(3)                                        
-                                        color: #f9f9f999 
+                                        color:  #f9f9f999 
                                         font-weight: 500                    
 // BLOG-SINGLE 1
 #skills
@@ -299,8 +318,8 @@ ul,li
             .skills-lists1
                 gap: 50px
                 .circle-container
-                    color: #f9f9f9
-                    font-family: 'Montserrat'
+                    color:  $textColor
+                    
                     font-weight: 600
                     .circle-wrapper
                         display: flex
@@ -313,7 +332,7 @@ ul,li
                             align-items: center
                             width: 170px
                             height:  170px
-                            background: conic-gradient(#f9f9f980 32deg,#D7B065 0deg,)
+                            background: conic-gradient( $textGrey1 32deg,$highLight 0deg,)
                             border-radius: 50%
                             &::before
                                 content: ''
@@ -338,8 +357,8 @@ ul,li
                     &+.skill
                         margin-top: 60px
                     .skill-label
-                        font-family: 'Montserrat'
-                        color: #F9F9F9
+                        
+                        color:  $textColor
                         font-size: 16px
                         text-transform: uppercase
                         letter-spacing: 5px
@@ -355,7 +374,7 @@ ul,li
                         border-radius: 0
                         background: #878c98
                         .progress-bar
-                            background: #d7b065
+                            background: $highLight
                             transition: width .7s
                             width: 0%
         .skill-image2
@@ -382,8 +401,8 @@ ul,li
                         margin: 0 0 40px
                         background-color: transparent
                         border: none
-                        border-bottom: 1px solid #f9f9f9
-                        color: #f9f9f9
+                        border-bottom: 1px solid  $textColor
+                        color:  $textColor
                         &:focus
                             outline: none
                         &::placeholder
@@ -394,16 +413,16 @@ ul,li
                         height: 130px
                     button
                         color: #0A0A0A
-                        background-color: #f9f9f9
-                        border: 1px solid #f9f9f9
+                        background-color:  $textColor
+                        border: 1px solid  $textColor
                         border-radius: 10px
                         padding: 10px 0
                         font-weight: 600
                         &:hover
-                            color: #f9f9f9
+                            color:  $textColor
                             background-color: transparent
             .para
-                color: #f9f9f9
+                color:  $textColor
                 p
                     text-align: justify
                     line-height: 36px
@@ -414,16 +433,16 @@ ul,li
                 div
                     font-size: 16px
                     line-height: 36px 
-                    color: #f9f9f9
+                    color:  $textColor
                     &:first-child
-                        color: #D7B065
+                        color: $highLight
                         font-weight: 600
                         margin: 0 0 10px                        
                         
 #page2                            
     main
         .item-wrapper
-            font-family: 'montserrat'
+            
             &.inactive
                 display: none
             .owl-carousel
@@ -440,7 +459,7 @@ ul,li
     main
         .item-wrapper
             max-width: 1106px
-            font-family: 'montserrat'
+            
             &.inactive
                 display: none
             .grid
@@ -472,7 +491,7 @@ ul,li
     main
         .item-wrapper
             max-width: 1106px
-            font-family: 'montserrat'
+            
             &.inactive
                 display: none
             .grid
@@ -513,7 +532,7 @@ ul,li
         color: #BCBCBC
         margin-bottom: 24px
         .section-heading
-            color: #f9f9f9
+            color:  $textColor
             text-transform: uppercase
             font-size: 56px
             position: relative
@@ -529,12 +548,12 @@ ul,li
     border: none
     border-radius: 10px
     background-color: #2C2C2C
-    color: #f9f9f9
+    color:  $textColor
     padding: 12px 30px
     font-weight: 600
     &:hover
         color: #2C2C2C!important
-        background-color: #f9f9f9
+        background-color:  $textColor
 .blog-area
     padding-top: 130px  
     .blog-item + .blog-item
@@ -553,7 +572,7 @@ ul,li
         .content
             .meta
                 display: block
-                color: #D7B065
+                color: $highLight
                 font-weight: 600
                 font-size: 16px
                 letter-spacing: -1%
@@ -623,11 +642,11 @@ ul,li
                     line-height: 25px
                     font-size: 16px
                     font-weight: 500
-                    color: #f9f9f9
+                    color:  $textColor
  
         h3
             font-weight: 600
-            color: #D7B065
+            color: $highLight
             font-size: 18px
             text-transform: uppercase
             margin-bottom: 30px 
@@ -644,7 +663,7 @@ ul,li
                 border-radius: 10px
         .meta
             display: block
-            color: #D7B065
+            color: $highLight
             font-weight: 600
             font-size: 16px
             letter-spacing: -1%
@@ -707,7 +726,7 @@ ul,li
                         font-weight: 500
                         display: block
                         margin-bottom: 10px
-                        color: #D7B065
+                        color: $highLight
                     h3 
                         font-size: 24px
                         line-height: 26.8px
@@ -762,7 +781,7 @@ ul,li
                 display: none           
             .articles
                 article
-                    font-family: 'Montserrat'
+                    
                     border-bottom:  2px solid #d9d9d980
                     padding: 30px 0
                     &:first-child
@@ -779,14 +798,30 @@ ul,li
                             width: 141px
                             height: 89px
                             transition: all .5s ease-in-out
-                            img
+                            border-radius: 10px
+                            img 
                                 width: 100%
                                 height: 100%
+                                object-fit: cover
                         h1
-                            color: #f9f9f9
+                            color:  $textColor
                             font-size: 30px
                             font-weight: 600
                             line-height: 46px
                     .date
-                        color: #D7B065
-                        font-size: 16px
+                        overflow: hidden
+                        span
+                            display: block
+                            color: $highLight
+                            font-size: 16px
+                            position: relative
+                            transition: all .3s ease-in-out
+                            &:hover
+                                transform: translateY(-100%)
+                                transform-origin: 0% 0%
+                            &:before           
+                                position: absolute
+                                top: 100%
+                                width: 100%
+                                left: 0
+                                content: attr(data-hover)
