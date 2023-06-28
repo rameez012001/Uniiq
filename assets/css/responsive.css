@@ -112,6 +112,9 @@
   }
 }
 @media (max-width: 992px) {
+  .cursor {
+    display: none;
+  }
   .content header {
     margin: 40px 34px 170px;
   }
