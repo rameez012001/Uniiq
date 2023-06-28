@@ -303,9 +303,39 @@ ul, li {
 #index main .item-wrapper .items:nth-child(7) {
   grid-area: img7;
 }
-#index main .item-wrapper .items img {
+#index main .item-wrapper .items .image {
+  position: relative;
+  transition: all 0.5s ease-in;
+}
+#index main .item-wrapper .items .image img {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+#index main .item-wrapper .items .image:hover::before {
+  opacity: 1;
+  background-color: rgba(46, 46, 46, 0.6);
+  width: 100%;
+}
+#index main .item-wrapper .items .image::before {
+  display: flex;
+  content: attr(data-word);
+  text-decoration: underline;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  width: 1%;
+  opacity: 0;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  color: #D7B065;
+  background-color: #2e2e2e;
+  transition: all 0.4s ease-in;
 }
 #index main .item-wrapper .items p {
   margin: 15px 0 0;

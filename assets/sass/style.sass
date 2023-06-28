@@ -271,9 +271,36 @@ ul,li
                     grid-area: img6
                 &:nth-child(7)
                     grid-area: img7
-                img
-                    width: 100%
-                    height: 100%
+                .image
+                    position: relative
+                    transition: all .5s ease-in
+                    img
+                        width: 100%
+                        height: 100%
+                        border-radius: 10px
+                        position: relative
+                    &:hover::before
+                        opacity: 1
+                        background-color: #2e2e2e99
+                        width: 100%
+                    &::before
+                        display: flex
+                        content: attr(data-word)
+                        text-decoration: underline
+                        justify-content: center
+                        align-items: center
+                        z-index: 99
+                        width: 1%
+                        opacity: 0
+                        height: 100%
+                        border-radius: 10px
+                        position: absolute
+                        top: 0
+                        left: 0
+                        font-weight: 600
+                        color: $highLight
+                        background-color: #2e2e2e
+                        transition: all .4s ease-in
                 p
                     margin: 15px 0 0    
                     font-weight: 600
