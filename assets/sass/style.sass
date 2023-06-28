@@ -1,14 +1,20 @@
-// $bgColor: #0a0a0a
-// $highLight:#D7B065
-// $textColor: #f9f9f9
-// $textGrey1: #f9f9f980
-// $sidebarBg: #131313
-// light mode
-$bgColor: #f9f9f9
+$bgColor: #0a0a0a
 $highLight:#D7B065
-$textColor: #2c2c2c
-$textGrey1: #2c2c2c80
-$sidebarBg: #F4F4F4
+$textColor: #f9f9f9
+$textGrey1: #f9f9f980
+$sidebarBg: #131313
+$white: #fff
+$innerCircle: #f9f9f980
+
+// light mode
+// $bgColor: #f9f9f9
+// $highLight:#D7B065
+// $textColor: #2c2c2c
+// $textGrey1: #2c2c2c80
+// $sidebarBg: #F4F4F4
+// $white: #000
+// $innerCircle: #e2e2e2
+
 *,*::before,*::after
     margin: 0
     padding: 0
@@ -126,7 +132,7 @@ ul,li
                 padding: 0px 314px 0px 272px
                 overflow: auto
                 height: 100%
-                background-color: $sidebarBg
+                background-color: $sidebarBg 
                 transition: .25s ease-in
                 flex-direction: column
                 justify-content: center
@@ -319,7 +325,6 @@ ul,li
                 gap: 50px
                 .circle-container
                     color:  $textColor
-                    
                     font-weight: 600
                     .circle-wrapper
                         display: flex
@@ -332,13 +337,13 @@ ul,li
                             align-items: center
                             width: 170px
                             height:  170px
-                            background: conic-gradient( $textGrey1 32deg,$highLight 0deg,)
+                            background: conic-gradient( $innerCircle 32deg,$highLight 0deg,)
                             border-radius: 50%
                             &::before
                                 content: ''
                                 width: 150px
                                 height: 150px
-                                background-color: #000
+                                background-color: $bgColor
                                 position: absolute
                                 border-radius: 50%
                             .progress-value
@@ -357,7 +362,6 @@ ul,li
                     &+.skill
                         margin-top: 60px
                     .skill-label
-                        
                         color:  $textColor
                         font-size: 16px
                         text-transform: uppercase
@@ -372,7 +376,7 @@ ul,li
                     .progress
                         height: 8px
                         border-radius: 0
-                        background: #878c98
+                        background: $innerCircle
                         .progress-bar
                             background: $highLight
                             transition: width .7s
@@ -407,12 +411,12 @@ ul,li
                             outline: none
                         &::placeholder
                             font-weight: 900
-                            color: #ffffff
+                            color: $white
                             opacity: 1
                     textarea
                         height: 130px
                     button
-                        color: #0A0A0A
+                        color: $bgColor
                         background-color:  $textColor
                         border: 1px solid  $textColor
                         border-radius: 10px
