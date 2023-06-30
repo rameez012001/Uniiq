@@ -25,6 +25,16 @@
   .content .blContent .blContent-wrapper .det_des .description {
     width: 632px;
   }
+  #lander main .item-wrapper .captions h2 {
+    width: 700px;
+  }
+  #lander main .item-wrapper .grid-box {
+    margin: 50px 0;
+    gap: 120px 24px;
+  }
+  #lander main .item-wrapper .grid-box .items {
+    max-width: 500px;
+  }
   #index main .item-wrapper .potrait {
     max-width: 287px;
   }
@@ -87,6 +97,13 @@
   }
   .content header .menu-icon-wrapper .left-sidebar li {
     margin-bottom: 32px;
+  }
+  #lander main .item-wrapper {
+    margin: 0 1em;
+  }
+  #lander main .item-wrapper .grid-box {
+    margin: 50px 0;
+    gap: 70px 24px;
   }
   #index main .item-wrapper .potrait {
     max-width: 287px;
@@ -278,6 +295,20 @@
   }
   .content .blContent .blContent-wrapper .det_des .description {
     width: 520px;
+  }
+  #lander main .caption h2 {
+    font-size: 20px;
+  }
+  #lander main .item-wrapper {
+    margin: 0 0.5em;
+  }
+  #lander main .item-wrapper .grid-box {
+    margin: 50px 0;
+    gap: 70px 24px;
+    grid-template-areas: "img1" "img2" "img3";
+  }
+  #lander main .item-wrapper .grid-box .items {
+    max-width: 700px;
   }
   #index main {
     padding: 0 0.5em;
