@@ -8,16 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <div class="content" id="contact">
-        <div class="cursor">
-            <div class="dot"></div>
-        </div>
+        <!-- <div class="cursor"></div>
+        <div class="dot"></div> -->
         
         <header class="d-flex justify-content-between">
             <div class="menu-icon-wrapper">
@@ -31,7 +30,7 @@
                     <li><a href="./about.html">About</a></li>
                     <li><a href="./blog-main.html">Blog</a></li>
                     <li><a href="./skills.html">Skills</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./contact.html" class="active">Contact</a></li>
                 </ul>
             </div>
             <div id="logo">
@@ -69,28 +68,28 @@
                     <img src="./assets/images/contact.png" alt="">
                 </div>
                 <div class="form-content row justify-content-between">
-                    <form class="d-flex flex-column col-md-6" action="">
+                    <form class="d-flex flex-column col-md-6" action="" data-aos="fade-right" data-aos-duration="1500">
                         <input placeholder="Name">
                         <input placeholder="Email">
                         <input placeholder="Subject">
                         <textarea placeholder="Message"></textarea>
                         <button type="button">SEND</button>
                     </form>
-                    <div class="para col-md-5">
+                    <div class="para col-md-5" data-aos="fade-left" data-aos-duration="1500">
                         <p>Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global death rich in heavy atoms with pretty stories for which there’s little good evidence something incredible is waiting to be known not a sunrise but a galaxy rise.</p>
                         <p>Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global death rich in heavy atoms with pretty stories for which there’s little good known not a sunrise but a galaxy rise.</p>
                     </div>
                 </div>
                 <footer class="row justify-content-between">
-                    <div class="reach col-md-3">
+                    <div class="reach col-md-3" data-aos="fade-up" data-aos-duration="1500">
                         <div class="">Phone</div>
                         <div class="">+ 1-987-654-300<br>+ 1-923-654-800</div>
                     </div>
-                    <div class="reach col-md-3">
+                    <div class="reach col-md-3" data-aos="zoom-in" data-aos-duration="1500">
                         <div class="">Email</div>
                         <div class="">hello@yourwebsite.com<br>support@yourwebsite.com</div>
                     </div>
-                    <div class="reach col-md-3">
+                    <div class="reach col-md-3" data-aos="fade-down" data-aos-duration="1500">
                         <div class="">Address</div>
                         <div class="">Some Street BL, Downtown<br>754/18 New York, United States</div>
                     </div>
@@ -108,7 +107,7 @@
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
