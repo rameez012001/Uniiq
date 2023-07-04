@@ -7,13 +7,13 @@ $white: #fff
 $innerCircle: #f9f9f980
 
 // light mode
-// $bgColor: #f9f9f9
-// $highLight:#D7B065
-// $textColor: #2c2c2c
-// $textGrey1: #2c2c2c80
-// $sidebarBg: #F4F4F4
-// $white: #000
-// $innerCircle: #e2e2e2
+$bgColor: #f9f9f9
+$highLight:#D7B065
+$textColor: #2c2c2c
+$textGrey1: #2c2c2c80
+$sidebarBg: #F4F4F4
+$white: #000
+$innerCircle: #e2e2e2
 
 *,*::before,*::after
     margin: 0
@@ -289,6 +289,49 @@ ul,li
                         grid-area: img2
                     &:nth-child(3)
                         grid-area: img3
+                    p
+                        margin: 15px 0 0    
+                        font-weight: 600
+                        font-size: 18px
+                        color: $textColor
+                        letter-spacing: 2px  
+            .grid-box1
+                margin: 100px 0
+                display: grid
+                justify-content: center
+                // grid-template-areas: 'img1 .' 'img1 img2' '. img2' 'img3 img2' 'img3 .' 'img3 img4' '. img4' 'img5 img2' 'img3 img2' 'img3 .'
+                grid-template-areas: 'img1 .' 'img1 img2' 'img3 img2' 'img3 img4' 'img5 img4' 'img5 img6' 'img7 img6' 'img7 img8'
+                gap: 180px 24px
+                .items 
+                    .image                   
+                        max-width: 683px
+                        height: auto
+                        overflow: hidden 
+                        border-radius: 10px
+                        border: 1px solid black
+                        img
+                            width: 100%
+                            object-fit: cover
+                            transform: scale(1.1)
+                            transition: all .3s ease-in-out                     
+                            &:hover
+                                transform: scale(1)
+                    &:nth-child(1)
+                        grid-area: img1
+                    &:nth-child(2)
+                        grid-area: img2
+                    &:nth-child(3)
+                        grid-area: img3
+                    &:nth-child(4)
+                        grid-area: img4
+                    &:nth-child(5)
+                        grid-area: img5
+                    &:nth-child(6)
+                        grid-area: img6
+                    &:nth-child(7)
+                        grid-area: img7
+                    &:nth-child(8)
+                        grid-area: img8
                     p
                         margin: 15px 0 0    
                         font-weight: 600
