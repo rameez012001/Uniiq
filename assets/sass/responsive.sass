@@ -2,7 +2,7 @@
     .content
         .about-text
             h3
-                left: 650px
+                transform: translate(0%)
                 max-width: 590px
         header
             margin: 40px 64px 170px
@@ -10,37 +10,31 @@
                 .left-sidebar
                     display: none
                     position: fixed
-                    padding: 372px 264px 60px 222px
+                    padding: 0px 264px 0px 222px
                     left: 0
                     top: 0
                     z-index: 99
                     overflow: auto
                     height: 100%
-                    background-color: #131313
                     transition: .25s ease-in
                     flex-direction: column
                     overflow-x: hidden
-        .blContent
-            .blContent-wrapper
-                width: 920px
-                .det_des
-                    .description
-                        width: 632px
-    #index
+    #lander
         main
             .item-wrapper
-                .potrait
-                    max-width: 287px
-                .landscape
-                    max-width: 476px 
-    #about
+                .captions
+                    h2
+                        width: 700px
+                .grid-box
+                    margin: 50px 0                    
+                    gap: 120px 24px
+                    .items
+                        max-width: 500px
+    #home,#about,#blogMain,#skills,#contact
         main
             .item-wrapper
-                max-width: 920px
-    #skills
-        main
-            .item-wrapper
-                 width: 920px
+                margin: 0 1em
+            
     #page2
         main
             .item-wrapper
@@ -50,37 +44,18 @@
     #page3
         main
             .item-wrapper
-                .grid
-                    gap: 80px 0px
-                    .image-l
-                        width: 480px
-                    .image-m
-                        width: 380px
-    
+                margin: 0 1em
     #page4
         main
             .item-wrapper
-                .grid
-                    grid-template-areas: '. . img2' 'img1 . img2' 'img3 img3 img3'
-                    gap: 80px 20px
-                    justify-content: center
-                    .image-s
-                        max-width: 400px
-                    .image-m
-                        max-width: 500px
-                    .image-l
-                        max-width: 920px
-    #blogMain
-        main
-            .item-wrapper
-                max-width: 920px                        
+                margin: 0 1em                 
 @media (max-width: 1280px)
     .content
         .about-text
             h3
                 width: 490px
-                top: 350px
-                left: 490px
+                left: 60%
+                transform: translate(-20%,-10%)
         header
             .menu-icon-wrapper 
                 .left-sidebar
@@ -89,57 +64,63 @@
                     left: 0
                     top: 0
                     z-index: 99
-                    padding: 300px 174px 0
+                    padding: 0px 174px 
                     overflow: auto
                     height: 100%
-                    background-color: #131313
                     transition: .25s ease-in
                     flex-direction: column
                     overflow-x: hidden
                     li
                         margin-bottom: 32px
-    #index
+    #lander
         main
             .item-wrapper
-                .potrait
-                    max-width: 287px
-                .landscape
-                    max-width: 476px 
-    #contact
-        main
-            .item-wrapper
-                .about-image, .form-content
-                    max-width: 920px
+                margin: 0 1em
+                .grid-box
+                    margin: 50px 0                    
+                    gap: 70px 24px
     #page2
         main
             .item-wrapper
+                .caption
+                    h2
+                        max-width: 820px
+                        padding: 0
                 .owl-carousel
                     .item
+                        max-width: 820px
+                .blContent
+                    .blContent-wrapper
                         max-width: 820px
     #page3
         main
             .item-wrapper
                 .grid
                     grid-template-areas:  'img1 . .'  'img1 . img2' '. . img2' 'img3 . img2' 'img3 . .' 'img3 . img4' '. . img4' '. . img4'
-                    gap: 0px
-                    .image-l
-                        width: 420px
-                    .image-m
-                        width: 320px
+    #page4
+        main
+            .item-wrapper
+                .grid
+                    gap: 30px
+
 @media (max-width: 992px)
+    .cursor,.dot
+        display: none
     .content
         header
             margin: 40px 34px 170px
         .about-text
             h3
-                top: 300px
-                width: 370px
+                top: 0px
+                left: 60%
+                transform: translate(0)
+                font-size: 20px
+                width: 340px
         .caption
             h2
                 padding:  0 .3em
         .blContent
             .blContent-wrapper
-                width: 700px
                 .det_des
                     grid-template-columns: auto 
                     justify-content: center
@@ -152,95 +133,17 @@
                         justify-content: space-between
                     .description
                         width: 700px   
-    #index
+    #home
         main
-            .about-text
-                &.active
-                    display: none
             .item-wrapper
                 grid-template-areas: 'img1 . .' 'img1 img2 img2'   'img3 img3 .' 'img3 img3 img4' 'img3 img3 img4' 'img5 img5 img4' 'img5 img5 .'  'img6 img7 img7' 'img6 . .' 'img6 . .'  
     #about
         main
             .item-wrapper
-                max-width: 700px
-    #skills
-        main
-            .item-wrapper
-                width: 700px
-                .skill1
-                    .skill-image1
-                        max-width: 100%
-                        margin-bottom: 70px
-                        img
-                            width: 100%
-                    .skills-lists1
-                        gap: 10px
-                        .circle-container
-                            color: #f9f9f9
-                            font-family: 'Montserrat'
-                            font-weight: 600
-                            .circle-wrapper
-                                display: flex
-                                flex-direction: column
-                                align-items: center
-                                .circle-progress
-                                    position: relative
-                                    display: flex
-                                    justify-content: center
-                                    align-items: center
-                                    width: 170px
-                                    height:  170px
-                                    background: conic-gradient(#f9f9f980 32deg,#D7B065 0deg,)
-                                    border-radius: 50%
-                                    &::before
-                                        content: ''
-                                        width: 150px
-                                        height: 150px
-                                        background-color: #000
-                                        position: absolute
-                                        border-radius: 50%
-                .skill2
-                    .skills-lists
-                        max-width: 100%
-                        margin: 20px 0 40px 
-                    .skill-image2
-                        max-width: 100%
-                        margin: 20px 0 
-    #contact
-        main
-            .item-wrapper
-                .about-image, .form-content
-                    max-width:700px
-    #page2
-        main
-            .item-wrapper
-                .owl-carousel
-                    .item
-                        max-width: 700px                               
-    #page3
-        main
-            .item-wrapper
-                .grid
-                    grid-template-areas:  'img1 .'  'img1 img2' '. img2' 'img3 img2' 'img3 .' 'img3 img4' '. img4'
-                    .image-l
-                        width: 380px
-                    .image-m
-                        width: 280px
-    #page4
-        main
-            .item-wrapper
-                .grid
-                    justify-content: center
-                    .image-s
-                        max-width: 300px
-                    .image-m
-                        max-width: 400px
-                    .image-l
-                        max-width: 700px
+                max-width: 800px
     #blogMain
         main
             .item-wrapper
-                max-width: 700px          
                 .articles
                     article
                         flex-direction: column
@@ -253,66 +156,118 @@
                             flex-direction: column   
                             transform: translateX(0)     
                             .hover-img
-                                width: auto
-                                max-width: 700px
+                                width: auto                                
                                 height: auto   
+                                overflow: hidden
+                                img
+                                    object-fit: cover
+                                    transform: scale(1.2)
+                                    transition: all .3s ease-in-out
+                                    &:hover
+                                        transform: scale(1)
                             h1
                                 font-size: 25px
+    #skills
+        main
+            .item-wrapper
+                max-width: 800px
+                .skill1
+                    .skill-image1
+                        max-width: 100%
+                        margin-bottom: 70px
+                        img
+                            width: 100%
+                            height: calc( 100vw - 80px  )
+                            border-radius: 10px
+                            object-fit: cover
+                    .skills-lists1
+                        gap: 10px
+                .skill2
+                    .skills-lists
+                        max-width: 100%
+                        margin: 20px 0 40px 
+                    .skill-image2
+                        max-width: 100%
+                        margin: 20px 0 
+    #contact
+        main
+            .item-wrapper
+                max-width: 800px
+    #page2
+        main
+            display: flex
+            justify-content: center            
+            .item-wrapper
+                max-width: calc( 100vw -  80px) 
+                .caption
+                    h2
+                        max-width: 800px    
+                .slider
+                    margin: 50px 0
+                .owl-carousel
+                    .item
+                        max-width: 720px     
+                .blContent
+                    .blContent-wrapper
+                        max-width: 800px 
+                        .det_des 
+                            .description  
+                                width: 100%        
+    #page3
+        main
+            .item-wrapper
+                max-width: calc( 100vw -  50px)
+                .grid
+                    grid-template-areas:  'img1 .'  'img1 img2' '. img2' 'img3 img2' 'img3 .' 'img3 img4' '. img4'
+                .blContent
+                    .blContent-wrapper
+                        .det_des 
+                            .description  
+                                width: 100%  
+    #page4
+        main
+            .item-wrapper
+                .blContent
+                    .blContent-wrapper
+                        .det_des
+                            .description
+                                width: auto
+    
 @media (max-width: 850px)
     .content
         .about-text
             &.active
                 display: none
-@media (max-width: 800px)
-    .caption
-        h2
-            font-size: 20px
-            padding: 0  10px
-        
+@media (max-width: 800px)    
     .content
         header
             margin: 40px 20px 140px 24px
-        .blContent
-            .blContent-wrapper
-                width: 520px
-                .det_des
-                    .description
-                        width: 520px
-    #index
+    #lander
         main
-            padding: 0 .5em
+            .caption
+                h2
+                    font-size: 20px
             .item-wrapper
-                grid-template-areas: 'img1 img2 img2' 'img3 img3 img4' 'img3 img3 img4' 'img5 img5 img4' 'img6 img7 img7'
-                gap: 10px
-                .potrait
-                    max-width: 350px
-                .landscape
-                    max-width: 600px   
-    #about
-        main
-            .item-wrapper
-                max-width: 520px
-    #skills
-        main
-            .item-wrapper
-                 width: 520px
-    #contact
-        main
-            .item-wrapper
-                max-width:520px
-                .about-image, .form-content
-                    width: 100%
-                    margin: 0 0 100px
-                footer
-                    row-gap: 45px
-                    .reach
-                        width: fit-content
+                margin: 0 .5em
+                .grid-box
+                    margin: 50px 0                    
+                    gap: 70px 24px
+                    grid-template-areas: 'img1' 'img2' 'img3'
+                    .items
+                       max-width: 700px
     #page2
         main
             .item-wrapper
+                max-width: calc( 100vw -  60px)
+                // .caption
+                //     h2
+                //         max-width: 590px
                 .owl-carousel
                     .item
-                        max-width: 520px
+                        max-width: 565px
+                .blContent
+                    .blContent-wrapper
+                        // max-width: 560px 
                                             
     #page3
         main
@@ -320,47 +275,42 @@
                 .grid
                     grid-template-areas: 'img1 .' 'img1 img2' 'img3 img2' 'img3 .' 'img3 img4' '. img4'
                     gap: 20px
-                    .image-l
-                        width: 250px
-                    .image-m
-                        width: 250px
                     .grid-item
-                        height: fit-content
-                        &:nth-child(2)
-                            justify-self: normal
+                        max-width: 100%
     #page4
         main
             .item-wrapper
                 .grid
                     justify-content: center
                     .image-s
-                        max-width: 220px
+                        max-width: 300px
                     .image-m
-                        max-width: 280px
+                        max-width: 350px
                     .image-l
-                        max-width: 520px                       
-    .blog-details-area,.blog-area
-        padding-top: 40px
-    
-    .blog-details-area .blog-details-content,.blog-area .blog-items
-        padding-right: 0
-    
-    .blog-area 
-        .blog-items 
-            .blog-item 
-                padding: 0
-                .img-box
-                    margin-bottom: 50px
-    
-    .blog-sidebar
-        margin-top: 50px
-
-    #blogMain
+                        max-width: 750px      
+    #blogwp  
         main
-            .item-wrapper
-                max-width: 520px             
+            .item-wrapper               
+                .blog-area, .blog-details-area
+                    padding-top: 40px
+                
+                .blog-area .blog-items, .blog-details-area .blog-details-content
+                    padding-right: 0
+                
+                .blog-area 
+                    .blog-items 
+                        .blog-item 
+                            padding-right: 0
+                            .img-box
+                                margin-bottom: 50px
+                
+                .blog-sidebar
+                    margin-top: 50px        
     
 @media (max-width: 568px)
+    .caption
+        h2
+            font-size: 16px
     .content
         header
             margin: 40px 45px
@@ -370,41 +320,22 @@
                     width: 100%
             .contact
                 display: none !important
-        .blContent
-            .blContent-wrapper
-                width: 390px
-                .det_des
-                    .description
-                        width: 390px  
         .caption
             h2
                 padding: 0 .5em
-    #index
+    #home
         main
-            .item-wrapper
-                grid-template-areas: 'img1 . .' 'img1 img2 img2'   'img3 img3 .' 'img3 img3 img4' 'img3 img3 img4' 'img5 img5 img4' 'img5 img5 .'  'img6 img7 img7' 'img6 . .' 'img6 . .'  
-                grid-template-areas: '. img1 .' '. img2 .''. img3 .''. img4 .''. img5 .''. img6 .''. img7 .'      
+            .item-wrapper 
+                grid-template-areas: 'img1' 'img2''img3''img4''img5''img6''img7'    
                 .items
-                    margin: 15px 0 5px
-                .potrait
-                    max-width: 400px
-                .landscape
-                    max-width: 400px  
-    #about
-        main
-            .item-wrapper
-                max-width: 390px
-    #skills
-        main
-            .item-wrapper
-                width: 390px
-    #contact
-        main
-            .item-wrapper
-                max-width:390px
+                    .potrait
+                        max-width: 100%
+                    .landscape
+                        max-width: 100%
     #page2
         main
             .item-wrapper
+                max-width: calc( 100vw -  20px)
                 .owl-carousel
                     .item
                         max-width: 390px
@@ -433,33 +364,29 @@
                     justify-content: center
                     grid-template-areas: 'img1' 'img2' 'img3'
                     gap: 20px
-                    .image-s
-                        max-width: 400px
-                    .image-m
-                        max-width: 400px
-                    .image-l
-                        max-width: 400px   
-    .blog-area 
-        .blog-items 
-            .blog-item 
-                .img-box 
-                    height: 300px                      
-                    
-    .blog-details-area 
-        .blog-details-content 
-            .comments-and-form-wrap 
-                .comments 
-                    .comment-list 
-                        gap: 20px
-                        .comment-avatar 
-                            width: 70px
-                            height: 70px
-                    .children 
-                        padding-left: 40px
-    #blogMain
+                    .image-s,.image-m,.image-l
+                        max-width: 100% 
+    #blogwp
         main
             .item-wrapper
-                max-width: 390px                                                                                   
+                .blog-area 
+                    .blog-items 
+                        .blog-item 
+                            .img-box 
+                                height: 300px                      
+                                
+                .blog-details-area 
+                    .blog-details-content 
+                        .comments-and-form-wrap 
+                            .comments 
+                                .comment-list 
+                                    gap: 20px
+                                    .comment-avatar 
+                                        width: 70px
+                                        height: 70px
+                                .children 
+                                    padding-left: 40px
+
 @media (max-width: 420px)
     .content
         header
@@ -467,26 +394,7 @@
             .menu-icon-wrapper 
                 .left-sidebar
                     z-index: 99
-                    padding: 300px 100px 0
-        .blContent
-            .blContent-wrapper
-                width: 320px
-                .det_des
-                    .description
-                        width: 320px        
-    #about
-        main
-            .item-wrapper
-               .about-image
-                    padding: 0 1em
-    #skills
-        main
-            .item-wrapper
-                width: 320px
-    #contact
-        main
-            .item-wrapper
-                max-width:320px
+                    padding: 0px 100px 
     #page2
         main
             .item-wrapper
@@ -494,39 +402,17 @@
                     .item
                         max-width: 320px   
 
-    #page4
+    #blogwp
         main
             .item-wrapper
-                .grid
-                    justify-content: center
-                    grid-template-areas: 'img1' 'img2' 'img3'
-                    padding: 0 1em
-                    .image-s
-                        max-width: 400px
-                    .image-m
-                        max-width: 400px
-                    .image-l
-                        max-width: 400px 
-
-    .blog-details-area 
-        .blog-details-content 
-            .comments-and-form-wrap 
-                .comments 
-                    .comment-list
-                        flex-direction: column
-                        align-items: center
-                        text-align: center
-                    .children
-                        padding-left: 0   
-
-    #blogMain
-        main
-            .item-wrapper
-                padding: 0 .5em  
-                .articles
-                    article
-                        .left
-                            h1
-                                font-size: 20px  
-                                line-height:  20px
-                                margin: 10px 0                                                                                            
+                .blog-details-area 
+                    .blog-details-content 
+                        .comments-and-form-wrap 
+                            .comments 
+                                .comment-list
+                                    flex-direction: column
+                                    align-items: center
+                                    text-align: center
+                                .children
+                                    padding-left: 0   
+                                                   
