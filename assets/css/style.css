@@ -33,20 +33,19 @@ ul, li {
   border: 3px solid #f9f9f9;
   border-radius: 50%;
   transform: translate(-23px, -23px);
-  z-index: 2;
+  pointer-events: none;
+  z-index: 3;
   transition: 0.03s;
 }
 
 .dot {
   position: fixed;
-  top: 43%;
-  left: 43%;
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background-color: #D7B065;
   transition: 0.1s;
-  z-index: 2;
+  z-index: 3;
 }
 
 .caption h2 {
@@ -190,6 +189,9 @@ ul, li {
 .content header .contact svg path {
   transition: all 0.5s ease-in-out;
   stroke: #f9f9f9;
+}
+.content header .contact svg:hover {
+  cursor: pointer;
 }
 .content header .contact svg:hover path {
   stroke-opacity: 1;
