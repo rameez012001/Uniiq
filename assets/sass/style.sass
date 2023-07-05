@@ -7,13 +7,13 @@ $white: #fff
 $innerCircle: #f9f9f980
 
 // light mode
-$bgColor: #f9f9f9
-$highLight:#D7B065
-$textColor: #2c2c2c
-$textGrey1: #2c2c2c80
-$sidebarBg: #F4F4F4
-$white: #000
-$innerCircle: #e2e2e2
+// $bgColor: #f9f9f9
+// $highLight:#D7B065
+// $textColor: #2c2c2c
+// $textGrey1: #2c2c2c80
+// $sidebarBg: #F4F4F4
+// $white: #000
+// $innerCircle: #e2e2e2
 
 *,*::before,*::after
     margin: 0
@@ -249,7 +249,10 @@ ul,li
                     font-weight: 500
                     margin-bottom: 60px
                     text-align: justify
-
+#lander,#home,#about,#blogMain,#skills,#contact,#page2,#page3,#page4,#blogwp
+    main
+        .item-wrapper
+            overflow: hidden
 #lander
     header
         #logo
@@ -258,11 +261,19 @@ ul,li
         animation: entry-animation
         animation-duration: 1.6s
         .item-wrapper
+            max-width: 1106px
             .caption
                 width: 100%
                 h2
-                    width: 800px
+                    max-width: 800px
                     padding: 0
+            .title
+                h1
+                    color: #2c2c2c
+                    font-size: 30px
+                    font-weight: 600
+                    span
+                        color: $highLight
             .grid-box
                 margin: 100px 0
                 display: grid
@@ -299,7 +310,6 @@ ul,li
                 margin: 100px 0
                 display: grid
                 justify-content: center
-                // grid-template-areas: 'img1 .' 'img1 img2' '. img2' 'img3 img2' 'img3 .' 'img3 img4' '. img4' 'img5 img2' 'img3 img2' 'img3 .'
                 grid-template-areas: 'img1 .' 'img1 img2' 'img3 img2' 'img3 img4' 'img5 img4' 'img5 img6' 'img7 img6' 'img7 img8'
                 gap: 180px 24px
                 .items 
@@ -337,7 +347,8 @@ ul,li
                         font-weight: 600
                         font-size: 18px
                         color: $textColor
-                        letter-spacing: 2px  
+                        letter-spacing: 2px                         
+                
 #home
     main
         animation: entry-animation

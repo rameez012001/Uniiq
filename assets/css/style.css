@@ -13,7 +13,7 @@ html, body {
   font-family: "Montserrat", sans-serif;
   line-height: 32px;
   scroll-behavior: smooth;
-  background: #f9f9f9;
+  background: #0a0a0a;
   background-image: url(../images/lines.png);
   background-size: 100%;
 }
@@ -30,7 +30,7 @@ ul, li {
   position: fixed;
   width: 50px;
   height: 50px;
-  border: 3px solid #2c2c2c;
+  border: 3px solid #f9f9f9;
   border-radius: 50%;
   transform: translate(-23px, -23px);
   z-index: 2;
@@ -53,7 +53,7 @@ ul, li {
   text-align: center;
   font-size: 30px;
   font-weight: 600;
-  color: #2c2c2c;
+  color: #f9f9f9;
   line-height: 46px;
   padding: 0 117px;
 }
@@ -73,7 +73,7 @@ ul, li {
   font-weight: 600;
   font-size: 30px;
   line-height: 46px;
-  color: #2c2c2c;
+  color: #f9f9f9;
   animation: fade-up;
   animation-duration: 1s;
 }
@@ -101,7 +101,7 @@ ul, li {
   width: 100%;
   height: 3px;
   border-radius: 5px;
-  background-color: #2c2c2c;
+  background-color: #f9f9f9;
 }
 .content header .menu-icon-wrapper .menu-icon span:nth-child(1) {
   width: 28px;
@@ -142,7 +142,7 @@ ul, li {
   padding: 0px 314px 0px 272px;
   overflow: auto;
   height: 100%;
-  background-color: #F4F4F4;
+  background-color: #131313;
   transition: 0.25s ease-in;
   flex-direction: column;
   justify-content: center;
@@ -154,13 +154,13 @@ ul, li {
   margin-bottom: 40px;
 }
 .content header .menu-icon-wrapper .left-sidebar li a {
-  color: rgba(44, 44, 44, 0.5019607843);
+  color: rgba(249, 249, 249, 0.5019607843);
   font-size: 24px;
   font-weight: 600;
   text-transform: uppercase;
 }
 .content header .menu-icon-wrapper .left-sidebar li a:hover, .content header .menu-icon-wrapper .left-sidebar li a.active {
-  color: #2c2c2c;
+  color: #f9f9f9;
   text-decoration: underline;
   text-decoration-color: #D7B065;
   text-decoration-thickness: 6px;
@@ -175,10 +175,10 @@ ul, li {
   max-width: 153px;
 }
 .content header #logo svg path {
-  fill: #2c2c2c;
+  fill: #f9f9f9;
 }
 .content header #logo svg rect {
-  stroke: #2c2c2c;
+  stroke: #f9f9f9;
 }
 .content header #logo.inactive {
   display: none;
@@ -189,11 +189,11 @@ ul, li {
 }
 .content header .contact svg path {
   transition: all 0.5s ease-in-out;
-  stroke: #2c2c2c;
+  stroke: #f9f9f9;
 }
 .content header .contact svg:hover path {
   stroke-opacity: 1;
-  stroke: #2c2c2c;
+  stroke: #f9f9f9;
 }
 .content footer {
   display: flex;
@@ -206,19 +206,19 @@ ul, li {
   max-width: 153px;
 }
 .content footer #logo svg path {
-  fill: #2c2c2c;
+  fill: #f9f9f9;
 }
 .content footer #logo svg rect {
-  stroke: #2c2c2c;
+  stroke: #f9f9f9;
 }
 .content footer p {
   text-align: center;
   margin-top: 20px;
-  color: rgba(44, 44, 44, 0.5019607843);
+  color: rgba(249, 249, 249, 0.5019607843);
   font-weight: 600;
 }
 .content footer p a {
-  color: #2c2c2c !important;
+  color: #f9f9f9 !important;
 }
 .content footer p a:hover {
   text-decoration: underline !important;
@@ -247,7 +247,7 @@ ul, li {
   color: #D7B065;
 }
 .content .blContent .blContent-wrapper .det_des .details .detail-items p:last-child {
-  color: #2c2c2c;
+  color: #f9f9f9;
   font-weight: 500;
 }
 .content .blContent .blContent-wrapper .det_des .description {
@@ -261,16 +261,20 @@ ul, li {
   color: #D7B065;
 }
 .content .blContent .blContent-wrapper .det_des .description p {
-  color: #2c2c2c;
+  color: #f9f9f9;
   font-size: 16px;
   font-weight: 500;
 }
 .content .blContent .blContent-wrapper .para p {
-  color: #2c2c2c;
+  color: #f9f9f9;
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 60px;
   text-align: justify;
+}
+
+#lander main .item-wrapper, #home main .item-wrapper, #about main .item-wrapper, #blogMain main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #page2 main .item-wrapper, #page3 main .item-wrapper, #page4 main .item-wrapper, #blogwp main .item-wrapper {
+  overflow: hidden;
 }
 
 #lander header #logo {
@@ -280,12 +284,23 @@ ul, li {
   animation: entry-animation;
   animation-duration: 1.6s;
 }
+#lander main .item-wrapper {
+  max-width: 1106px;
+}
 #lander main .item-wrapper .caption {
   width: 100%;
 }
 #lander main .item-wrapper .caption h2 {
-  width: 800px;
+  max-width: 800px;
   padding: 0;
+}
+#lander main .item-wrapper .title h1 {
+  color: #2c2c2c;
+  font-size: 30px;
+  font-weight: 600;
+}
+#lander main .item-wrapper .title h1 span {
+  color: #D7B065;
 }
 #lander main .item-wrapper .grid-box {
   margin: 100px 0;
@@ -323,7 +338,7 @@ ul, li {
   margin: 15px 0 0;
   font-weight: 600;
   font-size: 18px;
-  color: #2c2c2c;
+  color: #f9f9f9;
   letter-spacing: 2px;
 }
 #lander main .item-wrapper .grid-box1 {
@@ -377,7 +392,7 @@ ul, li {
   margin: 15px 0 0;
   font-weight: 600;
   font-size: 18px;
-  color: #2c2c2c;
+  color: #f9f9f9;
   letter-spacing: 2px;
 }
 
@@ -447,7 +462,7 @@ ul, li {
   margin: 0;
   font-weight: 600;
   font-size: 18px;
-  color: #2c2c2c;
+  color: #f9f9f9;
   letter-spacing: 2px;
   transition: 0.3s;
   position: relative;
@@ -503,7 +518,7 @@ ul, li {
   font-weight: 600;
 }
 #about main .item-wrapper .blContent .blContent-wrapper .about-det .details .detail-items p:nth-child(2) {
-  color: #2c2c2c;
+  color: #f9f9f9;
   font-weight: 500;
 }
 #about main .item-wrapper .blContent .blContent-wrapper .about-det .details .detail-items p:nth-child(3) {
@@ -551,7 +566,7 @@ ul, li {
   object-fit: cover;
 }
 #blogMain main .item-wrapper .articles article .left h1 {
-  color: #2c2c2c;
+  color: #f9f9f9;
   font-size: 30px;
   font-weight: 600;
   line-height: 46px;
@@ -611,7 +626,7 @@ ul, li {
   gap: 50px;
 }
 #skills main .item-wrapper .skill1 .skills-lists1 .circle-container {
-  color: #2c2c2c;
+  color: #f9f9f9;
   font-weight: 600;
 }
 #skills main .item-wrapper .skill1 .skills-lists1 .circle-container .circle-wrapper {
@@ -626,14 +641,14 @@ ul, li {
   align-items: center;
   width: 170px;
   height: 170px;
-  background: conic-gradient(#e2e2e2 32deg, #D7B065 0deg);
+  background: conic-gradient(rgba(249, 249, 249, 0.5019607843) 32deg, #D7B065 0deg);
   border-radius: 50%;
 }
 #skills main .item-wrapper .skill1 .skills-lists1 .circle-container .circle-wrapper .circle-progress::before {
   content: "";
   width: 150px;
   height: 150px;
-  background-color: #f9f9f9;
+  background-color: #0a0a0a;
   position: absolute;
   border-radius: 50%;
 }
@@ -656,7 +671,7 @@ ul, li {
   margin-top: 60px;
 }
 #skills main .item-wrapper .skill2 .skills-lists .skill .skill-label {
-  color: #2c2c2c;
+  color: #f9f9f9;
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -671,7 +686,7 @@ ul, li {
 #skills main .item-wrapper .skill2 .skills-lists .skill .progress {
   height: 8px;
   border-radius: 0;
-  background: #e2e2e2;
+  background: rgba(249, 249, 249, 0.5019607843);
 }
 #skills main .item-wrapper .skill2 .skills-lists .skill .progress .progress-bar {
   background: #D7B065;
@@ -726,34 +741,34 @@ ul, li {
   margin: 0 0 40px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #2c2c2c;
-  color: #2c2c2c;
+  border-bottom: 1px solid #f9f9f9;
+  color: #f9f9f9;
 }
 #contact main .item-wrapper .form-content form input:focus, #contact main .item-wrapper .form-content form textarea:focus {
   outline: none;
 }
 #contact main .item-wrapper .form-content form input::placeholder, #contact main .item-wrapper .form-content form textarea::placeholder {
   font-weight: 900;
-  color: #000;
+  color: #fff;
   opacity: 1;
 }
 #contact main .item-wrapper .form-content form textarea {
   height: 130px;
 }
 #contact main .item-wrapper .form-content form button {
-  color: #f9f9f9;
-  background-color: #2c2c2c;
-  border: 1px solid #2c2c2c;
+  color: #0a0a0a;
+  background-color: #f9f9f9;
+  border: 1px solid #f9f9f9;
   border-radius: 10px;
   padding: 10px 0;
   font-weight: 600;
 }
 #contact main .item-wrapper .form-content form button:hover {
-  color: #2c2c2c;
+  color: #f9f9f9;
   background-color: transparent;
 }
 #contact main .item-wrapper .para {
-  color: #2c2c2c;
+  color: #f9f9f9;
 }
 #contact main .item-wrapper .para p {
   text-align: justify;
@@ -765,7 +780,7 @@ ul, li {
 #contact main footer .reach div {
   font-size: 16px;
   line-height: 36px;
-  color: #2c2c2c;
+  color: #f9f9f9;
 }
 #contact main footer .reach div:first-child {
   color: #D7B065;
@@ -928,7 +943,7 @@ ul, li {
   margin-bottom: 24px;
 }
 #blogwp main .item-wrapper .breadcrumb-area .breadcrumb-content .section-heading {
-  color: #2c2c2c;
+  color: #f9f9f9;
   text-transform: uppercase;
   font-size: 56px;
   position: relative;
@@ -1115,13 +1130,13 @@ ul, li {
   border: none;
   border-radius: 10px;
   background-color: #2C2C2C;
-  color: #2c2c2c;
+  color: #f9f9f9;
   padding: 12px 30px;
   font-weight: 600;
 }
 #blogwp main .item-wrapper .blog-area .theme-btn:hover, #blogwp main .item-wrapper .blog-details-area .theme-btn:hover {
   color: #2C2C2C !important;
-  background-color: #2c2c2c;
+  background-color: #f9f9f9;
 }
 #blogwp main .item-wrapper .blog-area .blog-sidebar .blog-sidebar-inner .blog-sidebar-widget, #blogwp main .item-wrapper .blog-details-area .blog-sidebar .blog-sidebar-inner .blog-sidebar-widget {
   margin-bottom: 40px;
@@ -1175,7 +1190,7 @@ ul, li {
   line-height: 25px;
   font-size: 16px;
   font-weight: 500;
-  color: #2c2c2c;
+  color: #f9f9f9;
 }
 #blogwp main .item-wrapper .blog-area .blog-sidebar .blog-sidebar-inner h3, #blogwp main .item-wrapper .blog-details-area .blog-sidebar .blog-sidebar-inner h3 {
   font-weight: 600;
