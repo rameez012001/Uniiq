@@ -5,7 +5,7 @@
                 transform: translate(0%)
                 max-width: 590px
         header
-            margin: 40px 64px 170px
+            margin: 40px 64px 100px
             .menu-icon-wrapper 
                 .left-sidebar
                     display: none
@@ -22,9 +22,6 @@
     #lander
         main
             .item-wrapper
-                .captions
-                    h2
-                        width: 700px
                 .grid-box
                     margin: 50px 0                    
                     gap: 120px 24px
@@ -119,6 +116,7 @@
         .caption
             h2
                 padding:  0 .3em
+                line-height: 30px
         .blContent
             .blContent-wrapper
                 .det_des
@@ -244,30 +242,36 @@
             margin: 40px 20px 140px 24px
     #lander
         main
-            .caption
-                h2
-                    font-size: 20px
             .item-wrapper
-                margin: 0 .5em
+                max-width: 700px
+                margin: 0 1em
+                .caption
+                    h2
+                        font-size: 20px
+                .title
+                    h1
+                        font-size: 20px
                 .grid-box
                     margin: 50px 0                    
                     gap: 70px 24px
                     grid-template-areas: 'img1' 'img2' 'img3'
                     .items
                        max-width: 700px
+                .grid-box1
+                    margin: 50px 0                    
+                    gap: 70px 24px
+                    grid-template-areas: 'img1' 'img2' 'img3' 'img4' 'img5' 'img6' 'img7' 'img8'
+                    .items
+                       max-width: 700px
     #page2
         main
             .item-wrapper
                 max-width: calc( 100vw -  60px)
-                // .caption
-                //     h2
-                //         max-width: 590px
                 .owl-carousel
                     .item
                         max-width: 565px
                 .blContent
                     .blContent-wrapper
-                        // max-width: 560px 
                                             
     #page3
         main
