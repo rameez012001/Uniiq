@@ -7,17 +7,7 @@
     margin: 40px 64px 100px;
   }
   .content header .menu-icon-wrapper .left-sidebar {
-    display: none;
-    position: fixed;
     padding: 0px 264px 0px 222px;
-    left: 0;
-    top: 0;
-    z-index: 99;
-    overflow: auto;
-    height: 100%;
-    transition: 0.25s ease-in;
-    flex-direction: column;
-    overflow-x: hidden;
   }
   #lander main .item-wrapper .grid-box {
     margin: 50px 0;
@@ -46,17 +36,7 @@
     transform: translate(-20%, -10%);
   }
   .content header .menu-icon-wrapper .left-sidebar {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 99;
     padding: 0px 174px;
-    overflow: auto;
-    height: 100%;
-    transition: 0.25s ease-in;
-    flex-direction: column;
-    overflow-x: hidden;
   }
   .content header .menu-icon-wrapper .left-sidebar li {
     margin-bottom: 32px;
@@ -373,7 +353,6 @@
     margin: 40px 45px;
   }
   .content header .menu-icon-wrapper .left-sidebar {
-    z-index: 99;
     padding: 0px 100px;
   }
   #page2 main .item-wrapper .owl-carousel .item {
