@@ -35,8 +35,7 @@ ul, li {
   transform: translate(-23px, -23px);
   pointer-events: none;
   z-index: 3;
-  transition: 0.03s;
-  transition: width 0.7s, height 0.7s;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 .cursor.onimg {
   width: 120px;
@@ -62,7 +61,7 @@ ul, li {
   height: 6px;
   border-radius: 50%;
   background-color: #D7B065;
-  transition: 0.1s;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
   z-index: 3;
 }
 .dot.inactive {
@@ -93,12 +92,12 @@ ul, li {
   font-weight: 600;
   font-size: 30px;
   line-height: 46px;
-  color: #2c2c2c;
+  color: #D7B065;
   animation: fade-up;
   animation-duration: 1s;
 }
 .content .about-text h3 span {
-  color: #D7B065;
+  color: #2c2c2c;
 }
 .content .about-text.active {
   display: flex;
@@ -969,8 +968,11 @@ ul, li {
   display: none;
 }
 #blogwp main .item-wrapper .breadcrumb-area .breadcrumb-content {
-  color: #BCBCBC;
   margin-bottom: 24px;
+}
+#blogwp main .item-wrapper .breadcrumb-area .breadcrumb-content p {
+  color: #2c2c2c;
+  font-weight: 600;
 }
 #blogwp main .item-wrapper .breadcrumb-area .breadcrumb-content .section-heading {
   color: #2c2c2c;
@@ -1008,12 +1010,12 @@ ul, li {
   margin-bottom: 24px;
 }
 #blogwp main .item-wrapper .blog-area .blog-item .content h1 a {
-  color: #ffffff;
+  color: #2c2c2c;
 }
 #blogwp main .item-wrapper .blog-area .blog-item .content p {
   font-size: 16px;
   line-height: 25px;
-  color: #ffffff;
+  color: #000;
   opacity: 0.8;
   font-weight: 400;
   margin-bottom: 30px;
@@ -1034,7 +1036,7 @@ ul, li {
   border-radius: 10px;
 }
 #blogwp main .item-wrapper .blog-details-area .blog-details-content h1 a, #blogwp main .item-wrapper .blog-details-area .blog-details-content p {
-  color: #ffffff;
+  color: #000;
 }
 #blogwp main .item-wrapper .blog-details-area .blog-details-content p {
   text-align: justify;
@@ -1060,7 +1062,7 @@ ul, li {
 #blogwp main .item-wrapper .blog-details-area .comments-and-form-wrap .comments-and-form-wrap-inner h2 {
   font-size: 24px;
   line-height: 26.8px;
-  color: #ffffff;
+  color: #000;
   letter-spacing: -1%;
   margin-bottom: 40px;
 }
@@ -1098,7 +1100,7 @@ ul, li {
 #blogwp main .item-wrapper .blog-details-area .comments-and-form-wrap .comments-and-form-wrap-inner .comments .comment-body h3 {
   font-size: 24px;
   line-height: 26.8px;
-  color: #ffffff;
+  color: #000;
   letter-spacing: -1%;
 }
 #blogwp main .item-wrapper .blog-details-area .comments-and-form-wrap .comments-and-form-wrap-inner .comments .comment-body p {
@@ -1119,12 +1121,12 @@ ul, li {
 #blogwp main .item-wrapper .blog-details-area .comments-and-form-wrap .comments-and-form-wrap-inner .comment-form form .input-group input, #blogwp main .item-wrapper .blog-details-area .comments-and-form-wrap .comments-and-form-wrap-inner .comment-form form .input-group textarea {
   width: 100%;
   border: none;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
+  background-color: #dddddd;
   border-radius: 10px;
   padding: 17px 20px;
   font-size: 14px;
   display: block;
-  color: #fff;
+  color: #000;
 }
 #blogwp main .item-wrapper .blog-details-area .comments-and-form-wrap .comments-and-form-wrap-inner .comment-form form .input-group textarea {
   resize: none;
@@ -1154,18 +1156,18 @@ ul, li {
 #blogwp main .item-wrapper .blog-area .shadow-box, #blogwp main .item-wrapper .blog-details-area .shadow-box {
   position: relative;
   border-radius: 10px;
-  background: #131313;
+  background: #F4F4F4;
 }
 #blogwp main .item-wrapper .blog-area .theme-btn, #blogwp main .item-wrapper .blog-details-area .theme-btn {
   border: none;
   border-radius: 10px;
-  background-color: #2C2C2C;
+  background-color: #dddddd;
   color: #2c2c2c;
   padding: 12px 30px;
   font-weight: 600;
 }
 #blogwp main .item-wrapper .blog-area .theme-btn:hover, #blogwp main .item-wrapper .blog-details-area .theme-btn:hover {
-  color: #2C2C2C !important;
+  color: #dddddd !important;
   background-color: #2c2c2c;
 }
 #blogwp main .item-wrapper .blog-area .blog-sidebar .blog-sidebar-inner .blog-sidebar-widget, #blogwp main .item-wrapper .blog-details-area .blog-sidebar .blog-sidebar-inner .blog-sidebar-widget {
@@ -1190,7 +1192,7 @@ ul, li {
   background: transparent;
   padding: 19px 20px;
   border-radius: 30px;
-  color: #ffffff;
+  color: #000;
 }
 #blogwp main .item-wrapper .blog-area .blog-sidebar .blog-sidebar-inner .search-widget input:focus, #blogwp main .item-wrapper .blog-details-area .blog-sidebar .blog-sidebar-inner .search-widget input:focus {
   outline: none;
