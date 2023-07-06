@@ -45,6 +45,22 @@ ul,li
     pointer-events: none
     z-index: 3
     transition: .03s 
+    transition: width .7s ,height .7s
+    &.onimg
+        width: 120px
+        height: 120px
+        border-top:1px solid rgba(255, 255, 255, 0.1)
+        border-left:1px solid rgba(255, 255, 255, 0.1)
+        border-bottom:1px solid rgba(255, 255, 255, 0.01)
+        border-right: 1px solid rgba(255, 255, 255, 0.01)
+        transform: translate(-53px,-53px)
+        box-shadow: inset 10px 10px 25px rgba(255, 255, 255,.1)
+        backdrop-filter: blur(40px)
+    &.vector
+        background-image: url(../images/vector.png)
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        background-size: 34px
 .dot
     position: fixed
     width: 6px 
@@ -53,6 +69,8 @@ ul,li
     background-color: $highLight
     transition: .1s 
     z-index: 3
+    &.inactive
+        display: none
     
 .caption
     h2
@@ -268,6 +286,11 @@ ul,li
                     font-weight: 600
                     span
                         color: $highLight
+            .screens
+                max-width: 1170px
+                margin: 200px 0
+                img
+                    width: 100%
             .grid-box
                 margin: 100px 0
                 display: grid

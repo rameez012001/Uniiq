@@ -36,6 +36,24 @@ ul, li {
   pointer-events: none;
   z-index: 3;
   transition: 0.03s;
+  transition: width 0.7s, height 0.7s;
+}
+.cursor.onimg {
+  width: 120px;
+  height: 120px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.01);
+  border-right: 1px solid rgba(255, 255, 255, 0.01);
+  transform: translate(-53px, -53px);
+  box-shadow: inset 10px 10px 25px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(40px);
+}
+.cursor.vector {
+  background-image: url(../images/vector.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 34px;
 }
 
 .dot {
@@ -46,6 +64,9 @@ ul, li {
   background-color: #D7B065;
   transition: 0.1s;
   z-index: 3;
+}
+.dot.inactive {
+  display: none;
 }
 
 .caption h2 {
@@ -303,6 +324,13 @@ ul, li {
 }
 #lander main .item-wrapper .title h1 span {
   color: #D7B065;
+}
+#lander main .item-wrapper .screens {
+  max-width: 1170px;
+  margin: 200px 0;
+}
+#lander main .item-wrapper .screens img {
+  width: 100%;
 }
 #lander main .item-wrapper .grid-box {
   margin: 100px 0;
