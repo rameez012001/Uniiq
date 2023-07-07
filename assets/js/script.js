@@ -134,3 +134,24 @@ function mousemove() {
 
 mousemove();
 
+$(window).on('load', function() {
+  setTimeout(() => {
+      document.getElementById("pre-loader").classList.add("off")
+  }, 4000);
+})
+function load() {
+  let x = document.querySelector('#percentage');
+  let value = 1; 
+  x.innerHTML = value;
+
+  let interval = setInterval(() => {
+    if (value < 100) {
+      value++;
+      x.innerHTML = value+'%';
+    } else {
+      clearInterval(interval); 
+    }
+  }, 16);   
+}
+
+load();
