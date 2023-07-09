@@ -48,6 +48,14 @@
     margin: 50px 0;
     gap: 70px 24px;
   }
+  #lander main .item-wrapper .screens {
+    width: auto;
+    max-width: 1106px;
+    margin: 100px 0;
+  }
+  #lander main .item-wrapper .screens img {
+    margin-left: 0;
+  }
   #page2 main .item-wrapper .caption h2 {
     max-width: 820px;
     padding: 0;
