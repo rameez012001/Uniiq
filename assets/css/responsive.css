@@ -293,6 +293,9 @@
   .pre-loader .progress {
     width: 146px;
   }
+  .pre-loader .pre-footer {
+    bottom: 25px;
+  }
   .pre-loader .pre-footer p {
     font-size: 10px;
   }
