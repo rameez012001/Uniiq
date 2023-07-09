@@ -2,6 +2,31 @@ $(document).ready(function() {
     // strict function
     (function($) {
         "use strict";
+
+        // AOS initialization
+        $(document).ready(()=>{AOS.init();})
+        $(document).on('scroll',()=>{AOS.refresh();});
+
+        // calling the skillFill function when mouse scroll
+        $(document).on('scroll', skillFill);
+
+        // FUNCTION DEFINITION
+        // mouse change on images in home-page.
+        function mousemove() {
+          var x = document.querySelectorAll('#home .item-wrapper .items .image');
+          $(x).mouseenter(() => {
+            $('.cursor').addClass('onimg');
+            $('.cursor').addClass('vector');
+            $('.vector').css('background-position','center')
+            $('.dot').addClass('inactive');
+          }).mouseleave(() => {
+            $('.cursor').removeClass('onimg');
+            $('.cursor').removeClass('vector');
+            $('.dot').removeClass('inactive');
+          });
+        }
+
+        // content appear when clicking menu icon.
         function menuControl() {
             $(document).on('click', '.menu-icon', function() {
                 $(this).toggleClass('active');
@@ -10,9 +35,10 @@ $(document).ready(function() {
                 $('#logo').toggleClass('inactive');
                 $('.item-wrapper').toggleClass('inactive');
                 $('footer').toggleClass('inactive');
-                type();
             });
         }
+
+        // skill page progress bar filling while scroll.
         function skillFill() {
             var viewportTop = $(window).scrollTop();
             var viewportBottom = viewportTop + $(window).height();
@@ -28,8 +54,53 @@ $(document).ready(function() {
                 });
               }
             });
-          }
+        }
 
+
+        function type(){   
+          var words = [
+              `My name is Jason Williams and I am a photographer senior graphic designer from New York.`
+          ];
+        
+          var delay = 2000; // Delay before typing each word (in milliseconds)
+          var typingSpeed = 50; // Speed of typing animation (in milliseconds)
+        
+          var typingText = document.getElementById("typing-text");
+        
+          function typeWords(index) {
+              if (index < words.length) {
+                  var word = words[index];
+                  var typedWord = "";
+                  var isDeleting = false;
+        
+                  var interval = setInterval(function() {
+                      if (isDeleting) {
+                          typedWord = word.substr(0, typedWord.length - 1);
+                      } else {
+                          typedWord = word.substr(0, typedWord.length + 1);
+                      }
+        
+                      typingText.innerHTML = typedWord;
+        
+                      if (!isDeleting && typedWord === word) {
+                          isDeleting = true;
+                          clearInterval(interval);
+                          setTimeout(function() {
+                              typeWords(index);
+                          }, delay);
+                      } else if (isDeleting && typedWord === "") {
+                          isDeleting = false;
+                          clearInterval(interval);
+                          setTimeout(function() {
+                              typeWords(index + 1);
+                          }, delay);
+                      }
+                  }, typingSpeed);
+              }
+          }
+          typeWords(0);
+        }
+        // owl carousel call function
         function initializeCarousel(){
           $(document).ready(()=>{
             $('.owl-carousel').owlCarousel({
@@ -54,104 +125,48 @@ $(document).ready(function() {
             });
         })
         }
-          $(document).on('scroll', skillFill);
-          $(window).resize(()=>{initializeCarousel();})
+
+        //Function call
+        mousemove();
         menuControl();
+        type();
         initializeCarousel();
-    })(jQuery);
-    
+
+        $(window).resize(()=>{initializeCarousel();});
+
+    })(jQuery); // strict function ends here
     // normal jquery
-    
+
+    // to make the customize cursor follow mouse pointer
     $(document).mousemove(function(e) {
-        var roundCursor = $('.cursor');
-        var dot = $('.dot');
-        roundCursor.css({ top: e.clientY, left: e.clientX });
-        dot.css({ top: e.clientY, left: e.clientX });
-      });
-});
-$(document).ready(()=>{AOS.init();})
-$(document).on('scroll',()=>{AOS.refresh();})
-function type(){   
-  var words = [
-      `My name is Jason Williams and I am a photographer senior graphic designer from New York.`
-  ];
-
-  var delay = 2000; // Delay before typing each word (in milliseconds)
-  var typingSpeed = 50; // Speed of typing animation (in milliseconds)
-
-  var typingText = document.getElementById("typing-text");
-
-  function typeWords(index) {
-      if (index < words.length) {
-          var word = words[index];
-          var typedWord = "";
-          var isDeleting = false;
-
-          var interval = setInterval(function() {
-              if (isDeleting) {
-                  typedWord = word.substr(0, typedWord.length - 1);
-              } else {
-                  typedWord = word.substr(0, typedWord.length + 1);
-              }
-
-              typingText.innerHTML = typedWord;
-              // typingText.innerHTML = typedWord.replace(/(^[^,]+)/, '<span style="color: red">$1</span>').replace(/(,)/, '<span style="color: red">$1</span>');
-
-
-
-              if (!isDeleting && typedWord === word) {
-                  isDeleting = true;
-                  clearInterval(interval);
-                  setTimeout(function() {
-                      typeWords(index);
-                  }, delay);
-              } else if (isDeleting && typedWord === "") {
-                  isDeleting = false;
-                  clearInterval(interval);
-                  setTimeout(function() {
-                      typeWords(index + 1);
-                  }, delay);
-              }
-          }, typingSpeed);
-      }
-  }
-
-  typeWords(0);
-}
-
-function mousemove() {
-  var x = document.querySelectorAll('#home .item-wrapper .items .image');
-  $(x).mouseenter(() => {
-    $('.cursor').addClass('onimg');
-    $('.cursor').addClass('vector');
-    $('.dot').addClass('inactive');
-  }).mouseleave(() => {
-    $('.cursor').removeClass('onimg');
-    $('.cursor').removeClass('vector');
-    $('.dot').removeClass('inactive');
+      var roundCursor = $('.cursor');
+      var dot = $('.dot');
+      roundCursor.css({ top: e.clientY, left: e.clientX });
+      dot.css({ top: e.clientY, left: e.clientX });
+    });
+    // pre-loader percentage value incrementor.
+    function load() {
+      let x = document.querySelector('#percentage');
+      let value = 1; 
+      x.innerHTML = value;
+    
+      let interval = setInterval(() => {
+        if (value < 100) {
+          value++;
+          x.innerHTML = value+'%';
+        } else {
+          clearInterval(interval); 
+        }
+      },31.7);   
+    }load();
+    // pre-loader function
+    $(document).ready(function() {
+      setTimeout(() => {
+          document.getElementById("pre-loader").classList.add("off");
+      }, 5500);
+  
+      setInterval(() => {
+          $('#lander').css('display', 'block');
+      }, 4000);
   });
-}
-
-mousemove();
-
-$(window).on('load', function() {
-  setTimeout(() => {
-      document.getElementById("pre-loader").classList.add("off")
-  }, 4000);
-})
-function load() {
-  let x = document.querySelector('#percentage');
-  let value = 1; 
-  x.innerHTML = value;
-
-  let interval = setInterval(() => {
-    if (value < 100) {
-      value++;
-      x.innerHTML = value+'%';
-    } else {
-      clearInterval(interval); 
-    }
-  }, 16);   
-}
-
-load();
+});
