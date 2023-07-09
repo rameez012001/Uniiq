@@ -272,6 +272,22 @@
   }
 }
 @media (max-width: 568px) {
+  .pre-loader #load-txt {
+    height: auto;
+  }
+  .pre-loader #load-txt h1 {
+    font-size: 30px;
+  }
+  .pre-loader #load-txt span {
+    font-size: 12px;
+    top: -15px;
+  }
+  .pre-loader .progress {
+    width: 146px;
+  }
+  .pre-loader .pre-footer p {
+    font-size: 10px;
+  }
   .caption h2 {
     font-size: 16px;
   }
