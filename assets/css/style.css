@@ -278,6 +278,9 @@ ul, li {
 .content header #logo img {
   max-width: 153px;
 }
+.content header #logo svg {
+  width: 153px;
+}
 .content header #logo svg path {
   fill: #2c2c2c;
 }
