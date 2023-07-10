@@ -182,7 +182,7 @@
             display: flex
             justify-content: center            
             .item-wrapper
-                max-width: calc( 100vw -  80px) 
+                max-width: 100% 
                 .caption
                     h2
                         max-width: 800px    
@@ -200,7 +200,7 @@
     #page3
         main
             .item-wrapper
-                max-width: calc( 100vw -  50px)
+                max-width: 100%
                 .grid
                     grid-template-areas:  'img1 .'  'img1 img2' '. img2' 'img3 img2' 'img3 .' 'img3 img4' '. img4'
                 .blContent
@@ -298,6 +298,9 @@
                     margin-top: 50px        
     
 @media (max-width: 568px)
+    html,body
+        background-attachment: scroll
+        background-size: contain
     .pre-loader
         #load-txt
             height: auto

@@ -179,3 +179,42 @@ $(document).ready(function() {
       dot.css({ top: e.clientY, left: e.clientX });
     });
 });
+
+// function skill1() {
+//   // Select all elements with the class "circle-progress"
+//   let elements = document.querySelectorAll('.circle-progress');
+  
+//   // Iterate over each element
+//   elements.forEach(function(element) {
+//     // Access the value of the "data-circle" attribute
+//     let circleValue = element.dataset.circle;
+    
+//     // Convert the percentage to a 360-degree value
+//     let circleDegrees = (circleValue / 100) * 360;
+    
+//     // Set the background using the calculated value
+//     $(element).css('background', `conic-gradient(#D7B065 ${circleDegrees}deg, #e2e2e2 0deg)`);
+//   });
+// }
+// skill1();
+
+function animateBackground() {
+  let elements = document.querySelectorAll('.circle-progress');
+
+  elements.forEach(function(element) {
+    let circleValue = element.dataset.circle;
+    let circleDegrees = (circleValue / 100) * 360;
+
+    // Animate the background
+    $({ angleValue: 0 }).animate({ angleValue: circleDegrees }, {
+      duration: 1000,
+      easing: 'linear',
+      step: function() {
+        // Update the background with the animated angle value
+        element.style.background = `conic-gradient(#D7B065 ${this.angleValue}deg, #e2e2e2 0deg)`;
+      }
+    });
+  });
+}
+
+animateBackground();

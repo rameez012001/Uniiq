@@ -173,7 +173,7 @@
     justify-content: center;
   }
   #page2 main .item-wrapper {
-    max-width: calc(100vw - 80px);
+    max-width: 100%;
   }
   #page2 main .item-wrapper .caption h2 {
     max-width: 800px;
@@ -191,7 +191,7 @@
     width: 100%;
   }
   #page3 main .item-wrapper {
-    max-width: calc(100vw - 50px);
+    max-width: 100%;
   }
   #page3 main .item-wrapper .grid {
     grid-template-areas: "img1 ." "img1 img2" ". img2" "img3 img2" "img3 ." "img3 img4" ". img4";
@@ -280,6 +280,10 @@
   }
 }
 @media (max-width: 568px) {
+  html, body {
+    background-attachment: scroll;
+    background-size: contain;
+  }
   .pre-loader #load-txt {
     height: auto;
   }
