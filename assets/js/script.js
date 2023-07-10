@@ -13,12 +13,11 @@
       }
     },31.7);   
   }
-  load();
   // pre-loader function
     setTimeout(() => {
         document.getElementById("pre-loader").classList.add("off");
     }, 5500);
-
+    
     setInterval(() => {
         $('#lander').css('display', 'block');
     }, 4000);
