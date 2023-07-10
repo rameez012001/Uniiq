@@ -218,6 +218,9 @@ ul, li {
   width: 38px;
   transition: all 0.3s ease-in-out;
 }
+.content header .menu-icon-wrapper .menu-icon:hover {
+  cursor: pointer;
+}
 .content header .menu-icon-wrapper .menu-icon:hover span:nth-child(1) {
   -webkit-transform: translateX(7px);
   transform: translateX(7px);
@@ -538,6 +541,9 @@ ul, li {
   letter-spacing: 2px;
 }
 
+#home {
+  display: none;
+}
 #home main .item-wrapper {
   display: grid;
   justify-content: center;

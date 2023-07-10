@@ -24,6 +24,7 @@
     
     setInterval(() => {
         $('#lander').css('display', 'block');
+        $('#home').css('display', 'block');
     }, 4000);
 
 $(document).ready(function() {
