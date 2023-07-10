@@ -11,12 +11,16 @@
       } else {
         clearInterval(interval); 
       }
-    },31.7);   
+    },30);   
   }
   // pre-loader function
     setTimeout(() => {
-        document.getElementById("pre-loader").classList.add("off");
-    }, 5500);
+      document.getElementById("pre-loader").classList.add("off");
+    }, 5800);
+    setTimeout(() => {
+      document.querySelector('.d12').classList.add('go-up');
+      document.querySelector('.pre-footer p').classList.add("go-up");
+  }, 3500);
     
     setInterval(() => {
         $('#lander').css('display', 'block');
