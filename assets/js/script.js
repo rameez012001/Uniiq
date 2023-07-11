@@ -212,7 +212,7 @@ function animateBackground() {
       easing: 'linear',
       step: function() {
         // Update the background with the animated angle value
-        element.style.background = `conic-gradient(#D7B065 ${this.angleValue}deg, #e2e2e2 0deg)`;
+        element.style.background = `conic-gradient(#D7B065 ${this.angleValue}deg, #f9f9f980 0deg)`;
       }
     });
   });

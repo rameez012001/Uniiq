@@ -13,7 +13,7 @@ html, body {
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-  background: #f9f9f9 url(../images/light-lines.png) fixed center top/100% repeat-y;
+  background: #0a0a0a url(../images/lines.png) fixed center top/100% repeat-y;
 }
 
 a {
@@ -115,10 +115,11 @@ ul, li {
   height: 50px;
   pointer-events: none;
   border-radius: 50%;
-  border: 3px solid #2c2c2c;
+  border: 3px solid #f9f9f9;
   -webkit-transform: translate(-23px, -23px);
   transform: translate(-23px, -23px);
   transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, border 0.1s ease-in;
+  -webkit-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, border 0.1s ease-in;
 }
 .cursor.light-mode {
   border: 3px solid #f9f9f9;
@@ -146,6 +147,7 @@ ul, li {
   border-radius: 50%;
   background-color: #D7B065;
   transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  -webkit-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 .dot.inactive {
   display: none;
@@ -155,7 +157,7 @@ ul, li {
   text-align: center;
   font-size: 30px;
   font-weight: 600;
-  color: #2c2c2c;
+  color: #f9f9f9;
   line-height: 46px;
   padding: 0 117px;
 }
@@ -181,7 +183,7 @@ ul, li {
   transform: translate(10%);
 }
 .content .about-text h3 span {
-  color: #2c2c2c;
+  color: #f9f9f9;
 }
 .content .about-text.active {
   display: flex;
@@ -204,7 +206,7 @@ ul, li {
   width: 100%;
   height: 3px;
   border-radius: 5px;
-  background-color: #2c2c2c;
+  background-color: #f9f9f9;
 }
 .content header .menu-icon-wrapper .menu-icon span:nth-child(1) {
   width: 28px;
@@ -249,7 +251,7 @@ ul, li {
   padding: 0px 314px 0px 272px;
   overflow: auto;
   height: 100%;
-  background-color: #F4F4F4;
+  background-color: #131313;
   transition: 0.25s ease-in;
   flex-direction: column;
   justify-content: center;
@@ -261,13 +263,13 @@ ul, li {
   margin-bottom: 40px;
 }
 .content header .menu-icon-wrapper .left-sidebar li a {
-  color: rgba(44, 44, 44, 0.5019607843);
+  color: rgba(249, 249, 249, 0.5019607843);
   font-size: 24px;
   font-weight: 600;
   text-transform: uppercase;
 }
 .content header .menu-icon-wrapper .left-sidebar li a:hover, .content header .menu-icon-wrapper .left-sidebar li a.active {
-  color: #2c2c2c;
+  color: #f9f9f9;
   text-decoration: underline;
   text-decoration-color: #D7B065;
   text-decoration-thickness: 6px;
@@ -285,10 +287,10 @@ ul, li {
   width: 153px;
 }
 .content header #logo svg path {
-  fill: #2c2c2c;
+  fill: #f9f9f9;
 }
 .content header #logo svg rect {
-  stroke: #2c2c2c;
+  stroke: #f9f9f9;
 }
 .content header #logo.inactive {
   display: none;
@@ -301,7 +303,7 @@ ul, li {
 }
 .content header .contact i {
   width: 20px;
-  color: #2c2c2c;
+  color: #f9f9f9;
   opacity: 0.5;
   font-size: 24px;
   transition: 0.2s;
@@ -322,19 +324,19 @@ ul, li {
   max-width: 153px;
 }
 .content footer #logo svg path {
-  fill: #2c2c2c;
+  fill: #f9f9f9;
 }
 .content footer #logo svg rect {
-  stroke: #2c2c2c;
+  stroke: #f9f9f9;
 }
 .content footer p {
   text-align: center;
   margin-top: 20px;
-  color: rgba(44, 44, 44, 0.5019607843);
+  color: rgba(249, 249, 249, 0.5019607843);
   font-weight: 600;
 }
 .content footer p a {
-  color: #2c2c2c !important;
+  color: #f9f9f9 !important;
 }
 .content footer p a:hover {
   text-decoration: underline !important;
@@ -363,7 +365,7 @@ ul, li {
   color: #D7B065;
 }
 .content .blContent .blContent-wrapper .det_des .details .detail-items p:last-child {
-  color: #2c2c2c;
+  color: #f9f9f9;
   font-weight: 500;
 }
 .content .blContent .blContent-wrapper .det_des .description {
@@ -377,12 +379,12 @@ ul, li {
   color: #D7B065;
 }
 .content .blContent .blContent-wrapper .det_des .description p {
-  color: #2c2c2c;
+  color: #f9f9f9;
   font-size: 16px;
   font-weight: 500;
 }
 .content .blContent .blContent-wrapper .para p {
-  color: #2c2c2c;
+  color: #f9f9f9;
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 60px;
@@ -483,7 +485,7 @@ ul, li {
   margin: 15px 0 0;
   font-weight: 600;
   font-size: 18px;
-  color: #2c2c2c;
+  color: #f9f9f9;
   letter-spacing: 2px;
 }
 #lander main .item-wrapper .grid-box1 {
@@ -537,7 +539,7 @@ ul, li {
   margin: 15px 0 0;
   font-weight: 600;
   font-size: 18px;
-  color: #2c2c2c;
+  color: #f9f9f9;
   letter-spacing: 2px;
 }
 
@@ -592,8 +594,8 @@ ul, li {
   width: 100%;
   height: 100%;
   scale: 1.1;
-  transition: scale 0.2s ease-in;
-  -webkit-transition: scale 0.2s ease-in;
+  transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 #home main .item-wrapper .items .image img:hover {
   scale: 1;
@@ -606,7 +608,7 @@ ul, li {
   margin: 0;
   font-weight: 600;
   font-size: 18px;
-  color: #2c2c2c;
+  color: #f9f9f9;
   letter-spacing: 2px;
   transition: 0.3s;
   position: relative;
@@ -638,7 +640,8 @@ ul, li {
   width: 100%;
   object-fit: cover;
   scale: 1.1;
-  transition: scale 0.3s ease-in;
+  transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 #about main .item-wrapper .about-image img:hover {
   scale: 1;
@@ -658,7 +661,7 @@ ul, li {
   font-weight: 600;
 }
 #about main .item-wrapper .blContent .blContent-wrapper .about-det .details .detail-items p:nth-child(2) {
-  color: #2c2c2c;
+  color: #f9f9f9;
   font-weight: 500;
 }
 #about main .item-wrapper .blContent .blContent-wrapper .about-det .details .detail-items p:nth-child(3) {
@@ -702,7 +705,7 @@ ul, li {
   object-fit: cover;
 }
 #blogMain main .item-wrapper .articles article .left h1 {
-  color: #2c2c2c;
+  color: #f9f9f9;
   font-size: 30px;
   font-weight: 600;
   line-height: 46px;
@@ -748,7 +751,8 @@ ul, li {
   width: 100%;
   overflow: hidden;
   scale: 1.1;
-  transition: scale 0.3s ease-in;
+  transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   object-fit: cover;
 }
 #skills main .item-wrapper .skill1 .skill-image1 img:hover {
@@ -758,7 +762,7 @@ ul, li {
   gap: 50px;
 }
 #skills main .item-wrapper .skill1 .skills-lists1 .circle-container {
-  color: #2c2c2c;
+  color: #f9f9f9;
   font-weight: 600;
 }
 #skills main .item-wrapper .skill1 .skills-lists1 .circle-container .circle-wrapper {
@@ -773,7 +777,7 @@ ul, li {
   align-items: center;
   width: 170px;
   height: 170px;
-  background: conic-gradient(#D7B065 0deg, #e2e2e2 0deg);
+  background: conic-gradient(#D7B065 0deg, rgba(249, 249, 249, 0.5019607843) 0deg);
   transition: background-color 1s ease;
   border-radius: 50%;
 }
@@ -781,7 +785,7 @@ ul, li {
   content: "";
   width: 150px;
   height: 150px;
-  background-color: #f9f9f9;
+  background-color: #0a0a0a;
   position: absolute;
   border-radius: 50%;
 }
@@ -804,7 +808,7 @@ ul, li {
   margin-top: 60px;
 }
 #skills main .item-wrapper .skill2 .skills-lists .skill .skill-label {
-  color: #2c2c2c;
+  color: #f9f9f9;
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -819,7 +823,7 @@ ul, li {
 #skills main .item-wrapper .skill2 .skills-lists .skill .progress {
   height: 8px;
   border-radius: 0;
-  background: #e2e2e2;
+  background: rgba(249, 249, 249, 0.5019607843);
 }
 #skills main .item-wrapper .skill2 .skills-lists .skill .progress .progress-bar {
   background: #D7B065;
@@ -837,7 +841,8 @@ ul, li {
   width: 100%;
   height: 100%;
   scale: 1.1;
-  transition: scale 0.3s ease-in;
+  transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 #skills main .item-wrapper .skill-image2 img:hover {
   scale: 1;
@@ -857,7 +862,8 @@ ul, li {
 #contact main .item-wrapper .about-image img {
   width: 100%;
   scale: 1.1;
-  transition: scale 0.3s ease-in;
+  transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 #contact main .item-wrapper .about-image img:hover {
   scale: 1;
@@ -870,34 +876,34 @@ ul, li {
   margin: 0 0 40px;
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #2c2c2c;
-  color: #2c2c2c;
+  border-bottom: 1px solid #f9f9f9;
+  color: #f9f9f9;
 }
 #contact main .item-wrapper .form-content form input:focus, #contact main .item-wrapper .form-content form textarea:focus {
   outline: none;
 }
 #contact main .item-wrapper .form-content form input::placeholder, #contact main .item-wrapper .form-content form textarea::placeholder {
   font-weight: 900;
-  color: #000;
+  color: #fff;
   opacity: 1;
 }
 #contact main .item-wrapper .form-content form textarea {
   height: 130px;
 }
 #contact main .item-wrapper .form-content form button {
-  color: #f9f9f9;
-  background-color: #2c2c2c;
-  border: 1px solid #2c2c2c;
+  color: #0a0a0a;
+  background-color: #f9f9f9;
+  border: 1px solid #f9f9f9;
   border-radius: 10px;
   padding: 10px 0;
   font-weight: 600;
 }
 #contact main .item-wrapper .form-content form button:hover {
-  color: #2c2c2c;
+  color: #f9f9f9;
   background-color: transparent;
 }
 #contact main .item-wrapper .para {
-  color: #2c2c2c;
+  color: #f9f9f9;
 }
 #contact main .item-wrapper .para p {
   text-align: justify;
@@ -909,7 +915,7 @@ ul, li {
 #contact main footer .reach div {
   font-size: 16px;
   line-height: 36px;
-  color: #2c2c2c;
+  color: #f9f9f9;
 }
 #contact main footer .reach div:first-child {
   color: #D7B065;
@@ -944,7 +950,8 @@ ul, li {
   width: 100%;
   border-radius: 10px;
   scale: 1.1;
-  transition: scale 0.3s ease-in;
+  transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 #page2 main .item-wrapper .slider .slider-items img:hover {
   scale: 1;
@@ -981,7 +988,8 @@ ul, li {
   height: 100%;
   scale: 1.1;
   object-fit: cover;
-  transition: scale 0.3s ease-in;
+  transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 #page3 main .item-wrapper .grid .grid-item img:hover {
   scale: 1;
@@ -1032,7 +1040,8 @@ ul, li {
   width: 100%;
   object-fit: cover;
   scale: 1.1;
-  transition: scale 0.3s ease-in;
+  transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 #page4 main .item-wrapper .grid .grid-item img:hover {
   scale: 1;
@@ -1055,11 +1064,11 @@ ul, li {
   margin-bottom: 24px;
 }
 #blogwp main .item-wrapper .breadcrumb-area .breadcrumb-content p {
-  color: #2c2c2c;
+  color: #BCBCBC;
   font-weight: 600;
 }
 #blogwp main .item-wrapper .breadcrumb-area .breadcrumb-content .section-heading {
-  color: #2c2c2c;
+  color: #f9f9f9;
   text-transform: uppercase;
   font-size: 56px;
   position: relative;
@@ -1094,12 +1103,12 @@ ul, li {
   margin-bottom: 24px;
 }
 #blogwp main .item-wrapper .blog-area .blog-item .content h1 a {
-  color: #2c2c2c;
+  color: #f9f9f9;
 }
 #blogwp main .item-wrapper .blog-area .blog-item .content p {
   font-size: 16px;
   line-height: 25px;
-  color: #000;
+  color: #fff;
   opacity: 0.8;
   font-weight: 400;
   margin-bottom: 30px;
@@ -1120,7 +1129,7 @@ ul, li {
   border-radius: 10px;
 }
 #blogwp main .item-wrapper .blog-details-area .blog-details-content h1 a, #blogwp main .item-wrapper .blog-details-area .blog-details-content p {
-  color: #000;
+  color: #fff;
 }
 #blogwp main .item-wrapper .blog-details-area .blog-details-content p {
   text-align: justify;
@@ -1146,7 +1155,7 @@ ul, li {
 #blogwp main .item-wrapper .blog-details-area .comments-and-form-wrap .comments-and-form-wrap-inner h2 {
   font-size: 24px;
   line-height: 26.8px;
-  color: #000;
+  color: #fff;
   letter-spacing: -1%;
   margin-bottom: 40px;
 }
@@ -1184,7 +1193,7 @@ ul, li {
 #blogwp main .item-wrapper .blog-details-area .comments-and-form-wrap .comments-and-form-wrap-inner .comments .comment-body h3 {
   font-size: 24px;
   line-height: 26.8px;
-  color: #000;
+  color: #fff;
   letter-spacing: -1%;
 }
 #blogwp main .item-wrapper .blog-details-area .comments-and-form-wrap .comments-and-form-wrap-inner .comments .comment-body p {
@@ -1205,12 +1214,12 @@ ul, li {
 #blogwp main .item-wrapper .blog-details-area .comments-and-form-wrap .comments-and-form-wrap-inner .comment-form form .input-group input, #blogwp main .item-wrapper .blog-details-area .comments-and-form-wrap .comments-and-form-wrap-inner .comment-form form .input-group textarea {
   width: 100%;
   border: none;
-  background-color: #dddddd;
+  background-color: #2c2c2c;
   border-radius: 10px;
   padding: 17px 20px;
   font-size: 14px;
   display: block;
-  color: #000;
+  color: #fff;
 }
 #blogwp main .item-wrapper .blog-details-area .comments-and-form-wrap .comments-and-form-wrap-inner .comment-form form .input-group textarea {
   resize: none;
@@ -1240,19 +1249,19 @@ ul, li {
 #blogwp main .item-wrapper .blog-area .shadow-box, #blogwp main .item-wrapper .blog-details-area .shadow-box {
   position: relative;
   border-radius: 10px;
-  background: #F4F4F4;
+  background: #131313;
 }
 #blogwp main .item-wrapper .blog-area .theme-btn, #blogwp main .item-wrapper .blog-details-area .theme-btn {
   border: none;
   border-radius: 10px;
-  background-color: #dddddd;
-  color: #2c2c2c;
+  background-color: #2c2c2c;
+  color: #f9f9f9;
   padding: 12px 30px;
   font-weight: 600;
 }
 #blogwp main .item-wrapper .blog-area .theme-btn:hover, #blogwp main .item-wrapper .blog-details-area .theme-btn:hover {
-  color: #dddddd !important;
-  background-color: #2c2c2c;
+  color: #2c2c2c !important;
+  background-color: #f9f9f9;
 }
 #blogwp main .item-wrapper .blog-area .blog-sidebar .blog-sidebar-inner .blog-sidebar-widget, #blogwp main .item-wrapper .blog-details-area .blog-sidebar .blog-sidebar-inner .blog-sidebar-widget {
   margin-bottom: 40px;
@@ -1276,7 +1285,7 @@ ul, li {
   background: transparent;
   padding: 19px 20px;
   border-radius: 30px;
-  color: #000;
+  color: #fff;
 }
 #blogwp main .item-wrapper .blog-area .blog-sidebar .blog-sidebar-inner .search-widget input:focus, #blogwp main .item-wrapper .blog-details-area .blog-sidebar .blog-sidebar-inner .search-widget input:focus {
   outline: none;
@@ -1306,7 +1315,7 @@ ul, li {
   line-height: 25px;
   font-size: 16px;
   font-weight: 500;
-  color: #2c2c2c;
+  color: #f9f9f9;
 }
 #blogwp main .item-wrapper .blog-area .blog-sidebar .blog-sidebar-inner h3, #blogwp main .item-wrapper .blog-details-area .blog-sidebar .blog-sidebar-inner h3 {
   font-weight: 600;

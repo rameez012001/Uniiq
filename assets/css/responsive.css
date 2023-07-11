@@ -242,7 +242,7 @@
     max-width: calc(100vw - 60px);
   }
   #page2 main .item-wrapper .owl-carousel .item {
-    max-width: 565px;
+    max-width: 500px;
   }
   #page3 main .item-wrapper .grid {
     grid-template-areas: "img1 ." "img1 img2" "img3 img2" "img3 ." "img3 img4" ". img4";
@@ -356,16 +356,26 @@
   #page2 main .item-wrapper .slider {
     margin: 40px 0;
   }
+  #page2 main .item-wrapper .blContent .blContent-wrapper .det_des {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #page2 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
+    margin-bottom: 20px;
+  }
+  #page2 main .item-wrapper .blContent .blContent-wrapper .para p {
+    margin-bottom: 20px;
+  }
   #page3 main .item-wrapper .grid {
     grid-template-areas: "img1" "img2" "img3" "img4";
     gap: 20px;
   }
   #page3 main .item-wrapper .grid .image-l {
-    width: calc(100% - 140px);
+    width: calc(100vw - 80px);
     min-width: 300px;
   }
   #page3 main .item-wrapper .grid .image-m {
-    width: calc(100% - 100px);
+    width: calc(100vw - 80px);
     min-width: 300px;
   }
   #page3 main .item-wrapper .grid .grid-item {
@@ -374,6 +384,16 @@
   #page3 main .item-wrapper .grid .grid-item:nth-child(2) {
     justify-self: center;
   }
+  #page3 main .item-wrapper .blContent .blContent-wrapper .det_des {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #page3 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
+    margin-bottom: 20px;
+  }
+  #page3 main .item-wrapper .blContent .blContent-wrapper .para p {
+    margin-bottom: 0px;
+  }
   #page4 main .item-wrapper .grid {
     justify-content: center;
     grid-template-areas: "img1" "img2" "img3";
@@ -381,6 +401,19 @@
   }
   #page4 main .item-wrapper .grid .image-s, #page4 main .item-wrapper .grid .image-m, #page4 main .item-wrapper .grid .image-l {
     max-width: 100%;
+  }
+  #page4 main .item-wrapper .blContent .blContent-wrapper .det_des {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #page4 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
+    margin-bottom: 20px;
+  }
+  #page4 main .item-wrapper .blContent .blContent-wrapper .para p {
+    margin-bottom: 0px;
+  }
+  #blogwp main .item-wrapper {
+    margin: 0 0.3em;
   }
   #blogwp main .item-wrapper .blog-area .blog-items .blog-item .img-box {
     height: 300px;
