@@ -34,8 +34,8 @@
     -webkit-transform: translateX(0);
     transform: translateX(0);
     background-size: 100%;
-    background-color: #0A0A0A;
-    background-image: url(../images/lines.png);
+    background-color: #f9f9f9;
+    background-image: url(../images/light-lines.png);
     animation: pre-loader-fade-up 2s 4.1s;
     -webkit-animation: pre-loader-fade-up 2s 4.1s;
     transition: 0.3s;
@@ -63,7 +63,7 @@
     position: relative;
   }
   .pre-loader #load-txt h1 {
-    color: #fff;
+    color: #2c2c2c;
     font-size: 76px;
     font-weight: 600;
     position: relative;
@@ -74,19 +74,19 @@
     right: 0px;
     font-size: 16px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.6);
+    color: #2c2c2c;
   }
   .pre-loader .progress {
     width: 370px;
     height: 6px;
     border-radius: 1px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: #d7af6533;
   }
   .pre-loader .progress .progress-inner {
     width: 100%;
     height: 6px;
     border-radius: 1px;
-    background-color: #fff;
+    background-color: #D7B065;
     animation: progress-inner 4s;
     -webkit-animation: progress-inner 4s;
   }
@@ -197,7 +197,7 @@
     -webkit-animation: entry-animation 2s;
     animation: entry-animation 2s;
   }
-  #lander main .item-wrapper, #home main .item-wrapper, #about main .item-wrapper, #blogMain main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #page2 main .item-wrapper, #page3 main .item-wrapper, #page4 main .item-wrapper, #blogwp main .item-wrapper {
+  #lander main .item-wrapper, #home main .item-wrapper, #about main .item-wrapper, #blogMain main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #page2 main .item-wrapper, #page3 main .item-wrapper, #page4 main .item-wrapper{
     overflow: hidden;
   }
   

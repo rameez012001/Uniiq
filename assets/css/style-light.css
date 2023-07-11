@@ -34,8 +34,8 @@
     -webkit-transform: translateX(0);
     transform: translateX(0);
     background-size: 100%;
-    background-color: #0A0A0A;
-    background-image: url(../images/lines.png);
+    background-color: #f9f9f9;
+    background-image: url(../images/light-lines.png);
     animation: pre-loader-fade-up 2s 4.1s;
     -webkit-animation: pre-loader-fade-up 2s 4.1s;
     transition: 0.3s;
@@ -63,7 +63,7 @@
     position: relative;
   }
   .pre-loader #load-txt h1 {
-    color: #fff;
+    color: #2c2c2c;
     font-size: 76px;
     font-weight: 600;
     position: relative;
@@ -74,19 +74,19 @@
     right: 0px;
     font-size: 16px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.6);
+    color: #2c2c2c80;
   }
   .pre-loader .progress {
     width: 370px;
     height: 6px;
     border-radius: 1px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: #d7af6533;
   }
   .pre-loader .progress .progress-inner {
     width: 100%;
     height: 6px;
     border-radius: 1px;
-    background-color: #fff;
+    background-color: #D7B065;
     animation: progress-inner 4s;
     -webkit-animation: progress-inner 4s;
   }
@@ -97,7 +97,7 @@
   }
   .pre-loader .pre-footer p {
     text-align: center;
-    color: rgba(249, 249, 249, 0.5019607843);
+    color: #2c2c2c80;
     font-size: 14px;
     font-weight: 500;
     -webkit-transform: translateX(0);
@@ -119,6 +119,7 @@
     -webkit-transform: translate(-23px, -23px);
     transform: translate(-23px, -23px);
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, border 0.1s ease-in;
+    -webkit-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, border 0.1s ease-in;
   }
   .cursor.light-mode {
     border: 3px solid #f9f9f9;
@@ -146,6 +147,7 @@
     border-radius: 50%;
     background-color: #D7B065;
     transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    -webkit-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
   }
   .dot.inactive {
     display: none;
@@ -388,17 +390,15 @@
     margin-bottom: 60px;
     text-align: justify;
   }
-  
+  #lander,#home,#about,#blogMain,#skills,#contact,#page2,#page3,#page4,#blogwp {
+    display: none;
+  }
   #lander main, #home main, #about main, #blogMain main, #skills main, #contact main, #page2 main, #page3 main, #page4 main, #blogwp main {
     -webkit-animation: entry-animation 2s;
     animation: entry-animation 2s;
   }
-  #lander main .item-wrapper, #home main .item-wrapper, #about main .item-wrapper, #blogMain main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #page2 main .item-wrapper, #page3 main .item-wrapper, #page4 main .item-wrapper, #blogwp main .item-wrapper {
+  #lander main .item-wrapper, #home main .item-wrapper, #about main .item-wrapper, #blogMain main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #page2 main .item-wrapper, #page3 main .item-wrapper, #page4 main .item-wrapper {
     overflow: hidden;
-  }
-  
-  #lander {
-    display: none;
   }
   #lander header #logo {
     width: 113px;
@@ -540,10 +540,8 @@
     color: #2c2c2c;
     letter-spacing: 2px;
   }
-  
-  #home {
-    display: none;
-  }
+
+
   #home main .item-wrapper {
     display: grid;
     justify-content: center;
@@ -592,8 +590,8 @@
     width: 100%;
     height: 100%;
     scale: 1.1;
-    transition: scale 0.2s ease-in;
-    -webkit-transition: scale 0.2s ease-in;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #home main .item-wrapper .items .image img:hover {
     scale: 1;
@@ -638,7 +636,8 @@
     width: 100%;
     object-fit: cover;
     scale: 1.1;
-    transition: scale 0.3s ease-in;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #about main .item-wrapper .about-image img:hover {
     scale: 1;
@@ -748,7 +747,8 @@
     width: 100%;
     overflow: hidden;
     scale: 1.1;
-    transition: scale 0.3s ease-in;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     object-fit: cover;
   }
   #skills main .item-wrapper .skill1 .skill-image1 img:hover {
@@ -837,7 +837,8 @@
     width: 100%;
     height: 100%;
     scale: 1.1;
-    transition: scale 0.3s ease-in;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #skills main .item-wrapper .skill-image2 img:hover {
     scale: 1;
@@ -857,7 +858,8 @@
   #contact main .item-wrapper .about-image img {
     width: 100%;
     scale: 1.1;
-    transition: scale 0.3s ease-in;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #contact main .item-wrapper .about-image img:hover {
     scale: 1;
@@ -944,7 +946,8 @@
     width: 100%;
     border-radius: 10px;
     scale: 1.1;
-    transition: scale 0.3s ease-in;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #page2 main .item-wrapper .slider .slider-items img:hover {
     scale: 1;
@@ -981,7 +984,8 @@
     height: 100%;
     scale: 1.1;
     object-fit: cover;
-    transition: scale 0.3s ease-in;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #page3 main .item-wrapper .grid .grid-item img:hover {
     scale: 1;
@@ -1032,7 +1036,8 @@
     width: 100%;
     object-fit: cover;
     scale: 1.1;
-    transition: scale 0.3s ease-in;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #page4 main .item-wrapper .grid .grid-item img:hover {
     scale: 1;

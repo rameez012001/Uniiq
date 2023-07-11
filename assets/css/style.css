@@ -391,17 +391,17 @@ ul, li {
   text-align: justify;
 }
 
+#lander, #home, #about, #blogMain, #skills, #contact, #page2, #page3, #page4, #blogwp {
+  display: none;
+}
 #lander main, #home main, #about main, #blogMain main, #skills main, #contact main, #page2 main, #page3 main, #page4 main, #blogwp main {
   -webkit-animation: entry-animation 2s;
   animation: entry-animation 2s;
 }
-#lander main .item-wrapper, #home main .item-wrapper, #about main .item-wrapper, #blogMain main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #page2 main .item-wrapper, #page3 main .item-wrapper, #page4 main .item-wrapper, #blogwp main .item-wrapper {
+#lander main .item-wrapper, #home main .item-wrapper, #about main .item-wrapper, #blogMain main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #page2 main .item-wrapper, #page3 main .item-wrapper, #page4 main .item-wrapper{
   overflow: hidden;
 }
 
-#lander {
-  display: none;
-}
 #lander header #logo {
   width: 113px;
 }

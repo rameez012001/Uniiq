@@ -15,6 +15,22 @@
     <link rel="stylesheet" href="../assets/css/responsive.css">
 </head>
 <body>
+    <div id='pre-loader' class="pre-loader d-flex flex-column justify-content-center align-items-center">
+        <div class="d11">
+            <div class="d12">
+                <div id="load-txt">
+                    <h1>LOADING</h1>
+                    <span id="percentage">0%</span>
+                </div>  
+                <div class="progress">
+                    <div class="progress-inner"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pre-footer">
+            <p>© 2023 – Theme powered by WordpressRiver</p>
+        </div>
+    </div>
     <div class="content" id="skills">
         <div class="cursor"></div>
         <div class="dot"></div>
@@ -101,7 +117,7 @@
             </div>
             <div class="blContent">
                 <div class="blContent-wrapper">
-                    <div class="para" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="para" data-aos="fade-up" data-aos-duration="1000">
                         <p>Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global death rich in heavy atoms with pretty stories for which there’s little good evidence something incredible is waiting to be known not a sunrise but a galaxyrise shores of the cosmic ocean inconspicuous motes. consciousness the only home we’ve ever known. Globular star cluster.</p>
                         <p>Galaxies network of wormholes birth extraplanetary Apollonius of Perga adipisci velit! Muse about descended from astronomers shores of the cosmic ocean across the centuries encyclopaedia galactica Euclid intelligent beings. As a patch of light Apollonius of Perga, rings of Uranus network of wormholes bits of moving fluff, consciousness the only home we’ve ever known. Galaxies, corpus callosum radio telescope. Globular star cluster, light years made in the interiors of collapsing stars cosmic ocean with pretty stories for which there’s little good evidence something incredible.</p>
                     </div>
@@ -198,5 +214,27 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script>load();
+        function animateBackground() {
+  let elements = document.querySelectorAll('.circle-progress');
+
+  elements.forEach(function(element) {
+    let circleValue = element.dataset.circle;
+    let circleDegrees = (circleValue / 100) * 360;
+
+    // Animate the background
+    $({ angleValue: 0 }).animate({ angleValue: circleDegrees }, {
+      duration: 1000,
+      easing: 'linear',
+      step: function() {
+        // Update the background with the animated angle value
+        element.style.background = `conic-gradient(#D7B065 ${this.angleValue}deg, #E2E2E2 0deg)`;
+      }
+    });
+  });
+}
+
+animateBackground();
+    </script>
 </body>
 </html>

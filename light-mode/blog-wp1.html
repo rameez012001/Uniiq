@@ -15,6 +15,22 @@
     <link rel="stylesheet" href="../assets/css/responsive.css">
 </head>
 <body>
+    <div id='pre-loader' class="pre-loader d-flex flex-column justify-content-center align-items-center">
+        <div class="d11">
+            <div class="d12">
+                <div id="load-txt">
+                    <h1>LOADING</h1>
+                    <span id="percentage">0%</span>
+                </div>  
+                <div class="progress">
+                    <div class="progress-inner"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pre-footer">
+            <p>© 2023 – Theme powered by WordpressRiver</p>
+        </div>
+    </div>
     <div class="content" id="blogwp">
         <div class="cursor"></div>
         <div class="dot"></div>
@@ -131,7 +147,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="blog-sidebar-widget categories-widget" data-aos="fade-left" data-aos-duration="1000">
+                                        <div class="blog-sidebar-widget categories-widget" data-aos="fade-up" data-aos-duration="1000">
                                             <div class="blog-sidebar-widget-inner shadow-box">
                                                 <h3>Categories</h3>
 
@@ -146,7 +162,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="blog-sidebar-widget tags-widget" data-aos="fade-left" data-aos-duration="1000">
+                                        <div class="blog-sidebar-widget tags-widget" data-aos="fade-up" data-aos-duration="1000">
                                             <div class="blog-sidebar-widget-inner shadow-box">
                                                 <h3>Tags</h3>
 
@@ -187,5 +203,6 @@
     <script src="../assets/js/aos.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script>load();</script>
 </body>
 </html>

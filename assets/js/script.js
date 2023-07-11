@@ -25,6 +25,14 @@
     setInterval(() => {
         $('#lander').css('display', 'block');
         $('#home').css('display', 'block');
+        $('#about').css('display', 'block');
+        $('#blogMain').css('display', 'block');
+        $('#skills').css('display', 'block');
+        $('#contact').css('display', 'block');
+        $('#page2').css('display', 'block');
+        $('#page3').css('display', 'block');
+        $('#page4').css('display', 'block');
+        $('#blogwp').css('display', 'block');
     }, 4000);
 
 $(document).ready(function() {
@@ -181,23 +189,6 @@ $(document).ready(function() {
     });
 });
 
-// function skill1() {
-//   // Select all elements with the class "circle-progress"
-//   let elements = document.querySelectorAll('.circle-progress');
-  
-//   // Iterate over each element
-//   elements.forEach(function(element) {
-//     // Access the value of the "data-circle" attribute
-//     let circleValue = element.dataset.circle;
-    
-//     // Convert the percentage to a 360-degree value
-//     let circleDegrees = (circleValue / 100) * 360;
-    
-//     // Set the background using the calculated value
-//     $(element).css('background', `conic-gradient(#D7B065 ${circleDegrees}deg, #e2e2e2 0deg)`);
-//   });
-// }
-// skill1();
 
 function animateBackground() {
   let elements = document.querySelectorAll('.circle-progress');
