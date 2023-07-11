@@ -15,6 +15,22 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
+    <div id='pre-loader' class="pre-loader d-flex flex-column justify-content-center align-items-center">
+        <div class="d11">
+            <div class="d12">
+                <div id="load-txt">
+                    <h1>LOADING</h1>
+                    <span id="percentage">0%</span>
+                </div>  
+                <div class="progress">
+                    <div class="progress-inner"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pre-footer">
+            <p>© 2023 – Theme powered by WordpressRiver</p>
+        </div>
+    </div>
     <div class="content" id="contact">
         <div class="cursor"></div>
         <div class="dot"></div>
@@ -60,14 +76,14 @@
                     <img src="./assets/images/contact.png" alt="">
                 </div>
                 <div class="form-content row justify-content-between">
-                    <form class="d-flex flex-column col-md-6" action="" data-aos="fade-right" data-aos-duration="1500">
+                    <form class="d-flex flex-column col-md-6" action="" data-aos="fade-up" data-aos-duration="1500">
                         <input placeholder="Name">
                         <input placeholder="Email">
                         <input placeholder="Subject">
                         <textarea placeholder="Message"></textarea>
                         <button type="button">SEND</button>
                     </form>
-                    <div class="para col-md-5" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="para col-md-5" data-aos="fade-up" data-aos-duration="1500">
                         <p>Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global death rich in heavy atoms with pretty stories for which there’s little good evidence something incredible is waiting to be known not a sunrise but a galaxy rise.</p>
                         <p>Bearable only through love hydrogen atoms bits of moving fluff culture shores of the cosmic ocean paroxysm of global death rich in heavy atoms with pretty stories for which there’s little good known not a sunrise but a galaxy rise.</p>
                     </div>
@@ -77,11 +93,11 @@
                         <div class="">Phone</div>
                         <div class="">+ 1-987-654-300<br>+ 1-923-654-800</div>
                     </div>
-                    <div class="reach col-md-3" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="reach col-md-3" data-aos="fade-up" data-aos-duration="1500">
                         <div class="">Email</div>
                         <div class="">hello@yourwebsite.com<br>support@yourwebsite.com</div>
                     </div>
-                    <div class="reach col-md-3" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="reach col-md-3" data-aos="fade-up" data-aos-duration="1500">
                         <div class="">Address</div>
                         <div class="">Some Street BL, Downtown<br>754/18 New York, United States</div>
                     </div>
@@ -102,5 +118,6 @@
     <script src="./assets/js/aos.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script>load();</script>
 </body>
 </html>
