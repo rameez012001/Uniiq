@@ -192,18 +192,17 @@ $(document).ready(function() {
 
 function animateBackground() {
   let elements = document.querySelectorAll('.circle-progress');
-
   elements.forEach(function(element) {
     let circleValue = element.dataset.circle;
+    let color = element.dataset.color;
     let circleDegrees = (circleValue / 100) * 360;
-
     // Animate the background
-    $({ angleValue: 0 }).animate({ angleValue: circleDegrees }, {
+    $({ angleValue: 0 }).delay(4400).animate({ angleValue: circleDegrees }, {
       duration: 1000,
       easing: 'linear',
       step: function() {
         // Update the background with the animated angle value
-        element.style.background = `conic-gradient(#D7B065 ${this.angleValue}deg, #f9f9f980 0deg)`;
+        element.style.background = `conic-gradient(#D7B065 ${this.angleValue}deg, ${color} 0deg)`;
       }
     });
   });
