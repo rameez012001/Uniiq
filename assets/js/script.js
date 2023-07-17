@@ -1,13 +1,13 @@
   // pre-loader percentage value incrementor.
   function load() {
-    let x = document.querySelector('#percentage');
+    let percentage = document.querySelector('#percentage');
     let value = 1; 
-    x.innerHTML = value;
+    percentage.innerHTML = value;
   
     let interval = setInterval(() => {
       if (value < 100) {
         value++;
-        x.innerHTML = value+'%';
+        percentage.innerHTML = value+'%';
       } else {
         clearInterval(interval); 
       }
@@ -21,19 +21,10 @@
       document.querySelector('.d12').classList.add('go-up');
       document.querySelector('.pre-footer p').classList.add("go-up");
   }, 3500);
-    
-    setInterval(() => {
-        $('#lander').css('display', 'block');
-        $('#home').css('display', 'block');
-        $('#about').css('display', 'block');
-        $('#blogMain').css('display', 'block');
-        $('#skills').css('display', 'block');
-        $('#contact').css('display', 'block');
-        $('#page2').css('display', 'block');
-        $('#page3').css('display', 'block');
-        $('#page4').css('display', 'block');
-        $('#blogwp').css('display', 'block');
-    }, 4000);
+  setTimeout(() => {
+    document.getElementById("page-loader").classList.add("off");
+  }, 1700);
+
 
 $(document).ready(function() {
   // STRICT FUNCTION //
@@ -41,7 +32,7 @@ $(document).ready(function() {
       "use strict";
 
       // AOS initialization
-      $(document).ready(()=>{AOS.init();})
+      $(document).ready(()=>{AOS.init({once:'true'});})
       $(document).on('scroll',()=>{AOS.refresh();});
 
       // calling the skillFill function when mouse scroll
@@ -99,6 +90,24 @@ $(document).ready(function() {
           });
       }
 
+      function animateBackground() {
+        let elements = document.querySelectorAll('.circle-progress');
+        elements.forEach(function(element) {
+          let circleValue = element.dataset.circle;
+          let color = element.dataset.color;
+          let color1 = element.dataset.color1;
+          let circleDegrees = (circleValue / 100) * 360;
+          // Animate the background
+          $({ angleValue: 0 }).delay(0).animate({ angleValue: circleDegrees }, {
+            duration: 1000,
+            easing: 'linear',
+            step: function() {
+              // Update the background with the animated angle value
+              element.style.background = `conic-gradient(${color1} ${this.angleValue}deg, ${color} 0deg)`;
+            }
+          });
+        });
+      }
 
       function type(){   
         var words = [
@@ -172,6 +181,7 @@ $(document).ready(function() {
       //Function call
       mousemove();
       menuControl();
+      animateBackground();
       type();
       initializeCarousel();
 
@@ -190,23 +200,17 @@ $(document).ready(function() {
 });
 
 
-function animateBackground() {
-  let elements = document.querySelectorAll('.circle-progress');
 
-  elements.forEach(function(element) {
-    let circleValue = element.dataset.circle;
-    let circleDegrees = (circleValue / 100) * 360;
 
-    // Animate the background
-    $({ angleValue: 0 }).animate({ angleValue: circleDegrees }, {
-      duration: 1000,
-      easing: 'linear',
-      step: function() {
-        // Update the background with the animated angle value
-        element.style.background = `conic-gradient(#D7B065 ${this.angleValue}deg, #f9f9f980 0deg)`;
-      }
-    });
-  });
-}
 
-animateBackground();
+const lenis = new Lenis({
+  duration:2,
+  wheelMultiplier:2,
+  smoothWheel:true,
+  // easing:((t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)))
+});
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}  
+requestAnimationFrame(raf)

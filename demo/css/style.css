@@ -34,8 +34,8 @@
     -webkit-transform: translateX(0);
     transform: translateX(0);
     background-size: 100%;
-    background-color: #f9f9f9;
-    background-image: url(../images/light-lines.png);
+    background-color: #0A0A0A;
+    background-image: url(../images/lines.png);
     animation: pre-loader-fade-up 2s 4.1s;
     -webkit-animation: pre-loader-fade-up 2s 4.1s;
     transition: 0.3s;
@@ -63,7 +63,7 @@
     position: relative;
   }
   .pre-loader #load-txt h1 {
-    color: #2c2c2c;
+    color: #fff;
     font-size: 76px;
     font-weight: 600;
     position: relative;
@@ -74,19 +74,19 @@
     right: 0px;
     font-size: 16px;
     font-weight: 600;
-    color: #2c2c2c;
+    color: rgba(255, 255, 255, 0.6);
   }
   .pre-loader .progress {
     width: 370px;
     height: 6px;
     border-radius: 1px;
-    background-color: #d7af6533;
+    background-color: rgba(255, 255, 255, 0.4);
   }
   .pre-loader .progress .progress-inner {
     width: 100%;
     height: 6px;
     border-radius: 1px;
-    background-color: #D7B065;
+    background-color: #fff;
     animation: progress-inner 4s;
     -webkit-animation: progress-inner 4s;
   }
@@ -193,16 +193,16 @@
   .content footer p a:hover {
     text-decoration: underline !important;
   }
-#lander main, #home main, #about main, #blogMain main, #skills main, #contact main, #page2 main, #page3 main, #page4 main, #blogwp main {
-    -webkit-animation: entry-animation 2s;
-    animation: entry-animation 2s;
+#lander {
+    -webkit-animation: entry-animation 2s 4.2s;
+    animation: entry-animation 2s 4.2s;
   }
-  #lander main .item-wrapper, #home main .item-wrapper, #about main .item-wrapper, #blogMain main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #page2 main .item-wrapper, #page3 main .item-wrapper, #page4 main .item-wrapper{
+  #lander main .item-wrapper{
     overflow: hidden;
   }
   
   #lander {
-    display: none;
+    /* display: none; */
   }
   #lander header #logo {
     width: 113px;
@@ -452,8 +452,11 @@
     width: auto;
     margin: 10px 0;
     }
+    #lander{
+      margin: 0 1em;
+    }
     #lander header {
-      margin: 40px 20px;
+      margin: 40px 0px;
     }
     #lander header #logo {
       width: 90px;
@@ -464,6 +467,9 @@
     #lander header #buy button {
       font-size: 14px;
       padding: 0 15px;
+    }
+    #lander main .item-wrapper{
+      margin: 0px;
     }
 }
 
@@ -480,7 +486,7 @@
   @-webkit-keyframes entry-animation {
     0% {
       -webkit-transform: translateY(200px);
-      opacity: 0.8;
+      opacity: 0.6;
     }
     100% {
       -webkit-transform: translateY(0px);

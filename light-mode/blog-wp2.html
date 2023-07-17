@@ -9,28 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style-light.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
 </head>
 <body>
-    <div id='pre-loader' class="pre-loader d-flex flex-column justify-content-center align-items-center">
-        <div class="d11">
-            <div class="d12">
-                <div id="load-txt">
-                    <h1>LOADING</h1>
-                    <span id="percentage">0%</span>
-                </div>  
-                <div class="progress">
-                    <div class="progress-inner"></div>
-                </div>
-            </div>
-        </div>
-        <div class="pre-footer">
-            <p>© 2023 – Theme powered by WordpressRiver</p>
-        </div>
-    </div>
+    <div id='page-loader' class="page-loader"></div>
     <div class="content" id="blogwp">
         <div class="cursor"></div>
         <div class="dot"></div>
@@ -44,7 +29,7 @@
                 <ul class="left-sidebar">
                     <li><a href="./home.html">Home</a></li>
                     <li><a href="./about.html">About</a></li>
-                    <li><a href="./blog-main.html">Blog</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
                     <li><a href="./skills.html">Skills</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
@@ -83,7 +68,7 @@
                             <div class="col-md-8">
                                 <div class="blog-details-content">
                                     <div class="img-box">
-                                        <img src="../assets/images/Rectangle 6.png" alt="Blog">
+                                        <img src="../assets/images/b1.png" alt="Blog">
                                     </div>
                                     <span class="meta" data-aos="fade-up" data-aos-duration="1000">25 March 2022 - Comments (4) - Share (7)</span>
                                     <h1 data-aos="fade-up" data-aos-duration="1000"><a href="./blog-wp2.html">Consulted admitting is power acuteness.</a></h1>
@@ -243,7 +228,8 @@
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="./assets/js/aos.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/script.js"></script>
     <script>load();</script>

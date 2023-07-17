@@ -1,4 +1,3 @@
-  // pre-loader percentage value incrementor.
   function load() {
     let x = document.querySelector('#percentage');
     let value = 1; 
@@ -13,7 +12,6 @@
       }
     },30);   
   }
-  // pre-loader function
     setTimeout(() => {
       document.getElementById("pre-loader").classList.add("off");
     }, 5800);
@@ -22,21 +20,13 @@
       document.querySelector('.pre-footer p').classList.add("go-up");
   }, 3500);
     
-    setInterval(() => {
-        $('#lander').css('display', 'block');
-        $('#home').css('display', 'block');
-    }, 4000);
 
 $(document).ready(function() {
-  // STRICT FUNCTION //
   (function($) {
       "use strict";
-      // AOS initialization
-      $(document).ready(()=>{AOS.init();})
-      $(document).on('scroll',()=>{AOS.refresh();});
 
-      // FUNCTION DEFINITION
-      // mouse change on images in home-page.
+      $(document).ready(()=>{AOS.init({once:'true'});})
+      $(document).on('scroll',()=>{AOS.refresh();});
       function mousemove() {
         var y = document.querySelectorAll('.light-cursor');
         $(y).mouseenter(() => {
@@ -45,12 +35,9 @@ $(document).ready(function() {
           $('.cursor').removeClass('light-mode');
         });
       }
-      //Function call
       mousemove();
-  })(jQuery); ////////// STRICT FUNCTION ENDS HERE////////
+  })(jQuery);
 
-    // normal jquery
-    // to make the customize cursor follow mouse pointer
     $(document).mousemove(function(e) {
       var roundCursor = $('.cursor');
       var dot = $('.dot');
@@ -58,3 +45,15 @@ $(document).ready(function() {
       dot.css({ top: e.clientY, left: e.clientX });
     });
 });
+
+  const lenis = new Lenis({
+    duration:2,
+    wheelMultiplier:2,
+    smoothWheel:true,
+    // easing:((t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)))
+  });
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }  
+  requestAnimationFrame(raf)
