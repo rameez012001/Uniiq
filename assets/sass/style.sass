@@ -319,7 +319,6 @@ ul,li
                 justify-content: space-between
                 font-size: 16px
                 font-weight: 600
-                margin-bottom: 100px
                 .details
                     .detail-items
                         margin-bottom: 30px 
@@ -348,7 +347,6 @@ ul,li
                     color:  $textColor
                     font-size: 16px
                     font-weight: 500
-                    margin-bottom: 60px
                     text-align: justify
 #home
     main
@@ -430,7 +428,7 @@ ul,li
             &.inactive
                 display: none
             .about-image
-                margin: 80px 0
+                margin: 80px 0 0
                 overflow: hidden
                 border-radius: 10px
                 img
@@ -442,6 +440,7 @@ ul,li
                     &:hover
                         scale: 1
             .blContent
+                margin: 80px 0
                 .blContent-wrapper
                     .about-det
                         font-size: 16px
@@ -459,7 +458,13 @@ ul,li
                                         font-weight: 500
                                     &:nth-child(3)                                        
                                         color:  #f9f9f999 
-                                        font-weight: 500                    
+                                        font-weight: 500    
+                    .para
+                        p
+                            margin: 60px 0
+                            &:last-child
+                                margin: 0
+
 #portfolio
     main
         .item-wrapper
@@ -519,6 +524,11 @@ ul,li
             max-width: 1106px
             &.inactive
                 display: none
+            .blContent
+                .blContent-wrapper
+                    .para
+                        p
+                            margin: 60px 0
             .skill1
                 margin: 0 0 130px
                 .skill-image1
@@ -617,7 +627,7 @@ ul,li
             &.inactive
                 display: none
             .about-image
-                margin: 80px 0 176px
+                margin: 80px 0 0
                 overflow: hidden
                 border-radius: 10px
                 img
@@ -629,7 +639,7 @@ ul,li
                         scale: 1
             .form-content
                 row-gap: 60px
-                margin: 0 0 200px
+                margin: 160px 0 185px
                 form
                     input,textarea
                         margin: 0 0 40px
@@ -655,11 +665,12 @@ ul,li
                         &:hover
                             color:  $textColor
                             background-color: transparent
-            .para
-                color:  $textColor
-                p
-                    text-align: justify
-                    line-height: 36px
+                .para
+                    color:  $textColor
+                    p
+                        text-align: justify
+                        line-height: 36px
+                        margin-bottom: 40px
         
         footer
             margin: 0
@@ -679,6 +690,14 @@ ul,li
             max-width: 100vw
             &.inactive
                 display: none
+            .blContent
+                margin: 150px 0 0
+                .blContent-wrapper
+                    >:first-child
+                        margin-bottom: 90px        
+                    .para
+                        p
+                            margin-bottom:  60px
             .caption
                 #mobile
                     display: none
@@ -686,7 +705,7 @@ ul,li
                 .item
                     max-width: 1106px
             .slider
-                margin: 80px 0 160px
+                margin: 80px 0 0px
                 .slider-items
                     overflow: hidden
                     border-radius: 10px   
@@ -705,6 +724,14 @@ ul,li
             max-width: 1106px
             &.inactive
                 display: none
+            .blContent
+                margin: 60px 0
+                .blContent-wrapper
+                    .para
+                        p
+                            margin: 60px 0
+                    .det_des
+                        margin: 100px 0 90px
             .grid
                 display: grid
                 grid-template-areas: 'img1 . .' 'img1 . .'  'img1 . img2' '. . img2' 'img3 . img2' 'img3 . .' 'img3 . img4' '. . img4' '. . img4'
@@ -748,11 +775,19 @@ ul,li
                     display: none     
             &.inactive
                 display: none
+            .blContent
+                margin: 60px 0
+                .blContent-wrapper
+                    .para
+                        p
+                            margin: 60px 0
+                    .det_des
+                        margin: 100px 0 90px
             .grid
                 display: grid
                 grid-template-areas: '. . img2' 'img1 . img2' 'img3 img3 img3'
                 gap: 80px 20px
-                margin: 80px 0
+                margin: 80px 0 0
                 justify-content: center
                 .image-s
                     max-width: 424px

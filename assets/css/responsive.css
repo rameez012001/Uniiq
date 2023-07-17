@@ -43,8 +43,14 @@
   #page2 main .item-wrapper .owl-carousel .item {
     max-width: 950px;
   }
+  #page2 main .item-wrapper .blContent {
+    margin: 100px 0 60px;
+  }
   #page2 main .item-wrapper .blContent .blContent-wrapper {
     max-width: 950px;
+  }
+  #page2 main .item-wrapper .blContent .blContent-wrapper > :first-child {
+    margin-bottom: 60px;
   }
   #page3 main .item-wrapper .grid {
     grid-template-areas: "img1 . ." "img1 . img2" ". . img2" "img3 . img2" "img3 . ." "img3 . img4" ". . img4" ". . img4";
@@ -59,7 +65,7 @@
   }
   .content .caption h2 {
     font-size: 25px;
-    padding: 0px;
+    padding: 0 80px;
   }
   .content .about-text h3 {
     top: 0px;
@@ -74,7 +80,6 @@
   }
   .content .blContent .blContent-wrapper .det_des .details {
     margin: 0 auto;
-    margin-bottom: 50px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -213,6 +218,21 @@
   #page2 main .item-wrapper .owl-carousel .item {
     max-width: 500px;
   }
+  #page2 main .item-wrapper .blContent {
+    margin: 50px 0;
+  }
+  #page2 main .item-wrapper .blContent .blContent-wrapper {
+    max-width: 950px;
+  }
+  #page2 main .item-wrapper .blContent .blContent-wrapper > :first-child {
+    margin-bottom: 30px;
+  }
+  #page2 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
+    margin-bottom: 30px;
+  }
+  #page2 main .item-wrapper .blContent .blContent-wrapper .para p {
+    margin-bottom: 30px;
+  }
   #page3 main .item-wrapper {
     margin: 0;
   }
@@ -243,6 +263,9 @@
   }
   #page4 main .item-wrapper .blContent .blContent-wrapper .det_des {
     margin: 50px 0;
+  }
+  #blogwp {
+    margin: 0 1em;
   }
   #blogwp main .item-wrapper .blog-area, #blogwp main .item-wrapper .blog-details-area {
     padding-top: 40px;
@@ -313,6 +336,7 @@
     margin: 0 1em;
   }
   #home main .item-wrapper, #about main .item-wrapper, #portfolio main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #page2 main .item-wrapper, #page3 main .item-wrapper, #page4 main .item-wrapper {
+    overflow: hidden;
     margin: 0;
   }
   #home main .item-wrapper {
@@ -341,10 +365,13 @@
     max-width: 420px;
   }
   #page2 main .item-wrapper .slider {
-    margin: 40px 0;
+    margin: 40px 0 0;
+  }
+  #page2 main .item-wrapper .blContent {
+    margin: 30px 0;
   }
   #page2 main .item-wrapper .blContent .blContent-wrapper .det_des {
-    margin: 50px 0;
+    margin: 0px 0 25px;
   }
   #page2 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
     margin-bottom: 20px;
@@ -353,7 +380,7 @@
     padding-right: 1em;
   }
   #page2 main .item-wrapper .blContent .blContent-wrapper .para p {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   #page3 main .item-wrapper .grid {
     grid-template-areas: "img1" "img2" "img3" "img4";
@@ -400,8 +427,8 @@
   #page4 main .item-wrapper .blContent .blContent-wrapper .para p {
     margin-bottom: 0px;
   }
-  #blogwp main .item-wrapper {
-    margin: 0 0.3em;
+  #blogwp main .item-wrapper .breadcrumb-area .breadcrumb-content .section-heading {
+    font-size: 36px;
   }
   #blogwp main .item-wrapper .blog-area .blog-items .blog-item .img-box {
     height: 300px;
@@ -423,6 +450,9 @@
   }
   #page2 main .item-wrapper .owl-carousel .item {
     max-width: 320px;
+  }
+  #blogwp main .item-wrapper .breadcrumb-area .breadcrumb-content .section-heading {
+    font-size: 20px;
   }
   #blogwp main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .comment-list {
     flex-direction: column;
