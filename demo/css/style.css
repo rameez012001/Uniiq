@@ -193,16 +193,16 @@
   .content footer p a:hover {
     text-decoration: underline !important;
   }
-#lander main, #home main, #about main, #blogMain main, #skills main, #contact main, #page2 main, #page3 main, #page4 main, #blogwp main {
-    -webkit-animation: entry-animation 2s;
-    animation: entry-animation 2s;
+#lander {
+    -webkit-animation: entry-animation 2s 4.2s;
+    animation: entry-animation 2s 4.2s;
   }
-  #lander main .item-wrapper, #home main .item-wrapper, #about main .item-wrapper, #blogMain main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #page2 main .item-wrapper, #page3 main .item-wrapper, #page4 main .item-wrapper{
+  #lander main .item-wrapper{
     overflow: hidden;
   }
   
   #lander {
-    display: none;
+    /* display: none; */
   }
   #lander header #logo {
     width: 113px;
@@ -452,8 +452,11 @@
     width: auto;
     margin: 10px 0;
     }
+    #lander{
+      margin: 0 1em;
+    }
     #lander header {
-      margin: 40px 20px;
+      margin: 40px 0px;
     }
     #lander header #logo {
       width: 90px;
@@ -464,6 +467,9 @@
     #lander header #buy button {
       font-size: 14px;
       padding: 0 15px;
+    }
+    #lander main .item-wrapper{
+      margin: 0px;
     }
 }
 
@@ -480,7 +486,7 @@
   @-webkit-keyframes entry-animation {
     0% {
       -webkit-transform: translateY(200px);
-      opacity: 0.8;
+      opacity: 0.6;
     }
     100% {
       -webkit-transform: translateY(0px);
