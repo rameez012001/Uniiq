@@ -373,7 +373,6 @@ ul, li {
   justify-content: space-between;
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 100px;
 }
 .content .blContent .blContent-wrapper .det_des .details .detail-items {
   margin-bottom: 30px;
@@ -407,7 +406,6 @@ ul, li {
   color: #f9f9f9;
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 60px;
   text-align: justify;
 }
 
@@ -509,7 +507,7 @@ ul, li {
   display: none;
 }
 #about main .item-wrapper .about-image {
-  margin: 80px 0;
+  margin: 80px 0 0;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -522,6 +520,9 @@ ul, li {
 }
 #about main .item-wrapper .about-image img:hover {
   scale: 1;
+}
+#about main .item-wrapper .blContent {
+  margin: 80px 0;
 }
 #about main .item-wrapper .blContent .blContent-wrapper .about-det {
   font-size: 16px;
@@ -544,6 +545,12 @@ ul, li {
 #about main .item-wrapper .blContent .blContent-wrapper .about-det .details .detail-items p:nth-child(3) {
   color: rgba(249, 249, 249, 0.6);
   font-weight: 500;
+}
+#about main .item-wrapper .blContent .blContent-wrapper .para p {
+  margin: 60px 0;
+}
+#about main .item-wrapper .blContent .blContent-wrapper .para p:last-child {
+  margin: 0;
 }
 
 #portfolio main .item-wrapper {
@@ -615,6 +622,9 @@ ul, li {
 }
 #skills main .item-wrapper.inactive {
   display: none;
+}
+#skills main .item-wrapper .blContent .blContent-wrapper .para p {
+  margin: 60px 0;
 }
 #skills main .item-wrapper .skill1 {
   margin: 0 0 130px;
@@ -733,7 +743,7 @@ ul, li {
   display: none;
 }
 #contact main .item-wrapper .about-image {
-  margin: 80px 0 176px;
+  margin: 80px 0 0;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -748,7 +758,7 @@ ul, li {
 }
 #contact main .item-wrapper .form-content {
   row-gap: 60px;
-  margin: 0 0 200px;
+  margin: 160px 0 185px;
 }
 #contact main .item-wrapper .form-content form input, #contact main .item-wrapper .form-content form textarea {
   margin: 0 0 40px;
@@ -780,12 +790,13 @@ ul, li {
   color: #f9f9f9;
   background-color: transparent;
 }
-#contact main .item-wrapper .para {
+#contact main .item-wrapper .form-content .para {
   color: #f9f9f9;
 }
-#contact main .item-wrapper .para p {
+#contact main .item-wrapper .form-content .para p {
   text-align: justify;
   line-height: 36px;
+  margin-bottom: 40px;
 }
 #contact main footer {
   margin: 0;
@@ -807,6 +818,15 @@ ul, li {
 #page2 main .item-wrapper.inactive {
   display: none;
 }
+#page2 main .item-wrapper .blContent {
+  margin: 150px 0 0;
+}
+#page2 main .item-wrapper .blContent .blContent-wrapper > :first-child {
+  margin-bottom: 90px;
+}
+#page2 main .item-wrapper .blContent .blContent-wrapper .para p {
+  margin-bottom: 60px;
+}
 #page2 main .item-wrapper .caption #mobile {
   display: none;
 }
@@ -814,7 +834,7 @@ ul, li {
   max-width: 1106px;
 }
 #page2 main .item-wrapper .slider {
-  margin: 80px 0 160px;
+  margin: 80px 0 0px;
 }
 #page2 main .item-wrapper .slider .slider-items {
   overflow: hidden;
@@ -836,6 +856,15 @@ ul, li {
 }
 #page3 main .item-wrapper.inactive {
   display: none;
+}
+#page3 main .item-wrapper .blContent {
+  margin: 60px 0;
+}
+#page3 main .item-wrapper .blContent .blContent-wrapper .para p {
+  margin: 60px 0;
+}
+#page3 main .item-wrapper .blContent .blContent-wrapper .det_des {
+  margin: 100px 0 90px;
 }
 #page3 main .item-wrapper .grid {
   display: grid;
@@ -891,11 +920,20 @@ ul, li {
 #page4 main .item-wrapper.inactive {
   display: none;
 }
+#page4 main .item-wrapper .blContent {
+  margin: 60px 0;
+}
+#page4 main .item-wrapper .blContent .blContent-wrapper .para p {
+  margin: 60px 0;
+}
+#page4 main .item-wrapper .blContent .blContent-wrapper .det_des {
+  margin: 100px 0 90px;
+}
 #page4 main .item-wrapper .grid {
   display: grid;
   grid-template-areas: ". . img2" "img1 . img2" "img3 img3 img3";
   gap: 80px 20px;
-  margin: 80px 0;
+  margin: 80px 0 0;
   justify-content: center;
 }
 #page4 main .item-wrapper .grid .image-s {
