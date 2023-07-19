@@ -1269,7 +1269,7 @@
       opacity: 1;
     }
   }
-  @keyframes entry-animation {
+  /* @keyframes entry-animation {
     0% {
       transform: translateY(200px);
       opacity: 0.8;
@@ -1288,4 +1288,4 @@
       -webkit-transform: translateY(0px);
       opacity: 1;
     }
-  }
+  } */
