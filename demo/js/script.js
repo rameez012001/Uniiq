@@ -1,11 +1,11 @@
-load(5);
+load(25);
 window.addEventListener('load', function() {
   const isFirstVisit = !localStorage.getItem('hasVisited');
   if (isFirstVisit) {
     localStorage.setItem('hasVisited', true);
     setTimeout(() => {
       $('.pre-loader').addClass('off');
-    }, 2000);
+    }, 3200);
   } else {
     $('#percentage').text('100%');
     $('.pre-loader').addClass('off');
@@ -15,13 +15,16 @@ function load(time) {
   let percentage = document.querySelector('#percentage');
   let value = 0;
   percentage.innerHTML = value + '%';
-
+  const isFirstVisit = !localStorage.getItem('hasVisited');
   setInterval(() => {
 
     if (value < 100) {
       value++;
       percentage.innerHTML = value+'%';
       document.querySelector('.progress-inner').style.width = value + '%';
+      if(!isFirstVisit){
+        document.querySelector('.progress-inner').style.width = '100%';
+      }
 
       if(value == 100){
         let loadText = document.querySelector('.d12');
@@ -50,8 +53,6 @@ function load(time) {
           }
         )
       }
-    } else {
-      clearInterval(interval); 
     }
   },time); 
 }
