@@ -1,59 +1,79 @@
-  function load() {
-    let x = document.querySelector('#percentage');
-    let value = 1; 
-    x.innerHTML = value;
-  
-    let interval = setInterval(() => {
-      if (value < 100) {
-        value++;
-        x.innerHTML = value+'%';
-      } else {
-        clearInterval(interval); 
+function load() {
+  let percentage = document.querySelector('#percentage');
+  let value = 0;
+  percentage.innerHTML = value + '%';
+
+  setInterval(() => {
+
+    if (value < 100) {
+      value++;
+      percentage.innerHTML = value+'%';
+      document.querySelector('.progress-inner').style.width = value + '%';
+
+      if(value == 100){
+        let loadText = document.querySelector('.d12');
+        let footerText = document.querySelector('.pre-footer p');
+
+        loadText.animate(
+          [
+            { transform: 'translateY(0%)' },
+            { transform: 'translateY(-120%)' }
+          ],
+          {
+            duration: 500,
+            easing: 'ease-in-out',
+            fill: 'forwards'
+          }
+        );
+        footerText.animate(
+          [
+            {opacity:'1'},
+            {opacity:'0'}
+          ],
+          {
+            duration: 500,
+            easing: 'ease-in-out',
+            fill: 'forwards'
+          }
+        )
       }
-    },30);   
-  }
-    setTimeout(() => {
-      document.getElementById("pre-loader").classList.add("off");
-    }, 5800);
-    setTimeout(() => {
-      document.querySelector('.d12').classList.add('go-up');
-      document.querySelector('.pre-footer p').classList.add("go-up");
-  }, 3500);
-    
+    } else {
+      clearInterval(interval); 
+    }
+  },1); 
+}load();
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  $('.pre-loader').addClass('off');
+
+});
+// window.addEventListener('load', function() {
+//   $('.pre-loader').addClass('off');
+// });
+  
 
 $(document).ready(function() {
-  (function($) {
-      "use strict";
+(function($) {
+    "use strict";
 
-      $(document).ready(()=>{AOS.init({once:'true'});})
-      $(document).on('scroll',()=>{AOS.refresh();});
-      function mousemove() {
-        var y = document.querySelectorAll('.light-cursor');
-        $(y).mouseenter(() => {
-          $('.cursor').addClass('light-mode');
-        }).mouseleave(() => {
-          $('.cursor').removeClass('light-mode');
-        });
-      }
-      mousemove();
-  })(jQuery);
+    $(document).ready(()=>{AOS.init({once:'true'});})
+    $(document).on('scroll',()=>{AOS.refresh();});
+    function mousemove() {
+      var y = document.querySelectorAll('.light-cursor');
+      $(y).mouseenter(() => {
+        $('.cursor').addClass('light-mode');
+      }).mouseleave(() => {
+        $('.cursor').removeClass('light-mode');
+      });
+    }
+    mousemove();
+})(jQuery);
 
-    $(document).mousemove(function(e) {
-      var roundCursor = $('.cursor');
-      var dot = $('.dot');
-      roundCursor.css({ top: e.clientY, left: e.clientX });
-      dot.css({ top: e.clientY, left: e.clientX });
-    });
-});
-
-  const lenis = new Lenis({
-    duration:2,
-    wheelMultiplier:2,
-    smoothWheel:true,
-    // easing:((t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)))
+  $(document).mousemove(function(e) {
+    var roundCursor = $('.cursor');
+    var dot = $('.dot');
+    roundCursor.css({ top: e.clientY, left: e.clientX });
+    dot.css({ top: e.clientY, left: e.clientX });
   });
-  function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-  }  
-  requestAnimationFrame(raf)
+});
