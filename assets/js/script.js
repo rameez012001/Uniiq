@@ -18,6 +18,7 @@ window.addEventListener('load', function() {
   else {
     $('#percentage').text('100%');
     if (preLoaderElement) {
+        load(1);
         $('.pre-loader').addClass('off');
     }
     if (pageLoaderElement) {
@@ -32,15 +33,14 @@ window.addEventListener('load', function() {
     percentage.innerHTML = value + '%';
     const isFirstVisit = !localStorage.getItem('hasVisited');
     setInterval(() => {
-  
+      if(!isFirstVisit){
+        $('#percentage').text('100%');
+        $('.progress-inner').css('width','100%');
+      }else{
       if (value < 100) {
         value++;
         percentage.innerHTML = value+'%';
-        document.querySelector('.progress-inner').style.width = value + '%';
-        if(!isFirstVisit){
-          $('#percentage').text('100%');
-        }
-  
+        document.querySelector('.progress-inner').style.width = value + '%';  
         if(value == 100){
           let loadText = document.querySelector('.d12');
           let footerText = document.querySelector('.pre-footer p');
@@ -69,21 +69,30 @@ window.addEventListener('load', function() {
           )
         }
       }
+    }
     },time); 
   }
-  // document.addEventListener("DOMContentLoaded", function () {
-  //   let preLoaderElement = document.getElementById("pre-loader");
-  //   let pageLoaderElement = document.getElementById("page-loader");
-  //   if (preLoaderElement) {
-  //     $('.pre-loader').addClass('off');
-  //   }
-  //   if (pageLoaderElement) {
-  //     pageLoaderElement.classList.add('off');
-  //   }
-  // });
-
 
 $(document).ready(function() {
+    if ($('.owl-carousel').length) {
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      items: 1,
+      autoWidth: true,
+      margin: 10,
+      center: true,
+      smartSpeed: 1500,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      responsive: {
+        1000: {
+          items: 2,
+          margin:94
+        },
+      }
+    });
+  }
   (function($) {
       "use strict";
 
@@ -194,40 +203,32 @@ $(document).ready(function() {
         }
         typeWords(0);
       }
-      function initializeCarousel() {
-        $(document).ready(() => {
-          if ($('.owl-carousel').length) {
-            $('.owl-carousel').owlCarousel({
-              loop: true,
-              items: 0,
-              autoWidth: true,
-              margin: 10,
-              center: true,
-              smartSpeed: 1500,
-              autoplay: true,
-              autoplayTimeout: 3000,
-              autoplayHoverPause: true,
-              responsive: {
-                0: {
-                  items: 1
-                },
-                1100: {
-                  items: 3,
-                  margin: 94
-                }
-              }
-            });
-          }
-        });
-      }
+        // $(document).ready(() => {
+        //   if ($('.owl-carousel').length) {
+        //     $('.owl-carousel').owlCarousel({
+        //       loop: true,
+        //       items: 1,
+        //       autoWidth: true,
+        //       margin: 10,
+        //       center: true,
+        //       smartSpeed: 1500,
+        //       autoplay: true,
+        //       autoplayTimeout: 3000,
+        //       autoplayHoverPause: true,
+        //       responsive: {
+        //         1000: {
+        //           items: 2,
+        //           margin:94
+        //         },
+        //       }
+        //     });
+        //   }
+        // });
       
       mousemove();
       menuControl();
       animateBackground();
       type();
-      initializeCarousel();
-
-      $(window).resize(()=>{initializeCarousel();});
 
   })(jQuery);
 

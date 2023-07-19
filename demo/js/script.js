@@ -1,5 +1,5 @@
-load(25);
 window.addEventListener('load', function() {
+  load(25);
   const isFirstVisit = !localStorage.getItem('hasVisited');
   if (isFirstVisit) {
     localStorage.setItem('hasVisited', true);
@@ -17,15 +17,14 @@ function load(time) {
   percentage.innerHTML = value + '%';
   const isFirstVisit = !localStorage.getItem('hasVisited');
   setInterval(() => {
-
+      if(!isFirstVisit){
+        $('#percentage').text('100%');
+        $('.progress-inner').css('width','100%');
+      }else{
     if (value < 100) {
       value++;
       percentage.innerHTML = value+'%';
       document.querySelector('.progress-inner').style.width = value + '%';
-      if(!isFirstVisit){
-        document.querySelector('.progress-inner').style.width = '100%';
-      }
-
       if(value == 100){
         let loadText = document.querySelector('.d12');
         let footerText = document.querySelector('.pre-footer p');
@@ -54,6 +53,7 @@ function load(time) {
         )
       }
     }
+  }
   },time); 
 }
   
