@@ -1,4 +1,17 @@
-function load() {
+load(5);
+window.addEventListener('load', function() {
+  const isFirstVisit = !localStorage.getItem('hasVisited');
+  if (isFirstVisit) {
+    localStorage.setItem('hasVisited', true);
+    setTimeout(() => {
+      $('.pre-loader').addClass('off');
+    }, 2000);
+  } else {
+    $('#percentage').text('100%');
+    $('.pre-loader').addClass('off');
+  }
+});
+function load(time) {
   let percentage = document.querySelector('#percentage');
   let value = 0;
   percentage.innerHTML = value + '%';
@@ -40,25 +53,8 @@ function load() {
     } else {
       clearInterval(interval); 
     }
-  },1); 
-}load();
-
-window.addEventListener('load', function() {
-  // Check if this is the first visit by looking for a flag in localStorage
-  const isFirstVisit = !localStorage.getItem('hasVisited');
-
-  if (isFirstVisit) {
-    // It's the first visit, set the flag and execute the setTimeout
-    localStorage.setItem('hasVisited', true);
-    setTimeout(() => {
-      $('.pre-loader').addClass('off');
-    }, 2200);
-  } else {
-    // Not the first visit, remove the pre-loader immediately
-    $('#percentage').text('100%');
-    $('.pre-loader').addClass('off');
-  }
-});
+  },time); 
+}
   
 
 $(document).ready(function() {
