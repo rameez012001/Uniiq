@@ -1,7 +1,3 @@
-let preLoaderElement = document.getElementById("pre-loader");
-if (preLoaderElement) {
-  load(25);
-}
 window.addEventListener('load', function() {
   let preLoaderElement = document.getElementById("pre-loader");
   let pageLoaderElement = document.getElementById("page-loader");
@@ -11,7 +7,7 @@ window.addEventListener('load', function() {
       load(25);
       setTimeout(() => {
         $('.pre-loader').addClass('off');
-      }, 3200);
+      }, 5000);
     }
     if (pageLoaderElement) {
       setTimeout(() => {
