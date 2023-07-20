@@ -186,6 +186,9 @@
   #page4 main .item-wrapper .blContent .blContent-wrapper .det_des .description {
     width: auto;
   }
+  #blogwp main .container {
+    max-width: 1170px;
+  }
 }
 @media (max-width: 850px) {
   .content .about-text.active {
@@ -309,6 +312,9 @@
     padding-right: 0;
   }
   #blogwp main .item-wrapper .blog-area .blog-items .blog-item .img-box {
+    margin-bottom: 50px;
+  }
+  #blogwp main .item-wrapper .blog-details-area .blog-details-content .img-box {
     margin-bottom: 50px;
   }
   #blogwp main .item-wrapper .blog-sidebar {
@@ -470,9 +476,6 @@
   }
   #blogwp main .item-wrapper .breadcrumb-area .breadcrumb-content .section-heading {
     font-size: 36px;
-  }
-  #blogwp main .item-wrapper .blog-area .blog-items .blog-item .img-box {
-    height: 300px;
   }
   #blogwp main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .comment-list {
     gap: 20px;
