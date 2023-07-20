@@ -1,3 +1,7 @@
+let preLoaderElement = document.getElementById("pre-loader");
+if (preLoaderElement) {
+  load(25);
+}
 window.addEventListener('load', function() {
   let preLoaderElement = document.getElementById("pre-loader");
   let pageLoaderElement = document.getElementById("page-loader");
