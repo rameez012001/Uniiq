@@ -1,11 +1,11 @@
-load(25);
 window.addEventListener('load', function() {
+  load(25);
   const isFirstVisit = !localStorage.getItem('hasVisited');
   if (isFirstVisit) {
     localStorage.setItem('hasVisited', true);
     setTimeout(() => {
       $('.pre-loader').addClass('off');
-    }, 3200);
+    }, 5000);
   } else {
     $('#percentage').text('100%');
     $('.pre-loader').addClass('off');
