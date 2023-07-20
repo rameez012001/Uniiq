@@ -1,59 +1,57 @@
 window.addEventListener('load', function() {
-  load(25);
   const isFirstVisit = !localStorage.getItem('hasVisited');
   if (isFirstVisit) {
+    load(25);
     localStorage.setItem('hasVisited', true);
     setTimeout(() => {
       $('.pre-loader').addClass('off');
     }, 3200);
   } else {
     $('#percentage').text('100%');
+    $('.progress-inner').css('width','100%');
+    preAnimation();
     $('.pre-loader').addClass('off');
   }
 });
+function preAnimation(){
+  let loadText = document.querySelector('.d12');
+  let footerText = document.querySelector('.pre-footer p');
+  loadText.animate(
+    [
+      { transform: 'translateY(0%)' },
+      { transform: 'translateY(-120%)' }
+    ],
+    {
+      duration: 500,
+      easing: 'ease-in-out',
+      fill: 'forwards'
+    }
+  );
+  footerText.animate(
+    [
+      {opacity:'1'},
+      {opacity:'0'}
+    ],
+    {
+      duration: 500,
+      easing: 'ease-in-out',
+      fill: 'forwards'
+    }
+  )
+}
 function load(time) {
   let percentage = document.querySelector('#percentage');
   let value = 0;
   percentage.innerHTML = value + '%';
-  const isFirstVisit = !localStorage.getItem('hasVisited');
-  setInterval(() => {
-      if(!isFirstVisit){
-        $('#percentage').text('100%');
-        $('.progress-inner').css('width','100%');
-      }else{
+  setInterval(() => {   
     if (value < 100) {
       value++;
       percentage.innerHTML = value+'%';
       document.querySelector('.progress-inner').style.width = value + '%';
       if(value == 100){
-        let loadText = document.querySelector('.d12');
-        let footerText = document.querySelector('.pre-footer p');
-
-        loadText.animate(
-          [
-            { transform: 'translateY(0%)' },
-            { transform: 'translateY(-120%)' }
-          ],
-          {
-            duration: 500,
-            easing: 'ease-in-out',
-            fill: 'forwards'
-          }
-        );
-        footerText.animate(
-          [
-            {opacity:'1'},
-            {opacity:'0'}
-          ],
-          {
-            duration: 500,
-            easing: 'ease-in-out',
-            fill: 'forwards'
-          }
-        )
+        preAnimation();
       }
     }
-  }
   },time); 
 }
   

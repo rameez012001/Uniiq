@@ -2,76 +2,71 @@ window.addEventListener('load', function() {
   let preLoaderElement = document.getElementById("pre-loader");
   let pageLoaderElement = document.getElementById("page-loader");
   const isFirstVisit = !localStorage.getItem('hasVisited');
-  if (isFirstVisit) {
-    if (preLoaderElement) {
-      load(25);
-      setTimeout(() => {
+  if(preLoaderElement){
+    if(isFirstVisit){
+      load(25)
+      setTimeout(()=>{
         $('.pre-loader').addClass('off');
-      }, 3200);
-    }
-    if (pageLoaderElement) {
-      setTimeout(() => {
-        $('.page-loader').addClass('off');
-      }, 500);
+      },3200)
+    }else{
+      $('#percentage').text('100%');
+      $('.progress-inner').css('width','100%');
+      preAnimation();
+      $('.pre-loader').addClass('off');
     }
   }
-  else {
-    $('#percentage').text('100%');
-    if (preLoaderElement) {
-        load(1);
-        $('.pre-loader').addClass('off');
-    }
-    if (pageLoaderElement) {
+  if(pageLoaderElement){
+    if(isFirstVisit){
+      setTimeout(()=>{
         $('.page-loader').addClass('off');
+      },500)
+    }else{
+      $('.page-loader').addClass('off');
     }
   }
-
 });
-  function load(time) {
-    let percentage = document.querySelector('#percentage');
-    let value = 0;
-    percentage.innerHTML = value + '%';
-    const isFirstVisit = !localStorage.getItem('hasVisited');
-    setInterval(() => {
-      if(!isFirstVisit){
-        $('#percentage').text('100%');
-        $('.progress-inner').css('width','100%');
-      }else{
-      if (value < 100) {
-        value++;
-        percentage.innerHTML = value+'%';
-        document.querySelector('.progress-inner').style.width = value + '%';  
-        if(value == 100){
-          let loadText = document.querySelector('.d12');
-          let footerText = document.querySelector('.pre-footer p');
-  
-          loadText.animate(
-            [
-              { transform: 'translateY(0%)' },
-              { transform: 'translateY(-120%)' }
-            ],
-            {
-              duration: 500,
-              easing: 'ease-in-out',
-              fill: 'forwards'
-            }
-          );
-          footerText.animate(
-            [
-              {opacity:'1'},
-              {opacity:'0'}
-            ],
-            {
-              duration: 500,
-              easing: 'ease-in-out',
-              fill: 'forwards'
-            }
-          )
-        }
+function preAnimation(){
+    let loadText = document.querySelector('.d12');
+    let footerText = document.querySelector('.pre-footer p');
+
+    loadText.animate(
+      [
+        { transform: 'translateY(0%)' },
+        { transform: 'translateY(-120%)' }
+      ],
+      {
+        duration: 500,
+        easing: 'ease-in-out',
+        fill: 'forwards'
+      }
+    );
+    footerText.animate(
+      [
+        {opacity:'1'},
+        {opacity:'0'}
+      ],
+      {
+        duration: 500,
+        easing: 'ease-in-out',
+        fill: 'forwards'
+      }
+    )
+}
+function load(time) {
+  let percentage = document.querySelector('#percentage');
+  let value = 0;
+  percentage.innerHTML = value + '%';
+  setInterval(() => {
+    if (value < 100) {
+      value++;
+      percentage.innerHTML = value+'%';
+      document.querySelector('.progress-inner').style.width = value + '%';
+      if(value == 100){
+        preAnimation();
       }
     }
-    },time); 
-  }
+  },time); 
+}
 
 $(document).ready(function() {
     if ($('.owl-carousel').length) {
