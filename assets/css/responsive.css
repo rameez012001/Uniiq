@@ -399,6 +399,12 @@
   #about main .blContent .blContent-wrapper .about-det .details {
     padding: 0;
   }
+  #contact main footer .reach {
+    margin: 10px 0;
+  }
+  #contact main footer .reach div:first-child {
+    margin: 0;
+  }
   #page2 main .item-wrapper {
     max-width: calc(100vw - 20px);
   }
