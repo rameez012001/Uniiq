@@ -36,7 +36,7 @@
     transform: translateX(0);
     background-size: 100%;
     background-color: #0A0A0A;
-    background-image: url(../images/lines.png);
+    /* background-image: url(../images/lines.png); */
     transition: 1.5s;
   }
   .pre-loader.off {
