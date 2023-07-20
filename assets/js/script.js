@@ -7,7 +7,7 @@ window.addEventListener('load', function() {
       load(25);
       setTimeout(() => {
         $('.pre-loader').addClass('off');
-      }, 5000);
+      }, 3200);
     }
     if (pageLoaderElement) {
       setTimeout(() => {
