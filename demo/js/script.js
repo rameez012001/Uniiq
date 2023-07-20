@@ -5,7 +5,7 @@ window.addEventListener('load', function() {
     localStorage.setItem('hasVisited', true);
     setTimeout(() => {
       $('.pre-loader').addClass('off');
-    }, 5000);
+    }, 3200);
   } else {
     $('#percentage').text('100%');
     $('.pre-loader').addClass('off');
