@@ -398,15 +398,11 @@
     text-align: justify;
   }
 
-  #home main {
-    -webkit-animation: entry-animation 2s 4.1s;
-    animation: entry-animation 2s 4.1s;
-  }
   #home main .item-wrapper {
     overflow: hidden;
   }
   
-  #about main, #portfolio main, #skills main, #contact main, #page2 main, #page3 main, #page4 main {
+  .entry-animation{
     -webkit-animation: entry-animation 2s;
     animation: entry-animation 2s;
   }
@@ -820,6 +816,7 @@
     display: none;
   }
   #page2 main .item-wrapper .owl-carousel .item {
+    min-width: 300px;
     max-width: 1106px;
   }
   #page2 main .item-wrapper .slider {
@@ -1276,7 +1273,7 @@
       opacity: 1;
     }
   }
-  /* @keyframes entry-animation {
+  @keyframes entry-animation {
     0% {
       transform: translateY(200px);
       opacity: 0.8;
@@ -1295,4 +1292,4 @@
       -webkit-transform: translateY(0px);
       opacity: 1;
     }
-  } */
+  }
