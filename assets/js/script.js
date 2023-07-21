@@ -7,17 +7,20 @@ window.addEventListener('load', function() {
       load(25)
       setTimeout(()=>{
         $('.pre-loader').addClass('off');
+        $('.item-wrapper').addClass('entry-animation');
       },3200)
     }else{
       $('#percentage').text('100%');
       $('.progress-inner').css('width','100%');
       preAnimation();
       $('.pre-loader').addClass('off');
+      $('.item-wrapper').addClass('entry-animation');
     }
   }
   if(pageLoaderElement){
     if(isFirstVisit){
       setTimeout(()=>{
+        $('.item-wrapper').addClass('entry-animation');
         $('.page-loader').addClass('off');
       },500)
     }else{

@@ -338,15 +338,12 @@ ul,li
                     text-align: justify
 #home
     main
-        // -webkit-animation: entry-animation 2s 4.1s
-        // animation: entry-animation 2s 4.1s
         .item-wrapper
             overflow: hidden
 
-#about,#portfolio,#skills,#contact,#page2,#page3,#page4
-    main
-        -webkit-animation: entry-animation 2s 
-        animation: entry-animation 2s 
+.entry-animation
+    -webkit-animation: entry-animation 2s 
+    animation: entry-animation 2s 
 #home
     main
         .item-wrapper
@@ -691,6 +688,7 @@ ul,li
                     display: none
             .owl-carousel
                 .item
+                    min-width: 300px
                     max-width: 1106px
             .slider
                 margin: 80px 0 0px
@@ -1083,20 +1081,20 @@ ul,li
         left: 0
         opacity: 1
     
-// @keyframes entry-animation 
-//     0% 
-//         transform: translateY(200px)
-//         opacity: .8
+@keyframes entry-animation 
+    0% 
+        transform: translateY(200px)
+        opacity: .8
     
-//     100% 
-//         transform: translateY(0px)
-//         opacity: 1
+    100% 
+        transform: translateY(0px)
+        opacity: 1
     
-// @-webkit-keyframes entry-animation 
-//     0% 
-//         -webkit-transform: translateY(200px)
-//         opacity: .8
+@-webkit-keyframes entry-animation 
+    0% 
+        -webkit-transform: translateY(200px)
+        opacity: .8
     
-//     100% 
-//         -webkit-transform: translateY(0px)
-//         opacity: 1
+    100% 
+        -webkit-transform: translateY(0px)
+        opacity: 1

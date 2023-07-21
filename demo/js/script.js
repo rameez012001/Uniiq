@@ -4,9 +4,11 @@ window.addEventListener('load', function() {
     load(25);
     localStorage.setItem('hasVisited', true);
     setTimeout(() => {
+      $('.item-wrapper').addClass('entry-animation');
       $('.pre-loader').addClass('off');
     }, 3200);
   } else {
+    $('.item-wrapper').addClass('entry-animation');
     $('#percentage').text('100%');
     $('.progress-inner').css('width','100%');
     preAnimation();

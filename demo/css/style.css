@@ -183,10 +183,10 @@
   .content footer p a:hover {
     text-decoration: underline !important;
   }
-  /* #lander {
-    -webkit-animation: entry-animation 2s 4.2s;
-    animation: entry-animation 2s 4.2s;
-  } */
+  .entry-animation {
+    -webkit-animation: entry-animation 2s;
+    animation: entry-animation 2s;
+  }
   #lander main .item-wrapper{
     overflow: hidden;
   }
@@ -460,7 +460,7 @@
     }
 }
 
-/* @keyframes entry-animation {
+@keyframes entry-animation {
     0% {
       transform: translateY(200px);
       opacity: 0.8;
@@ -479,4 +479,4 @@
       -webkit-transform: translateY(0px);
       opacity: 1;
     }
-  } */
+  }
