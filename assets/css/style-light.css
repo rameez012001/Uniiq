@@ -241,12 +241,14 @@
     transform: translateX(10px);
   }
   .content header .menu-icon-wrapper .menu-icon.active span:nth-child(1) {
-    width: 38px;
-    transform: rotate(44deg) translate(14px, 3px);
+    width: 40px;
+    transform: rotate(-40deg) translate(-12px, 0);
+    transform-origin: 50% 50% 0px;
   }
   .content header .menu-icon-wrapper .menu-icon.active span:nth-child(3) {
-    width: 38px;
-    transform: rotate(-44deg) translate(13px, -3px);
+    width: 40px;
+    transform: rotate(40deg) translate(-12px, 0);
+    transform-origin: 50% 50% 0px;
   }
   .content header .menu-icon-wrapper .menu-icon.active span:nth-child(2) {
     opacity: 0;
