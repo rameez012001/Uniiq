@@ -269,18 +269,35 @@
   }
   .content header .menu-icon-wrapper .left-sidebar li {
     margin-bottom: 40px;
+    overflow: hidden;
   }
   .content header .menu-icon-wrapper .left-sidebar li a {
+    display: block;
     color: rgba(249, 249, 249, 0.5019607843);
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
+    position: relative;
+    transition: 0.3s ease;
   }
-  .content header .menu-icon-wrapper .left-sidebar li a:hover, .content header .menu-icon-wrapper .left-sidebar li a.active {
+  .content header .menu-icon-wrapper .left-sidebar li a:hover {
+    transform: translateY(-100%);
+    transform-origin: 0% 0%;
+  }
+  .content header .menu-icon-wrapper .left-sidebar li a:before {
     color: #f9f9f9;
+    position: absolute;
     text-decoration: underline;
     text-decoration-color: #D7B065;
     text-decoration-thickness: 6px;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    content: attr(data-word);
+  }
+  .content header .menu-icon-wrapper .left-sidebar li a.active {
+    transform: translateY(-100%);
+    transform-origin: 0% 0%;
   }
   .content header .menu-icon-wrapper .left-sidebar.active {
     display: flex;

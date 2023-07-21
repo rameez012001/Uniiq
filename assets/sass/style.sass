@@ -235,16 +235,31 @@ ul,li
                 -webkit-animation: menu-icon 1s
                 li
                     margin-bottom: 40px
+                    overflow: hidden
                     a
+                        display: block
                         color:  $textGrey1
                         font-size: 24px
                         font-weight: 600
                         text-transform: uppercase
-                        &:hover,&.active
-                            color:  $textColor
+                        position: relative
+                        transition: .1s ease
+                        &:hover
+                            transform: translateY(-100%)
+                            transform-origin: 0% 0%
+                        &:before   
+                            color: $textColor        
+                            position: absolute
                             text-decoration: underline
                             text-decoration-color: $highLight
-                            text-decoration-thickness: 6px
+                            text-decoration-thickness: 6px  
+                            top: 100%
+                            width: 100%
+                            left: 0
+                            content: attr(data-word)                   
+                        &.active
+                            transform: translateY(-100%)
+                            transform-origin: 0% 0%
                 &.active
                     display: flex
         #logo
