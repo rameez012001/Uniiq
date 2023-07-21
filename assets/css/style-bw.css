@@ -33,11 +33,7 @@
     height: 100%;
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    background-size: 100%;
-    background-color: #0A0A0A;
-    background-image: url(../images/lines.png);
-    animation: pre-loader-fade-up 2s;
-    -webkit-animation: pre-loader-fade-up 2s;
+    background: $bgColor url(../images/lines.png) fixed center top / 100% repeat-y;
     transition: 1.3s;
     -webkit-transition: 1.3s;
   }
@@ -54,11 +50,7 @@
     height: 103vh;
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    background-size: 100%;
-    background-color: #0A0A0A;
-    background-image: url(../images/lines.png);
-    animation: pre-loader-fade-up 2s 4.1s;
-    -webkit-animation: pre-loader-fade-up 2s 4.1s;
+    background: $bgColor url(../images/lines.png) fixed center top / 100% repeat-y;
     transition: 1.5s;
     -webkit-transition: 1.5s;
   }
@@ -240,12 +232,14 @@
     transform: translateX(10px);
   }
   .content header .menu-icon-wrapper .menu-icon.active span:nth-child(1) {
-    width: 38px;
-    transform: rotate(44deg) translate(14px, 3px);
+    width: 40px;
+    transform: rotate(-40deg) translate(-12px, 0);
+    transform-origin: 50% 50% 0px;
   }
   .content header .menu-icon-wrapper .menu-icon.active span:nth-child(3) {
-    width: 38px;
-    transform: rotate(-44deg) translate(13px, -3px);
+    width: 40px;
+    transform: rotate(40deg) translate(-12px, 0);
+    transform-origin: 50% 50% 0px;
   }
   .content header .menu-icon-wrapper .menu-icon.active span:nth-child(2) {
     opacity: 0;

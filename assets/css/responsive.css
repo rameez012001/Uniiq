@@ -330,10 +330,6 @@
   }
 }
 @media (max-width: 568px) {
-  html, body {
-    background-attachment: scroll;
-    background-size: contain;
-  }
   .pre-loader #load-txt {
     height: auto;
   }

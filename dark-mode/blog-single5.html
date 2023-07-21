@@ -2,21 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UNIQ</title>
-    <link rel="stylesheet" href="./assets/css/iconoir.css">
+    <link rel="stylesheet" href="../assets/css/iconoir.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/aos.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 </head>
 <body>
     <div id='page-loader' class="page-loader"></div>
-    <div class="content" id="portfolio">
+    <div class="content" id="page2">
         <div class="cursor"></div>
         <div class="dot"></div>
         <header class="d-flex justify-content-between">
@@ -27,11 +28,11 @@
                     <span></span>
                 </div>
                 <ul class="left-sidebar">
-                    <li><a href="./home.html" data-word="Home">Home</a></li>
-                    <li><a href="./about.html"  data-word="About">About</a></li>
-                    <li><a href="./portfolio.html" class="active" data-word="Portfolio">Portfolio</a></li>
+                    <li><a href="./home.html"  data-word="Home">Home</a></li>
+                    <li><a href="./about.html" data-word="About">About</a></li>
+                    <li><a href="./portfolio.html" data-word="Portfolio">Portfolio</a></li>
                     <li><a href="./skills.html" data-word="Skills">Skills</a></li>
-                    <li><a href="./contact.html"  data-word="Contact">Contact</a></li>
+                    <li><a href="./contact.html" data-word="Contact">Contact</a></li>
                 </ul>
             </div>
             <div id="logo">
@@ -45,67 +46,61 @@
             <div class="contact d-flex align-items-center">
                 <i class="iconoir-dribbble"></i>
                 <i class="iconoir-twitter"></i>
-                <i class="iconoir-instagram"></i>                   
+                <i class="iconoir-instagram"></i>                  
             </div>
         </header>
         <div class="about-text">
             <h3>Hello <br><span id="typing-text"></span></h3>
         </div>
-        <main class="d-flex justify-content-center">
+        <main>
             <div class="item-wrapper">
-                <div class="articles">
-                    <a href="./blog-single1.html">
-                        <article class="d-flex justify-content-lg-between">
-                            <div class="left d-flex">
-                                <div class="hover-img">
-                                    <img src="./assets/images/bp1c.png" alt="img1">
+                <div class="d-flex justify-content-center caption">
+                    <h2 id="desktop">Creative problem solving <span>involves free</span> breaking <br>from conventional thinking patterns discuss <br>the <span>value</span> of thinking outside the box. </h2>
+                    <h2 id="mobile">Creative problem solving <span>involves free</span> breaking from conventional thinking patterns discuss the <span>value</span> of thinking outside the box. </h2>
+                </div>
+                <div class="owl-carousel slider">
+                    <div class="item slider-items">
+                        <img src="../assets/images/bp5c.png"alt='img1' loading="lazy">
+                    </div>
+                    <div class="item slider-items">
+                        <img src="../assets/images/bp5r.png"alt='img2' loading="lazy">
+                    </div>
+                    <div class="item slider-items">
+                        <img src="../assets/images/bp5l.png"alt='img3' loading="lazy">
+                    </div>
+                </div>
+                <div class="blContent d-flex flex-column align-items-center">
+                    <div class="blContent-wrapper">
+                        <div class="para" data-aos="fade-up" data-aos-duration="1000">
+                            <p>Creative problem solving involves breaking free from conventional thinking patterns. We'll discuss the value of thinking outside the box, challenging assumptions, and exploring unconventional approaches. By encouraging ourselves to think beyond boundaries, we can discover innovative solutions that may have previously seemed impossible.</p>
+
+                            <p>No man is an island, and the same holds true for problem solving. Collaboration and diverse perspectives are powerful tools in finding a way out of seemingly insurmountable situations. We'll explore the benefits of teamwork, brainstorming sessions, and seeking input from different disciplines and backgrounds. Through collaboration, we can tap into a collective intelligence that sparks fresh ideas and new perspectives.By encouraging ourselves to think beyond boundaries, we can discover innovative solutions that may have previously seemed impossible.</p>
+                        </div>
+                        <div class="det_des">
+                            <div class="details" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="detail-items">
+                                    <p>Year</p>
+                                    <p>2023</p>
                                 </div>
-                                <h1 class="align-self-lg-center">01/ AROUND THE WORLD</h1>
-                            </div>
-                            <div class="date align-self-lg-center">
-                                <span data-hover="MARCH 16,2023">MARCH 16,2023</span>
-                            </div>
-                        </article>
-                    </a>
-                    <a href="./blog-single2.html">
-                        <article class="d-flex justify-content-lg-between">
-                            <div class="left d-flex">
-                                <div class="hover-img">
-                                    <img src="./assets/images/bp2c.png" alt="img2">
+                                <div class="detail-items">
+                                    <p>Project</p>
+                                    <p>Bombrader</p>
                                 </div>
-                                <h1 class="align-self-lg-center" data-aos="fade-right" data-aos-duration="1000">02/ BIG FOUR </h1>
-                            </div>
-                            <div class="date align-self-lg-center">
-                                <span data-hover="APRIL 09, 2023" data-aos="fade-left" data-aos-duration="1000">APRIL 09, 2023</span>
-                            </div>
-                        </article>
-                    </a>
-                    <a href="./blog-single4.html">
-                        <article class="d-flex justify-content-lg-between">
-                            <div class="left d-flex">
-                                <div class="hover-img">
-                                    <img src="./assets/images/bp4c.png" alt="img3">
+                                <div class="detail-items">
+                                    <p>Client</p>
+                                    <p>Hype Solutions</p>
                                 </div>
-                                <h1 class="align-self-lg-center" data-aos="fade-right" data-aos-duration="1000">03/ IN THE TOP</h1>
-                            </div>
-                            <div class="date align-self-lg-center" data-aos="fade-left" data-aos-duration="1000">
-                                <span data-hover="MAY 06, 2023">MAY 06, 2023</span>
-                            </div>
-                        </article>
-                    </a>
-                    <a href="./blog-single3.html">
-                        <article class="d-flex justify-content-lg-between">
-                            <div class="left d-flex">
-                                <div class="hover-img">
-                                    <img src="./assets/images/bp3c.png" alt="img4">
+                                <div class="detail-items">
+                                    <p>Service</p>
+                                    <p>UI Design</p>
                                 </div>
-                                <h1 class="align-self-lg-center" data-aos="fade-right" data-aos-duration="1000">04/ NO WAY OUT</h1>
                             </div>
-                            <div class="date align-self-lg-center" data-aos="fade-left" data-aos-duration="1000">
-                                <span data-hover="JUNE 24, 2023">JUNE 24, 2023</span>
+                            <div class="description" data-aos="fade-up" data-aos-duration="1000">
+                                <h3>Description</h3>
+                                <p>Welcome to In the Top, a blog dedicated to unraveling the secrets behind achieving success in various aspects of life. Whether it's personal development, career growth, or pursuing your passions, this blog is your guide to reaching new heights. Get ready to explore the strategies, insights, and inspirational stories that will empower you to elevate your life and emerge at the top. In the first article, we dive into the importance of setting clear and meaningful goals. Learn how to identify your passions, define your objectives, and create a roadmap that will guide you towards success.</p>
                             </div>
-                        </article>
-                    </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -118,14 +113,15 @@
                     </svg>
                 </a>
             </div>
-            <p>© 2023 – Theme powered by <a href="./home.html">WordpressRiver</a></p>
+            <p>© 2023 – Theme powered by <a href="./home.html">WordPressRiver</a href="./home.html"></p>
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     
-    <script src="./assets/js/aos.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="../assets/js/aos.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/script.js"></script>
      
 </body>
 </html>
