@@ -4,12 +4,14 @@ window.addEventListener('load', function() {
   const isFirstVisit = !localStorage.getItem('hasVisited');
   if(preLoaderElement){
     if(isFirstVisit){
+      console.log('first visit');
       load(25)
       setTimeout(()=>{
         $('.pre-loader').addClass('off');
         $('.item-wrapper').addClass('entry-animation');
       },3200)
     }else{
+      console.log('last visit');
       $('#percentage').text('100%');
       $('.progress-inner').css('width','100%');
       preAnimation();
@@ -22,8 +24,9 @@ window.addEventListener('load', function() {
       setTimeout(()=>{
         $('.item-wrapper').addClass('entry-animation');
         $('.page-loader').addClass('off');
-      },500)
+      },500);console.log('first visit');
     }else{
+      consol.log('last visit');
       $('.page-loader').addClass('off');
     }
   }
