@@ -34,7 +34,7 @@
     height: 100vh;
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    background: $bgColor url(../images/lines.png) fixed center top / 100% repeat-y;
+    background: #0a0a0a url(../images/lines.png) fixed center top / 100% repeat-y;
     transition: 1.5s;
   }
   .pre-loader.off {

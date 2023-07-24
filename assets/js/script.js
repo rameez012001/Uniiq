@@ -1,3 +1,20 @@
+// 1 pre-loader animtions
+
+// Inside Strict Function
+
+// 2 Mouse action on images --home page
+// 3 Menu Control --conditions to apply when click event on hamburger menu
+// 4 Owl carousel
+// 5 Circle Progress Bar
+// 6 Progress Bar
+// 7 Typing Animation in Menu
+
+// Strict Functions Ends
+
+// 8 Customize cursor
+
+
+// 1
 window.addEventListener('load', function() {
   let preLoaderElement = document.getElementById("pre-loader");
   let pageLoaderElement = document.getElementById("page-loader");
@@ -22,9 +39,12 @@ window.addEventListener('load', function() {
       setTimeout(()=>{
         $('.item-wrapper').addClass('entry-animation');
         $('.page-loader').addClass('off');
-      },500)
+      },500);
     }else{
-      $('.page-loader').addClass('off');
+      $('.item-wrapper').addClass('entry-animation');
+      if ($('.page-loader').addClass('off').is('.off')) {
+        $('.page-loader').hide();
+      }
     }
   }
 });
@@ -72,33 +92,15 @@ function load(time) {
 }
 
 $(document).ready(function() {
-    if ($('.owl-carousel').length) {
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      items: 1,
-      autoWidth: true,
-      margin: 10,
-      center: true,
-      smartSpeed: 1500,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      autoplayHoverPause: true,
-      responsive: {
-        1000: {
-          items: 2,
-          margin:94
-        },
-      }
-    });
-  }
   (function($) {
       "use strict";
 
       $(document).ready(()=>{AOS.init({once:'true'});})
       $(document).on('scroll',()=>{AOS.refresh();});
       $(document).on('scroll', skillFill);
+      $(document).ready(()=>{initalizeCarousel();})
 
-
+      // 2
       function mousemove() {
         var onImg = document.querySelectorAll('#home .item-wrapper .items .image');
         $(onImg).mouseenter(() => {
@@ -113,6 +115,7 @@ $(document).ready(function() {
         });
       }
 
+      // 3
       function menuControl() {
           $(document).on('click', '.menu-icon', function() {
               $(this).toggleClass('active');
@@ -124,23 +127,30 @@ $(document).ready(function() {
           });
       }
 
-      function skillFill() {
-          var viewportTop = $(window).scrollTop();
-          var viewportBottom = viewportTop + $(window).height();
-        
-          $('.skill-fill:not(.animation-done)').each(function () {
-            var progressBar = $(this);
-            var progressFill = progressBar.data('fill');
-            var progressBarTop = progressBar.offset().top;
-        
-            if (progressBarTop <= viewportBottom) {
-              progressBar.animate({ width: progressFill },1, function() {
-                $(this).addClass('animation-done');
-              });
+      // 4
+      function initalizeCarousel(){
+        if ($('.owl-carousel').length) {
+          $('.owl-carousel').owlCarousel({
+            loop: true,
+            items: 1,
+            autoWidth: true,
+            margin: 10,
+            center: true,
+            smartSpeed: 1500,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsive: {
+              1000: {
+                items: 2,
+                margin:94
+              },
             }
           });
+        }
       }
 
+      // 5
       function animateBackground() {
         let elements = document.querySelectorAll('.circle-progress');
         elements.forEach(function(element) {
@@ -158,6 +168,25 @@ $(document).ready(function() {
         });
       }
 
+      // 6
+      function skillFill() {
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+      
+        $('.skill-fill:not(.animation-done)').each(function () {
+          var progressBar = $(this);
+          var progressFill = progressBar.data('fill');
+          var progressBarTop = progressBar.offset().top;
+      
+          if (progressBarTop <= viewportBottom) {
+            progressBar.animate({ width: progressFill },1, function() {
+              $(this).addClass('animation-done');
+            });
+          }
+        });
+    }
+
+      // 7
       function type(){   
         var words = [
             `My name is Jason Williams and I am a photographer senior graphic designer from New York.`
@@ -201,27 +230,6 @@ $(document).ready(function() {
         }
         typeWords(0);
       }
-        // $(document).ready(() => {
-        //   if ($('.owl-carousel').length) {
-        //     $('.owl-carousel').owlCarousel({
-        //       loop: true,
-        //       items: 1,
-        //       autoWidth: true,
-        //       margin: 10,
-        //       center: true,
-        //       smartSpeed: 1500,
-        //       autoplay: true,
-        //       autoplayTimeout: 3000,
-        //       autoplayHoverPause: true,
-        //       responsive: {
-        //         1000: {
-        //           items: 2,
-        //           margin:94
-        //         },
-        //       }
-        //     });
-        //   }
-        // });
       
       mousemove();
       menuControl();
@@ -229,8 +237,8 @@ $(document).ready(function() {
       type();
 
   })(jQuery);
-
-
+  
+    // 8
     $(document).mousemove(function(e) {
       var roundCursor = $('.cursor');
       var dot = $('.dot');
