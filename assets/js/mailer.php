@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     # FIX: Replace this email with recipient email
-    $mail_to = "rameez012001@gmail.com";
+    $mail_to = "youremail@gmail.com";
 
     # Sender Data
     $name    = str_replace(array("\r","\n"), array(" ", " "), strip_tags(trim($_POST["name"])));
