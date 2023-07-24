@@ -42,9 +42,7 @@ window.addEventListener('load', function() {
       },500);
     }else{
       $('.item-wrapper').addClass('entry-animation');
-      if ($('.page-loader').addClass('off').is('.off')) {
-        $('.page-loader').hide();
-      }
+      $('.page-loader').addClass('off');      
     }
   }
 });
