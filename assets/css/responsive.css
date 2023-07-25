@@ -98,6 +98,7 @@
   }
   #home main .item-wrapper {
     grid-template-areas: "img1 . ." "img1 img2 img2" "img3 img3 ." "img3 img3 img4" "img3 img3 img4" "img5 img5 img4" "img5 img5 ." "img6 img7 img7" "img6 . ." "img6 . .";
+    row-gap: 10px;
   }
   #portfolio main .item-wrapper .articles article {
     flex-direction: column;
@@ -383,7 +384,6 @@
   }
   #home main .item-wrapper {
     grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7";
-    gap: 20px 0;
   }
   #home main .item-wrapper .items .potrait {
     max-width: 100%;
