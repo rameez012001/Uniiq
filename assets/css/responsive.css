@@ -505,6 +505,11 @@
   #blogwp main .item-wrapper .breadcrumb-area .breadcrumb-content .section-heading {
     font-size: 20px;
   }
+  #blogwp main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .comment-list {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   #blogwp main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .children {
     padding-left: 0;
   }
