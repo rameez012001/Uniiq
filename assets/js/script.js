@@ -18,34 +18,58 @@
 window.addEventListener('load', function() {
   let preLoaderElement = document.getElementById("pre-loader");
   let pageLoaderElement = document.getElementById("page-loader");
-  const isFirstVisit = !localStorage.getItem('hasVisited');
-  if(preLoaderElement){
-    if(isFirstVisit){
-      load(25)
-      setTimeout(()=>{
+
+  // Check if it's the first visit on the main page using sessionStorage
+  const isFirstVisitMain = !sessionStorage.getItem('hasVisitedMain');
+
+  if (preLoaderElement) {
+    if (isFirstVisitMain) {
+      sessionStorage.setItem('hasVisitedMain', true); // Set the flag for first visit on the main page
+      load(25);
+      setTimeout(() => {
         $('.pre-loader').addClass('off');
         $('.item-wrapper').addClass('entry-animation');
-      },3200)
-    }else{
+      }, 3200);
+    } else {
+      console.log('last visit');
       $('#percentage').text('100%');
-      $('.progress-inner').css('width','100%');
+      $('.progress-inner').css('width', '100%');
       preAnimation();
       $('.pre-loader').addClass('off');
       $('.item-wrapper').addClass('entry-animation');
     }
+
+    // Retrieve the current page URL
+    const currentPageURL = window.location.href;
+
+    // Check if it's the first visit for the current page using sessionStorage
+    const isFirstVisitInner = !sessionStorage.getItem('hasVisitedInner-' + currentPageURL);
+
+    if (isFirstVisitInner) {
+      console.log('first visit');
+      sessionStorage.setItem('hasVisitedInner-' + currentPageURL, true); // Set the flag for first visit on the current inner page
+    }
   }
-  if(pageLoaderElement){
-    if(isFirstVisit){
-      setTimeout(()=>{
+
+  if (pageLoaderElement) {
+    // Check if it's the first visit for the current page using sessionStorage
+    const currentPageURL = window.location.href;
+    const isFirstVisitInner = !sessionStorage.getItem('hasVisitedInner-' + currentPageURL);
+
+    if (isFirstVisitInner) {
+      sessionStorage.setItem('hasVisitedInner-' + currentPageURL, true); // Set the flag for first visit on the current inner page
+      setTimeout(() => {
         $('.item-wrapper').addClass('entry-animation');
         $('.page-loader').addClass('off');
-      },500);
-    }else{
+      }, 500);
+    } else {
       $('.item-wrapper').addClass('entry-animation');
-      $('.page-loader').addClass('off');      
+      $('.page-loader').addClass('off');
     }
   }
 });
+
+
 function preAnimation(){
     let loadText = document.querySelector('.d12');
     let footerText = document.querySelector('.pre-footer p');
