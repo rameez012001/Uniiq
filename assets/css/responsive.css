@@ -12,15 +12,17 @@
 }
 @media (max-width: 1280px) {
   .content .about-text h3 {
-    width: 490px;
-    left: 60%;
+    font-size: 25px;
+    width: 500px;
+    top: -30px;
+    left: 57%;
     transform: translate(-20%, -10%);
   }
   .content header {
-    margin: 40px 16px 100px;
+    margin: 40px 64px 100px;
   }
   .content header .menu-icon-wrapper .left-sidebar {
-    padding: 0px 174px;
+    padding: 0px 154px;
   }
   .content header .menu-icon-wrapper .left-sidebar li {
     margin-bottom: 32px;
@@ -66,6 +68,9 @@
   .content .caption h2 {
     font-size: 25px;
     padding: 0 80px;
+  }
+  .content header {
+    margin: 40px 64px 100px;
   }
   .content .about-text h3 {
     top: 0px;
