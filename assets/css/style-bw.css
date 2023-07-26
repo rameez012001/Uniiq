@@ -180,8 +180,8 @@
     line-height: 46px;
     -webkit-animation: about-text 1s;
     animation: about-text 1s;
-    -webkit-transform: translate(10%);
-    transform: translate(10%);
+    -webkit-transform: translate(10%, 60px);
+    transform: translate(10%, 60px);
   }
   .content .about-text h3 span {
     color: #f9f9f9;

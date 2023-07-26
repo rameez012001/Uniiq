@@ -14,9 +14,9 @@
   .content .about-text h3 {
     font-size: 25px;
     width: 500px;
-    top: -30px;
     left: 57%;
-    transform: translate(-20%, -10%);
+    -webkit-transform: translate(-20%, -40px);
+    transform: translate(-20%, -40px);
   }
   .content header {
     margin: 40px 64px 100px;
@@ -73,7 +73,6 @@
     margin: 40px 26px 100px;
   }
   .content .about-text h3 {
-    top: 0px;
     left: 60%;
     transform: translate(0);
     font-size: 20px;
