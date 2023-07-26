@@ -63,9 +63,12 @@
                     <img src="../assets/images/contact.png" alt="">
                 </div>
                 <div class="form-content row justify-content-between">
-                    <form id="contactForm" class="d-flex flex-column col-md-6" method="POST" action="../assets/js/mailer.php" data-aos="fade-up" data-aos-duration="1500">
-                        <input placeholder="Name" name="name">
-                        <input placeholder="Email" name="email">
+                    <form class="d-flex flex-column col-md-6" method="POST" action="../assets/js/mailer.php" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="alert alert-success messenger-box-contact__msg" style="display: none;" role="alert">
+                            Your message was sent successfully.
+                        </div>
+                        <input placeholder="Name" name="name" id="full-name">
+                        <input placeholder="Email" name="email" id="email">
                         <input placeholder="Subject" name="subject">
                         <textarea placeholder="Message" name="message"></textarea>
                         <button type="submit">SEND</button>
@@ -105,12 +108,9 @@
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    
     <script src="../assets/js/aos.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
-    
     <script src="../assets/js/script.js"></script>
     <script src="../assets/js/ajax.js"></script>
-     
 </body>
 </html>

@@ -175,7 +175,6 @@ ul, li {
   width: 590px;
   color: #D7B065;
   position: absolute;
-  top: 40px;
   left: 50%;
   font-size: 30px;
   font-weight: 600;
@@ -762,6 +761,10 @@ ul, li {
 #contact main .item-wrapper .form-content {
   row-gap: 60px;
   margin: 160px 0 185px;
+}
+#contact main .item-wrapper .form-content form .submission-message {
+  width: 100%;
+  background-color: red;
 }
 #contact main .item-wrapper .form-content form input, #contact main .item-wrapper .form-content form textarea {
   margin: 0 0 40px;
