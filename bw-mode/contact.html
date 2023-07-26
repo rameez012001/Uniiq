@@ -60,15 +60,18 @@
                     <h2>Get In Touch <br>Let’s Work <span>Together!</span></h2>
                 </div>
                 <div class="about-image d-flex justify-content-center">
-                    <img src="./images/contact.png" alt="">
+                    <img src="../assets/images2/contact.png" alt="">
                 </div>
                 <div class="form-content row justify-content-between">
-                    <form class="d-flex flex-column col-md-6" action="" data-aos="fade-right" data-aos-duration="1500">
-                        <input placeholder="Name">
-                        <input placeholder="Email">
-                        <input placeholder="Subject">
-                        <textarea placeholder="Message"></textarea>
-                        <button type="button">SEND</button>
+                    <form class="d-flex flex-column col-md-6" method="POST" action="../assets/js/mailer.php" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="alert alert-success messenger-box-contact__msg" style="display: none;" role="alert">
+                            Your message was sent successfully.
+                        </div>
+                        <input placeholder="Name" name="name" id="full-name">
+                        <input placeholder="Email" name="email" id="email">
+                        <input placeholder="Subject" name="subject">
+                        <textarea placeholder="Message" name="message"></textarea>
+                        <button type="submit">SEND</button>
                     </form>
                     <div class="para col-md-5" data-aos="fade-up" data-aos-duration="1500">
                         <p>Thank you for your interest in reaching out to us. We welcome inquiries, feedback,  collaboration opportunities you may have. Please feel free to get in touch with us using the contact detail information provided below. We look forward to hearing from you!</p>
@@ -105,11 +108,10 @@
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    
     <script src="../assets/js/aos.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
-    
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/ajax.js"></script>
      
 </body>
 </html>
