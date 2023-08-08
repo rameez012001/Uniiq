@@ -309,15 +309,6 @@ ul, li {
 .content header #logo img {
   max-width: 153px;
 }
-.content header #logo svg {
-  width: 153px;
-}
-.content header #logo svg path {
-  fill: #f9f9f9;
-}
-.content header #logo svg rect {
-  stroke: #f9f9f9;
-}
 .content header #logo.inactive {
   display: none;
 }
@@ -348,12 +339,6 @@ ul, li {
 }
 .content footer #logo img {
   max-width: 153px;
-}
-.content footer #logo svg path {
-  fill: #f9f9f9;
-}
-.content footer #logo svg rect {
-  stroke: #f9f9f9;
 }
 .content footer p {
   text-align: center;
