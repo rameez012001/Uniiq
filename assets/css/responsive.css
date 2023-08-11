@@ -362,13 +362,13 @@
     margin: 10px 0;
   }
   .content header #logo img {
-    width: 100%;
-  }
-  .content header #logo svg {
-    width: 100px;
+    width: 120px;
   }
   .content header .contact {
     display: none !important;
+  }
+  .content footer #logo img {
+    width: 120px;
   }
   .content .caption h2 {
     padding: 0;

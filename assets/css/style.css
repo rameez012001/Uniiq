@@ -118,10 +118,10 @@ ul, li {
   pointer-events: none;
   border: 3px solid #f9f9f9;
   border-radius: 50%;
-  transform: translate(-23px, -23px);
   -webkit-transform: translate(-23px, -23px);
-  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, border 0.1s ease, backdrop-filter 0.1s ease;
+  transform: translate(-23px, -23px);
   -webkit-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, border 0.1s ease, backdrop-filter 0.1s ease;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, border 0.1s ease, backdrop-filter 0.1s ease;
 }
 .cursor.light-mode {
   border: 3px solid #f9f9f9;
@@ -156,6 +156,10 @@ ul, li {
   display: none;
 }
 
+.content {
+  margin: 0 auto;
+  max-width: 1920px;
+}
 .content .caption h2 {
   text-align: center;
   font-size: 30px;
@@ -360,7 +364,7 @@ ul, li {
 }
 .content .blContent .blContent-wrapper .det_des {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   font-size: 16px;
   font-weight: 600;
@@ -1238,16 +1242,6 @@ ul, li {
   margin-bottom: 30px;
 }
 
-@keyframes about-text {
-  0% {
-    top: 200px;
-    opacity: 0.1;
-  }
-  100% {
-    top: 0;
-    opacity: 1;
-  }
-}
 @-webkit-keyframes about-text {
   0% {
     top: 200px;
@@ -1258,13 +1252,13 @@ ul, li {
     opacity: 1;
   }
 }
-@keyframes menu-icon {
+@keyframes about-text {
   0% {
-    left: -10%;
+    top: 200px;
     opacity: 0.1;
   }
   100% {
-    left: 0;
+    top: 0;
     opacity: 1;
   }
 }
@@ -1278,13 +1272,13 @@ ul, li {
     opacity: 1;
   }
 }
-@keyframes entry-animation {
+@keyframes menu-icon {
   0% {
-    transform: translateY(200px);
-    opacity: 0.8;
+    left: -10%;
+    opacity: 0.1;
   }
   100% {
-    transform: translateY(0px);
+    left: 0;
     opacity: 1;
   }
 }
@@ -1295,6 +1289,16 @@ ul, li {
   }
   100% {
     -webkit-transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes entry-animation {
+  0% {
+    transform: translateY(200px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(0px);
     opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */

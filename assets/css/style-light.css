@@ -118,8 +118,8 @@
     border: 3px solid #2c2c2c;
     -webkit-transform: translate(-23px, -23px);
     transform: translate(-23px, -23px);
-    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, border 0.1s ease-in;
     -webkit-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, border 0.1s ease-in;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, border 0.1s ease-in;
   }
   .cursor.light-mode {
     border: 3px solid #f9f9f9;
@@ -165,7 +165,10 @@
   .caption h2 span {
     color: #D7B065;
   }
-  
+  .content{
+    margin: 0 auto;
+    max-width: 1920px;
+  }
   .content .about-text {
     display: none;
     position: relative;
@@ -360,7 +363,7 @@
   }
   .content .blContent .blContent-wrapper .det_des {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     font-size: 16px;
     font-weight: 600;
@@ -1235,6 +1238,17 @@
     margin-bottom: 30px;
   }
   
+
+  @-webkit-keyframes about-text {
+    0% {
+      top: 200px;
+      opacity: 0.1;
+    }
+    100% {
+      top: 0;
+      opacity: 1;
+    }
+  }
   @keyframes about-text {
     0% {
       top: 200px;
@@ -1245,13 +1259,14 @@
       opacity: 1;
     }
   }
-  @-webkit-keyframes about-text {
+
+  @-webkit-keyframes menu-icon {
     0% {
-      top: 200px;
+      left: -10%;
       opacity: 0.1;
     }
     100% {
-      top: 0;
+      left: 0;
       opacity: 1;
     }
   }
@@ -1265,13 +1280,14 @@
       opacity: 1;
     }
   }
-  @-webkit-keyframes menu-icon {
+
+  @-webkit-keyframes entry-animation {
     0% {
-      left: -10%;
-      opacity: 0.1;
+      -webkit-transform: translateY(200px);
+      opacity: 0.8;
     }
     100% {
-      left: 0;
+      -webkit-transform: translateY(0px);
       opacity: 1;
     }
   }
@@ -1282,16 +1298,6 @@
     }
     100% {
       transform: translateY(0px);
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes entry-animation {
-    0% {
-      -webkit-transform: translateY(200px);
-      opacity: 0.8;
-    }
-    100% {
-      -webkit-transform: translateY(0px);
       opacity: 1;
     }
   }

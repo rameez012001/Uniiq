@@ -148,6 +148,10 @@
   .caption h2 span {
     color: #D7B065;
   }
+  .content{
+    margin: 0 auto;
+    max-width: 1920px;
+  }
   .content header {
     margin: 40px 124px 170px 124px;
     position: relative;
