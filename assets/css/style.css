@@ -47,7 +47,7 @@ ul, li {
   left: 0;
   z-index: 100;
   width: 100%;
-  height: 103vh;
+  height: 100vh;
   -webkit-transform: translateX(0);
   transform: translateX(0);
   -webkit-transition: 1.5s;
@@ -95,8 +95,6 @@ ul, li {
   height: 6px;
   border-radius: 1px;
   background-color: #fff;
-  animation: progress-inner 4s;
-  -webkit-animation: progress-inner 4s;
 }
 .pre-loader .pre-footer {
   position: absolute;
@@ -517,6 +515,8 @@ ul, li {
 }
 #about main .item-wrapper .blContent .blContent-wrapper .about-det {
   font-size: 16px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
   margin-bottom: 100px;
 }
 #about main .item-wrapper .blContent .blContent-wrapper .about-det .details .detail-items {

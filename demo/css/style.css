@@ -34,8 +34,9 @@
     height: 100vh;
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    background: #0a0a0a url(../images/lines.png) fixed center top / 100% repeat-y;
+    -webkit-transition: 1.5s;
     transition: 1.5s;
+    background: #0a0a0a url(../images/lines.png) fixed center top / 100% repeat-y;
   }
   .pre-loader.off {
     top: -103vh;
@@ -65,13 +66,13 @@
     right: 0px;
     font-size: 16px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.6);
+    color: #ffffff99;
   }
   .pre-loader .progress {
     width: 370px;
     height: 6px;
     border-radius: 1px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: #ffffff66;
   }
   .pre-loader .progress .progress-inner {
     width: 0%;
@@ -86,7 +87,7 @@
   }
   .pre-loader .pre-footer p {
     text-align: center;
-    color: rgba(249, 249, 249, 0.5019607843);
+    color: #f9f9f980;
     font-size: 14px;
     font-weight: 500;
   }
