@@ -32,10 +32,10 @@
     width: 100%;
     height: 100%;
     -webkit-transform: translateX(0);
-    transform: translateX(0);
-    background: #0a0a0a url(../images/lines.png) fixed center top / 100% repeat-y;
-    transition: 1.3s;
+    transform: translateX(0);    
     -webkit-transition: 1.3s;
+    transition: 1.3s;
+    background: #0a0a0a url(../images/lines.png) fixed center top / 100% repeat-y;
   }
   .page-loader.off {
     top: -103vh;
@@ -50,9 +50,9 @@
     height: 103vh;
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    background: #0a0a0a url(../images/lines.png) fixed center top / 100% repeat-y;
-    transition: 1.5s;
     -webkit-transition: 1.5s;
+    transition: 1.5s;
+    background: #0a0a0a url(../images/lines.png) fixed center top / 100% repeat-y;
   }
   .pre-loader.off {
     top: -103vh;
@@ -118,8 +118,8 @@
     border: 3px solid #f9f9f9;
     -webkit-transform: translate(-23px, -23px);
     transform: translate(-23px, -23px);
-    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, border 0.1s ease-in;
     -webkit-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, border 0.1s ease-in;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, border 0.1s ease-in;
   }
   .cursor.light-mode {
     border: 3px solid #f9f9f9;
@@ -147,8 +147,8 @@
     border-radius: 50%;
     pointer-events: none;
     background-color: #D7B065;
-    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
     -webkit-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
   }
   .dot.inactive {
     display: none;
@@ -165,7 +165,10 @@
   .caption h2 span {
     color: #D7B065;
   }
-  
+  .content{
+    margin: 0 auto;
+    max-width: 1920px;
+  }
   .content .about-text {
     display: none;
     position: relative;
@@ -208,8 +211,8 @@
     height: 3px;
     border-radius: 5px;
     background-color: #f9f9f9;
-    transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   .content header .menu-icon-wrapper .menu-icon span:nth-child(1) {
     width: 28px;
@@ -359,7 +362,7 @@
   }
   .content .blContent .blContent-wrapper .det_des {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     font-size: 16px;
     font-weight: 600;
@@ -455,8 +458,8 @@
     width: 100%;
     height: 100%;
     scale: 1.1;
-    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #home main .item-wrapper .items .image img:hover {
     scale: 1;
@@ -501,8 +504,8 @@
     width: 100%;
     object-fit: cover;
     scale: 1.1;
-    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #about main .item-wrapper .about-image img:hover {
     scale: 1;
@@ -625,8 +628,8 @@
     width: 100%;
     overflow: hidden;
     scale: 1.1;
-    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     object-fit: cover;
   }
   #skills main .item-wrapper .skill1 .skill-image1 img:hover {
@@ -715,8 +718,8 @@
     width: 100%;
     height: 100%;
     scale: 1.1;
-    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #skills main .item-wrapper .skill-image2 img:hover {
     scale: 1;
@@ -736,8 +739,8 @@
   #contact main .item-wrapper .about-image img {
     width: 100%;
     scale: 1.1;
-    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #contact main .item-wrapper .about-image img:hover {
     scale: 1;
@@ -831,8 +834,8 @@
     width: 100%;
     border-radius: 10px;
     scale: 1.1;
-    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #page2 main .item-wrapper .slider .slider-items img:hover {
     scale: 1;
@@ -878,8 +881,8 @@
     height: 100%;
     scale: 1.1;
     object-fit: cover;
-    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #page3 main .item-wrapper .grid .grid-item img:hover {
     scale: 1;
@@ -942,8 +945,8 @@
     width: 100%;
     object-fit: cover;
     scale: 1.1;
-    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #page4 main .item-wrapper .grid .grid-item img:hover {
     scale: 1;
@@ -1233,6 +1236,18 @@
     margin-bottom: 30px;
   }
   
+
+  @-webkit-keyframes about-text {
+    0% {
+      top: 200px;
+      opacity: 0.1;
+    }
+    100% {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  
   @keyframes about-text {
     0% {
       top: 200px;
@@ -1243,13 +1258,14 @@
       opacity: 1;
     }
   }
-  @-webkit-keyframes about-text {
+
+  @-webkit-keyframes menu-icon {
     0% {
-      top: 200px;
+      left: -10%;
       opacity: 0.1;
     }
     100% {
-      top: 0;
+      left: 0;
       opacity: 1;
     }
   }
@@ -1263,13 +1279,14 @@
       opacity: 1;
     }
   }
-  @-webkit-keyframes menu-icon {
+
+  @-webkit-keyframes entry-animation {
     0% {
-      left: -10%;
-      opacity: 0.1;
+      -webkit-transform: translateY(200px);
+      opacity: 0.8;
     }
     100% {
-      left: 0;
+      -webkit-transform: translateY(0px);
       opacity: 1;
     }
   }
@@ -1280,16 +1297,6 @@
     }
     100% {
       transform: translateY(0px);
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes entry-animation {
-    0% {
-      -webkit-transform: translateY(200px);
-      opacity: 0.8;
-    }
-    100% {
-      -webkit-transform: translateY(0px);
       opacity: 1;
     }
   }

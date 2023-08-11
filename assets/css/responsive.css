@@ -120,8 +120,8 @@
   #portfolio main .item-wrapper .articles article .left .hover-img img {
     object-fit: cover;
     scale: 1.1;
-    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #portfolio main .item-wrapper .articles article .left .hover-img img:hover {
     scale: 1;
@@ -362,13 +362,13 @@
     margin: 10px 0;
   }
   .content header #logo img {
-    width: 100%;
-  }
-  .content header #logo svg {
-    width: 100px;
+    width: 120px;
   }
   .content header .contact {
     display: none !important;
+  }
+  .content footer #logo img {
+    width: 120px;
   }
   .content .caption h2 {
     padding: 0;
