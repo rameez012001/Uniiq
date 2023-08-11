@@ -33,9 +33,9 @@
     height: 100%;
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    background: #f9f9f9 url(../images/light-lines.png) fixed center top/100% repeat-y;
-    transition: 1.3s;
     -webkit-transition: 1.3s;
+    transition: 1.3s;
+    background: #f9f9f9 url(../images/light-lines.png) fixed center top/100% repeat-y;
   }
   .page-loader.off {
     top: -103vh;
@@ -50,9 +50,9 @@
     height: 103vh;
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    background: #f9f9f9 url(../images/light-lines.png) fixed center top/100% repeat-y;
-    transition: 1.5s;
     -webkit-transition: 1.5s;
+    transition: 1.5s;
+    background: #f9f9f9 url(../images/light-lines.png) fixed center top/100% repeat-y;
   }
   .pre-loader.off {
     top: -103vh;
@@ -147,8 +147,8 @@
     border-radius: 50%;
     pointer-events: none;
     background-color: #D7B065;
-    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
     -webkit-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
   }
   .dot.inactive {
     display: none;
@@ -459,8 +459,8 @@
     width: 100%;
     height: 100%;
     scale: 1.1;
-    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #home main .item-wrapper .items .image img:hover {
     scale: 1;
@@ -505,8 +505,8 @@
     width: 100%;
     object-fit: cover;
     scale: 1.1;
-    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #about main .item-wrapper .about-image img:hover {
     scale: 1;
@@ -629,8 +629,8 @@
     width: 100%;
     overflow: hidden;
     scale: 1.1;
-    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     object-fit: cover;
   }
   #skills main .item-wrapper .skill1 .skill-image1 img:hover {
@@ -719,8 +719,8 @@
     width: 100%;
     height: 100%;
     scale: 1.1;
-    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #skills main .item-wrapper .skill-image2 img:hover {
     scale: 1;
@@ -740,8 +740,8 @@
   #contact main .item-wrapper .about-image img {
     width: 100%;
     scale: 1.1;
-    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #contact main .item-wrapper .about-image img:hover {
     scale: 1;
@@ -835,8 +835,8 @@
     width: 100%;
     border-radius: 10px;
     scale: 1.1;
-    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #page2 main .item-wrapper .slider .slider-items img:hover {
     scale: 1;
@@ -882,8 +882,8 @@
     height: 100%;
     scale: 1.1;
     object-fit: cover;
-    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #page3 main .item-wrapper .grid .grid-item img:hover {
     scale: 1;
@@ -946,8 +946,8 @@
     width: 100%;
     object-fit: cover;
     scale: 1.1;
-    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
     -webkit-transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: scale 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
   }
   #page4 main .item-wrapper .grid .grid-item img:hover {
     scale: 1;
