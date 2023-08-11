@@ -396,7 +396,10 @@
   #about main .item-wrapper .about-image {
     margin: 40px 0;
   }
-  #about main .blContent .blContent-wrapper .about-det .details {
+  #about main .item-wrapper .blContent .blContent-wrapper .about-det {
+    grid-template-columns: auto;
+  }
+  #about main .item-wrapper .blContent .blContent-wrapper .about-det .details {
     padding: 0;
   }
   #contact main footer .reach {
@@ -422,9 +425,13 @@
   }
   #page2 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
     margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 15px;
   }
   #page2 main .item-wrapper .blContent .blContent-wrapper .det_des .details .detail-items {
     padding-right: 1em;
+    margin-bottom: 0;
   }
   #page2 main .item-wrapper .blContent .blContent-wrapper .para p {
     margin-bottom: 30px;
