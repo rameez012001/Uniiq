@@ -207,6 +207,9 @@
   .content header {
     margin: 40px 0px 100px;
   }
+  .content header .menu-icon-wrapper {
+    margin: 20px 15px;
+  }
   .content .caption h2 {
     font-size: 20px;
   }
