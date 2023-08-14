@@ -27,37 +27,37 @@
   .content header .menu-icon-wrapper .left-sidebar li {
     margin-bottom: 32px;
   }
-  #home main .item-wrapper, #about main .item-wrapper, #portfolio main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #page3 main .item-wrapper, #page4 main .item-wrapper {
+  #home main .item-wrapper, #about main .item-wrapper, #portfolio main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #projectPage1 main .item-wrapper, #projectPage2 main .item-wrapper {
     max-width: 950px;
   }
   #skills main .item-wrapper .skill1 {
     width: 930px;
   }
-  #page2 main .item-wrapper .caption #desktop, #page4 main .item-wrapper .caption #desktop {
+  #portfolioDetail main .item-wrapper .caption #desktop, #projectPage2 main .item-wrapper .caption #desktop {
     display: none;
   }
-  #page2 main .item-wrapper .caption #mobile, #page4 main .item-wrapper .caption #mobile {
+  #portfolioDetail main .item-wrapper .caption #mobile, #projectPage2 main .item-wrapper .caption #mobile {
     display: block;
   }
-  #page2 main .item-wrapper .slider {
+  #portfolioDetail main .item-wrapper .slider {
     margin: 80px 0;
   }
-  #page2 main .item-wrapper .owl-carousel .item {
+  #portfolioDetail main .item-wrapper .owl-carousel .item {
     max-width: 950px;
   }
-  #page2 main .item-wrapper .blContent {
+  #portfolioDetail main .item-wrapper .blContent {
     margin: 100px 0 60px;
   }
-  #page2 main .item-wrapper .blContent .blContent-wrapper {
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper {
     max-width: 950px;
   }
-  #page2 main .item-wrapper .blContent .blContent-wrapper > :first-child {
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper > :first-child {
     margin-bottom: 60px;
   }
-  #page3 main .item-wrapper .grid {
+  #projectPage1 main .item-wrapper .grid {
     grid-template-areas: "img1 . ." "img1 . img2" ". . img2" "img3 . img2" "img3 . ." "img3 . img4" ". . img4" ". . img4";
   }
-  #page4 main .item-wrapper .grid {
+  #projectPage2 main .item-wrapper .grid {
     gap: 30px;
   }
 }
@@ -92,7 +92,7 @@
   .content .blContent .blContent-wrapper .det_des .description {
     width: 700px;
   }
-  #home main .item-wrapper, #about main .item-wrapper, #portfolio main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #page3 main .item-wrapper, #page4 main .item-wrapper {
+  #home main .item-wrapper, #about main .item-wrapper, #portfolio main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #projectPage1 main .item-wrapper, #projectPage2 main .item-wrapper {
     max-width: 758px;
   }
   #home main .item-wrapper {
@@ -155,43 +155,43 @@
   #contact main .item-wrapper .form-content {
     margin: 100px 0;
   }
-  #page2 main {
+  #portfolioDetail main {
     display: flex;
     justify-content: center;
   }
-  #page2 main .item-wrapper {
+  #portfolioDetail main .item-wrapper {
     max-width: 100%;
   }
-  #page2 main .item-wrapper .slider {
+  #portfolioDetail main .item-wrapper .slider {
     margin: 50px 0;
   }
-  #page2 main .item-wrapper .owl-carousel .item {
+  #portfolioDetail main .item-wrapper .owl-carousel .item {
     max-width: 720px;
   }
-  #page2 main .item-wrapper .blContent .blContent-wrapper {
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper {
     max-width: 720px;
   }
-  #page2 main .item-wrapper .blContent .blContent-wrapper .det_des .description {
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper .det_des .description {
     width: 100%;
   }
-  #page3 main .item-wrapper .grid {
+  #projectPage1 main .item-wrapper .grid {
     margin: 80px 0 0;
     grid-template-areas: "img1 ." "img1 img2" ". img2" "img3 img2" "img3 ." "img3 img4" ". img4";
   }
-  #page3 main .item-wrapper .blContent .blContent-wrapper .det_des {
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .det_des {
     margin: 60px 0;
   }
-  #page3 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
     margin-bottom: 30px;
   }
-  #page3 main .item-wrapper .blContent .blContent-wrapper .det_des .description {
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .det_des .description {
     margin-top: 30px;
     width: 100%;
   }
-  #page4 main .item-wrapper .blContent .blContent-wrapper .det_des .description {
+  #projectPage2 main .item-wrapper .blContent .blContent-wrapper .det_des .description {
     width: auto;
   }
-  #blogwp main .container {
+  #blogPage main .container {
     max-width: 1170px;
   }
 }
@@ -207,7 +207,7 @@
   .content .caption h2 {
     font-size: 20px;
   }
-  #home, #about, #portfolio, #skills, #contact, #page2, #page3, #page4 {
+  #home, #about, #portfolio, #skills, #contact, #portfolioDetail, #projectPage1, #projectPage2 {
     margin: 0 1em;
   }
   #home main .item-wrapper, #about main .item-wrapper, #portfolio main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper {
@@ -240,89 +240,89 @@
   #contact main .item-wrapper .form-content {
     margin-bottom: 30px;
   }
-  #page2 main .item-wrapper {
+  #portfolioDetail main .item-wrapper {
     max-width: calc(100vw - 50px);
   }
-  #page2 main .item-wrapper .slider {
+  #portfolioDetail main .item-wrapper .slider {
     margin: 0px;
   }
-  #page2 main .item-wrapper .owl-carousel .item {
+  #portfolioDetail main .item-wrapper .owl-carousel .item {
     max-width: 500px;
   }
-  #page2 main .item-wrapper .blContent {
+  #portfolioDetail main .item-wrapper .blContent {
     margin: 50px 0;
   }
-  #page2 main .item-wrapper .blContent .blContent-wrapper {
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper {
     max-width: 950px;
   }
-  #page2 main .item-wrapper .blContent .blContent-wrapper > :first-child {
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper > :first-child {
     margin-bottom: 30px;
   }
-  #page2 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper .det_des .details {
     margin-bottom: 30px;
   }
-  #page2 main .item-wrapper .blContent .blContent-wrapper .para p {
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper .para p {
     margin-bottom: 30px;
   }
-  #page3 main .item-wrapper {
+  #projectPage1 main .item-wrapper {
     margin: 0;
   }
-  #page3 main .item-wrapper .grid {
+  #projectPage1 main .item-wrapper .grid {
     grid-template-areas: "img1 ." "img1 img2" "img3 img2" "img3 ." "img3 img4" ". img4";
     gap: 20px;
   }
-  #page3 main .item-wrapper .grid .grid-item {
+  #projectPage1 main .item-wrapper .grid .grid-item {
     max-width: 100%;
   }
-  #page3 main .item-wrapper .blContent .blContent-wrapper .det_des {
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .det_des {
     margin-bottom: 20px;
   }
-  #page4 main .item-wrapper {
+  #projectPage2 main .item-wrapper {
     margin: 0;
   }
-  #page4 main .item-wrapper .grid {
+  #projectPage2 main .item-wrapper .grid {
     justify-content: center;
   }
-  #page4 main .item-wrapper .grid .image-s {
+  #projectPage2 main .item-wrapper .grid .image-s {
     max-width: 300px;
   }
-  #page4 main .item-wrapper .grid .image-m {
+  #projectPage2 main .item-wrapper .grid .image-m {
     max-width: 350px;
   }
-  #page4 main .item-wrapper .grid .image-l {
+  #projectPage2 main .item-wrapper .grid .image-l {
     max-width: 750px;
   }
-  #page4 main .item-wrapper .blContent {
+  #projectPage2 main .item-wrapper .blContent {
     margin: 30px 0;
   }
-  #page4 main .item-wrapper .blContent .blContent-wrapper .det_des {
+  #projectPage2 main .item-wrapper .blContent .blContent-wrapper .det_des {
     margin: 50px 0;
   }
-  #page4 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
+  #projectPage2 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
     margin-bottom: 15px;
   }
-  #page4 main .item-wrapper .blContent .blContent-wrapper .det_des .description {
+  #projectPage2 main .item-wrapper .blContent .blContent-wrapper .det_des .description {
     margin-top: 15px;
   }
-  #blogwp {
+  #blogPage {
     margin: 0 1em;
   }
-  #blogwp main .item-wrapper .blog-area, #blogwp main .item-wrapper .blog-details-area {
+  #blogPage main .item-wrapper .blog-area, #blogPage main .item-wrapper .blog-details-area {
     padding-top: 40px;
   }
-  #blogwp main .item-wrapper .blog-area .blog-items, #blogwp main .item-wrapper .blog-details-area .blog-details-content {
+  #blogPage main .item-wrapper .blog-area .blog-items, #blogPage main .item-wrapper .blog-details-area .blog-details-content {
     padding-right: 0;
   }
-  #blogwp main .item-wrapper .blog-area .blog-items .blog-item {
+  #blogPage main .item-wrapper .blog-area .blog-items .blog-item {
     padding-right: 0;
   }
-  #blogwp main .item-wrapper .blog-area .blog-items .blog-item .img-box {
+  #blogPage main .item-wrapper .blog-area .blog-items .blog-item .img-box {
     margin-bottom: 50px;
   }
-  #blogwp main .item-wrapper .blog-details-area .blog-details-content .img-box {
+  #blogPage main .item-wrapper .blog-details-area .blog-details-content .img-box {
     margin-bottom: 50px;
   }
-  #blogwp main .item-wrapper .blog-sidebar {
+  #blogPage main .item-wrapper .blog-sidebar {
     margin-top: 50px;
   }
 }
@@ -374,10 +374,10 @@
     padding: 0;
     line-height: 30px;
   }
-  #home, #about, #portfolio, #skills, #contact, #page2, #page3, #page4 {
+  #home, #about, #portfolio, #skills, #contact, #portfolioDetail, #projectPage1, #projectPage2 {
     margin: 0 1em;
   }
-  #home main .item-wrapper, #about main .item-wrapper, #portfolio main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #page2 main .item-wrapper, #page3 main .item-wrapper, #page4 main .item-wrapper {
+  #home main .item-wrapper, #about main .item-wrapper, #portfolio main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #portfolioDetail main .item-wrapper, #projectPage1 main .item-wrapper, #projectPage2 main .item-wrapper {
     overflow: hidden;
     margin: 0;
   }
@@ -408,96 +408,96 @@
   #contact main footer .reach div:first-child {
     margin: 0;
   }
-  #page2 main .item-wrapper {
+  #portfolioDetail main .item-wrapper {
     max-width: calc(100vw - 20px);
   }
-  #page2 main .item-wrapper .owl-carousel .item {
+  #portfolioDetail main .item-wrapper .owl-carousel .item {
     max-width: 420px;
   }
-  #page2 main .item-wrapper .slider {
+  #portfolioDetail main .item-wrapper .slider {
     margin: 40px 0 0;
   }
-  #page2 main .item-wrapper .blContent {
+  #portfolioDetail main .item-wrapper .blContent {
     margin: 30px 0;
   }
-  #page2 main .item-wrapper .blContent .blContent-wrapper .det_des {
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper .det_des {
     margin: 0px 0 25px;
   }
-  #page2 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper .det_des .details {
     margin-bottom: 20px;
     display: grid;
     grid-template-columns: auto auto;
     row-gap: 15px;
   }
-  #page2 main .item-wrapper .blContent .blContent-wrapper .det_des .details .detail-items {
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper .det_des .details .detail-items {
     padding-right: 1em;
     margin-bottom: 0;
   }
-  #page2 main .item-wrapper .blContent .blContent-wrapper .para p {
+  #portfolioDetail main .item-wrapper .blContent .blContent-wrapper .para p {
     margin-bottom: 30px;
   }
-  #page3 main .item-wrapper .grid {
+  #projectPage1 main .item-wrapper .grid {
     grid-template-areas: "img1" "img2" "img3" "img4";
     gap: 20px;
     margin: 40px 0 0;
   }
-  #page3 main .item-wrapper .grid .image-l {
+  #projectPage1 main .item-wrapper .grid .image-l {
     width: 100%;
     min-width: 300px;
   }
-  #page3 main .item-wrapper .grid .image-m {
+  #projectPage1 main .item-wrapper .grid .image-m {
     width: 100%;
     min-width: 300px;
   }
-  #page3 main .item-wrapper .grid .grid-item {
+  #projectPage1 main .item-wrapper .grid .grid-item {
     justify-self: center;
   }
-  #page3 main .item-wrapper .grid .grid-item:nth-child(2) {
+  #projectPage1 main .item-wrapper .grid .grid-item:nth-child(2) {
     justify-self: center;
   }
-  #page3 main .item-wrapper .blContent {
+  #projectPage1 main .item-wrapper .blContent {
     margin: 0;
   }
-  #page3 main .item-wrapper .blContent .blContent-wrapper .det_des {
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .det_des {
     margin: 50px 0;
   }
-  #page3 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .det_des .details {
     margin-bottom: 10px;
   }
-  #page3 main .item-wrapper .blContent .blContent-wrapper .det_des .description {
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .det_des .description {
     margin-top: 10px;
   }
-  #page3 main .item-wrapper .blContent .blContent-wrapper .para p {
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .para p {
     margin-bottom: 0px;
   }
-  #page3 main .item-wrapper .blContent .blContent-wrapper .para:last-child {
+  #projectPage1 main .item-wrapper .blContent .blContent-wrapper .para:last-child {
     margin: 0;
   }
-  #page4 main .item-wrapper .grid {
+  #projectPage2 main .item-wrapper .grid {
     justify-content: center;
     grid-template-areas: "img1" "img2" "img3";
     gap: 20px;
   }
-  #page4 main .item-wrapper .grid .image-s, #page4 main .item-wrapper .grid .image-m, #page4 main .item-wrapper .grid .image-l {
+  #projectPage2 main .item-wrapper .grid .image-s, #projectPage2 main .item-wrapper .grid .image-m, #projectPage2 main .item-wrapper .grid .image-l {
     max-width: 100%;
   }
-  #page4 main .item-wrapper .blContent .blContent-wrapper .det_des {
+  #projectPage2 main .item-wrapper .blContent .blContent-wrapper .det_des {
     margin: 25px 0;
   }
-  #page4 main .item-wrapper .blContent .blContent-wrapper .para p {
+  #projectPage2 main .item-wrapper .blContent .blContent-wrapper .para p {
     margin-bottom: 15px;
   }
-  #blogwp main .item-wrapper .breadcrumb-area .breadcrumb-content .section-heading {
+  #blogPage main .item-wrapper .breadcrumb-area .breadcrumb-content .section-heading {
     font-size: 36px;
   }
-  #blogwp main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .comment-list {
+  #blogPage main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .comment-list {
     gap: 20px;
   }
-  #blogwp main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .comment-list .comment-avatar {
+  #blogPage main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .comment-list .comment-avatar {
     width: 70px;
     height: 70px;
   }
-  #blogwp main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .children {
+  #blogPage main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .children {
     padding-left: 40px;
   }
 }
@@ -505,18 +505,18 @@
   .content header .menu-icon-wrapper .left-sidebar {
     padding: 0px 100px;
   }
-  #page2 main .item-wrapper .owl-carousel .item {
+  #portfolioDetail main .item-wrapper .owl-carousel .item {
     max-width: 320px;
   }
-  #blogwp main .item-wrapper .breadcrumb-area .breadcrumb-content .section-heading {
+  #blogPage main .item-wrapper .breadcrumb-area .breadcrumb-content .section-heading {
     font-size: 20px;
   }
-  #blogwp main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .comment-list {
+  #blogPage main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .comment-list {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  #blogwp main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .children {
+  #blogPage main .item-wrapper .blog-details-area .blog-details-content .comments-and-form-wrap .comments .children {
     padding-left: 0;
   }
 }/*# sourceMappingURL=responsive.css.map */
