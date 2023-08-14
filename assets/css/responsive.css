@@ -424,7 +424,7 @@
     margin: 30px 0;
   }
   #portfolioDetail main .item-wrapper .blContent .blContent-wrapper .det_des {
-    margin: 0px 0 25px;
+    margin: 0;
   }
   #portfolioDetail main .item-wrapper .blContent .blContent-wrapper .det_des .details {
     display: grid;
