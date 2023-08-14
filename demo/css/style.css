@@ -1,21 +1,10 @@
 /*   -- Table of Content --
 
- *
- *  * # Pageloader
- *  * # Preloader
- *  * # Cursor
- *  * # Header
- *  * # Footer
- *  * # Home-Page
- *  * # About-Page
- *  * # Portfolio-Page
- *  * # Skill-Page
- *  * # Contact-Page
- *  * # Portfolio-Detail
- *  * # Project-Page1
- *  * # Project-page2
- *  * # Blog Page
- *  * Animations 
+  *  * # Preloader
+  *  * # Cursor
+  *  * # Header
+  *  * # Footer
+  *  * Animations 
  
  */
 *, *::before, *::after {
@@ -43,7 +32,7 @@
   ul, li {
     list-style: none;
   }
-
+  /* Preloader */
   .pre-loader {
     display: flex;
     position: fixed;
@@ -111,7 +100,7 @@
     font-size: 14px;
     font-weight: 500;
   }
-
+  /* Cursor */
   .cursor {
     position: fixed;
     z-index: 3;
@@ -173,10 +162,12 @@
     margin: 0 auto;
     max-width: 1920px;
   }
+  /* Header */
   .content header {
     margin: 40px 124px 170px 124px;
     position: relative;
   }
+  /* Footer */
   .content footer {
     display: flex;
     margin: 100px 0 0;
@@ -477,7 +468,7 @@
       margin: 0px;
     }
 }
-
+/* Animations */
 @keyframes entry-animation {
     0% {
       transform: translateY(200px);
