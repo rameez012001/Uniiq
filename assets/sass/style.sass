@@ -312,6 +312,38 @@ ul,li
                     cursor: pointer
                     opacity: 1
                     font-size: 28px
+    
+    .blog-menu
+        .hamburger
+            display: none
+        .nav-bar
+            gap: 20px
+            display: flex
+            li
+                margin-bottom: 30px
+                overflow: hidden
+                a
+                    display: block
+                    color:  $textGrey1
+                    font-size: 24px
+                    font-weight: 600
+                    text-transform: uppercase
+                    position: relative
+                    transition: .3s ease
+                    &:hover
+                        transform: translateY(-100%)
+                        transform-origin: 0% 0%
+                    &:before   
+                        color: $textColor        
+                        position: absolute
+                        text-decoration: underline
+                        text-decoration-color: $highLight
+                        text-decoration-thickness: 6px  
+                        top: 100%
+                        width: 100%
+                        left: 0
+                        content: attr(data-word) 
+    
     /* # Footer
     footer
         display: flex
@@ -330,6 +362,7 @@ ul,li
                 color:  $textColor !important
                 &:hover
                     text-decoration: underline !important
+    
     .blContent
         width: 100%
         .blContent-wrapper

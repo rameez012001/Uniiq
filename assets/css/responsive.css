@@ -210,6 +210,15 @@
   .content header .menu-icon-wrapper .menu-icon.active {
     margin: 0 15px;
   }
+  .content .blog-menu #logo {
+    width: auto;
+  }
+  .content .blog-menu .menu-icon-wrapper {
+    display: block;
+  }
+  .content .blog-menu .nav-bar {
+    display: none;
+  }
   .content .caption h2 {
     font-size: 20px;
   }
