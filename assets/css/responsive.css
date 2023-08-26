@@ -377,9 +377,6 @@
     padding: 0;
     line-height: 30px;
   }
-  #home, #about, #portfolio, #skills, #contact, #portfolioDetail, #projectPage1, #projectPage2 {
-    margin: 0 1em;
-  }
   #home main .item-wrapper, #about main .item-wrapper, #portfolio main .item-wrapper, #skills main .item-wrapper, #contact main .item-wrapper, #portfolioDetail main .item-wrapper, #projectPage1 main .item-wrapper, #projectPage2 main .item-wrapper {
     overflow: hidden;
     margin: 0;
