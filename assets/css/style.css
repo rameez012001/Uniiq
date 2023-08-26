@@ -897,10 +897,6 @@ ul, li {
 #portfolioDetail main .item-wrapper .caption #mobile {
   display: none;
 }
-#portfolioDetail main .item-wrapper .owl-carousel .item {
-  min-width: 300px;
-  max-width: 1106px;
-}
 #portfolioDetail main .item-wrapper .slider {
   margin: 80px 0 0px;
 }
