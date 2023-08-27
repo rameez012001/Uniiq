@@ -1,7 +1,20 @@
 window.addEventListener('load', function() {
   const isFirstVisit = !localStorage.getItem('hasVisited');
+  $('#pre-loader').delay(4500).hide(0);
   if (isFirstVisit) {
-    load(25);
+    let percentage = document.querySelector('#percentage');
+    let value = 0;
+    percentage.innerHTML = value + '%';
+    setInterval(() => {   
+      if (value < 100) {
+        value++;
+        percentage.innerHTML = value+'%';
+        document.querySelector('.progress-inner').style.width = value + '%';
+        if(value == 100){
+          preAnimation();
+        }
+      }
+    },25); 
     localStorage.setItem('hasVisited', true);
     setTimeout(() => {
       $('.item-wrapper').addClass('entry-animation');
@@ -40,23 +53,7 @@ function preAnimation(){
       fill: 'forwards'
     }
   )
-}
-function load(time) {
-  let percentage = document.querySelector('#percentage');
-  let value = 0;
-  percentage.innerHTML = value + '%';
-  setInterval(() => {   
-    if (value < 100) {
-      value++;
-      percentage.innerHTML = value+'%';
-      document.querySelector('.progress-inner').style.width = value + '%';
-      if(value == 100){
-        preAnimation();
-      }
-    }
-  },time); 
-}
-  
+}  
 
 $(document).ready(function() {
 (function($) {

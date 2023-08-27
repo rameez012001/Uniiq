@@ -18,14 +18,27 @@
 window.addEventListener('load', function() {
   let preLoaderElement = document.getElementById("pre-loader");
   let pageLoaderElement = document.getElementById("page-loader");
-
+  $('#pre-loader').delay(4500).hide(0);
+  $('#page-loader').delay(1500).hide(0);
   // Check if it's the first visit on the main page using sessionStorage
   const isFirstVisitMain = !sessionStorage.getItem('hasVisitedMain');
-
+  // Pre-Loader
   if (preLoaderElement) {
     if (isFirstVisitMain) {
       sessionStorage.setItem('hasVisitedMain', true); // Set the flag for first visit on the main page
-      load(25);
+      let percentage = document.querySelector('#percentage');
+      let value = 0;
+      percentage.innerHTML = value + '%';
+      setInterval(() => {
+        if (value < 100) {
+          value++;
+          percentage.innerHTML = value+'%';
+          document.querySelector('.progress-inner').style.width = value + '%';
+          if(value == 100){
+            preAnimation();
+          }
+        }
+      },25);       
       setTimeout(() => {
         $('.pre-loader').addClass('off');
         $('.item-wrapper').addClass('entry-animation');
@@ -51,6 +64,7 @@ window.addEventListener('load', function() {
     }
   }
 
+  // Page Loader 
   if (pageLoaderElement) {
     // Check if it's the first visit for the current page using sessionStorage
     const currentPageURL = window.location.href;
@@ -67,6 +81,7 @@ window.addEventListener('load', function() {
       $('.page-loader').addClass('off');
     }
   }
+
 });
 
 
@@ -96,21 +111,6 @@ function preAnimation(){
         fill: 'forwards'
       }
     )
-}
-function load(time) {
-  let percentage = document.querySelector('#percentage');
-  let value = 0;
-  percentage.innerHTML = value + '%';
-  setInterval(() => {
-    if (value < 100) {
-      value++;
-      percentage.innerHTML = value+'%';
-      document.querySelector('.progress-inner').style.width = value + '%';
-      if(value == 100){
-        preAnimation();
-      }
-    }
-  },time); 
 }
 
 $(document).ready(function() {
