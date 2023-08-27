@@ -61,6 +61,7 @@ ul, li {
 
 /* # Preloader */
 .pre-loader {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;

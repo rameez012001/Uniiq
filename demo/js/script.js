@@ -1,5 +1,6 @@
 window.addEventListener('load', function() {
   const isFirstVisit = !localStorage.getItem('hasVisited');
+  $('#pre-loader').delay(4500).hide(0);
   if (isFirstVisit) {
     load(25);
     localStorage.setItem('hasVisited', true);

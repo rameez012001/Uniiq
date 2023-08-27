@@ -18,7 +18,8 @@
 window.addEventListener('load', function() {
   let preLoaderElement = document.getElementById("pre-loader");
   let pageLoaderElement = document.getElementById("page-loader");
-
+  $('#pre-loader').delay(4500).hide(0);
+  $('#page-loader').delay(1500).hide(0);
   // Check if it's the first visit on the main page using sessionStorage
   const isFirstVisitMain = !sessionStorage.getItem('hasVisitedMain');
 
@@ -31,7 +32,6 @@ window.addEventListener('load', function() {
         $('.item-wrapper').addClass('entry-animation');
       }, 3200);
     } else {
-      console.log('last visit');
       $('#percentage').text('100%');
       $('.progress-inner').css('width', '100%');
       preAnimation();
@@ -46,7 +46,6 @@ window.addEventListener('load', function() {
     const isFirstVisitInner = !sessionStorage.getItem('hasVisitedInner-' + currentPageURL);
 
     if (isFirstVisitInner) {
-      console.log('first visit');
       sessionStorage.setItem('hasVisitedInner-' + currentPageURL, true); // Set the flag for first visit on the current inner page
     }
   }
