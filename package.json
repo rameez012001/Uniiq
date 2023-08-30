@@ -1,0 +1,19 @@
+{
+  "name": "uniiq",
+  "version": "1.0.0",
+  "description": "A Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rameez012001/uniiq.git"
+  },
+  "author": "Rameez Hameed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rameez012001/uniiq/issues"
+  },
+  "homepage": "https://github.com/rameez012001/uniiq#readme"
+}
