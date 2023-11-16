@@ -1,7 +1,9 @@
 @media (max-width: 1440px) {
-  .content .about-text h3 {
-    transform: translate(0%);
-    max-width: 590px;
+  .content #ticker {
+    margin: 20px 64px 0;
+  }
+  .content #connect {
+    margin: 91px 64px 0;
   }
   .content header {
     margin: 40px 64px 100px;
@@ -10,14 +12,18 @@
     padding: 0px 264px 0px 222px;
   }
 }
-@media (max-width: 1280px) {
-  .content .about-text h3 {
-    font-size: 25px;
-    width: 500px;
-    left: 57%;
-    -webkit-transform: translate(-20%, -40px);
-    transform: translate(-20%, -40px);
+@media (max-width: 1200px) {
+  .content header .contact {
+    visibility: hidden;
   }
+  .content footer section #hide1 {
+    display: none;
+  }
+  .content #connect section aside {
+    display: none;
+  }
+}
+@media (max-width: 1280px) {
   .content header {
     margin: 40px 64px 100px;
   }
@@ -71,6 +77,12 @@
   }
   .content header {
     margin: 40px 26px 100px;
+  }
+  .content #ticker {
+    margin: auto 26px;
+  }
+  .content #connect {
+    margin: 80px 26px 0;
   }
   .content footer {
     margin: 100px 0 0;
@@ -207,11 +219,41 @@
   }
 }
 @media (max-width: 800px) {
+  .content #ticker, .content #connect {
+    margin: 15px 0 0;
+  }
+  .content #connect {
+    margin: 50px 0 0;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .content #connect section #hide4 {
+    display: none;
+  }
+  .content #connect section #hide5 {
+    display: block;
+  }
   .content header {
     margin: 40px 0px 100px;
   }
+  .content header nav {
+    display: none;
+  }
+  .content header .menu-icon-wrapper {
+    display: block;
+  }
   .content header .menu-icon-wrapper .menu-icon.active {
     margin: 0 15px;
+  }
+  .content footer {
+    flex-direction: column;
+  }
+  .content footer section #hide2 {
+    display: none;
+  }
+  .content footer aside #hide3 {
+    display: block;
   }
   .content .caption h2 {
     font-size: 20px;

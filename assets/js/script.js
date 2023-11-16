@@ -140,11 +140,10 @@ $(document).ready(function() {
       function menuControl() {
           $(document).on('click', '.menu-icon', function() {
               $(this).toggleClass('active');
-              $('.left-sidebar').toggleClass('active');
-              $('.about-text').toggleClass('active');
-              $('#logo').toggleClass('inactive');
-              $('.item-wrapper').toggleClass('inactive');
-              $('footer').toggleClass('inactive');
+              $('.mobile-hamburger').toggleClass('active');
+              // $('#logo').toggleClass('inactive');
+              // $('.item-wrapper').toggleClass('inactive');
+              // $('footer').toggleClass('inactive');
           });
       }
 
@@ -207,55 +206,10 @@ $(document).ready(function() {
         });
     }
 
-      // 7
-      function type(){   
-        var words = [
-            `My name is Jason Williams and I am a photographer senior graphic designer from New York.`
-        ];
-      
-        var delay = 2000; // Delay before typing each word (in milliseconds)
-        var typingSpeed = 50; // Speed of typing animation (in milliseconds)
-      
-        var typingText = document.getElementById("typing-text");
-      
-        function typeWords(index) {
-            if (index < words.length) {
-                var word = words[index];
-                var typedWord = "";
-                var isDeleting = false;
-      
-                var interval = setInterval(function() {
-                    if (isDeleting) {
-                        typedWord = word.substr(0, typedWord.length - 1);
-                    } else {
-                        typedWord = word.substr(0, typedWord.length + 1);
-                    }
-      
-                    typingText.innerHTML = typedWord;
-      
-                    if (!isDeleting && typedWord === word) {
-                        isDeleting = true;
-                        clearInterval(interval);
-                        setTimeout(function() {
-                            typeWords(index);
-                        }, delay);
-                    } else if (isDeleting && typedWord === "") {
-                        isDeleting = false;
-                        clearInterval(interval);
-                        setTimeout(function() {
-                            typeWords(index + 1);
-                        }, delay);
-                    }
-                }, typingSpeed);
-            }
-        }
-        typeWords(0);
-      }
       
       mousemove();
       menuControl();
       animateBackground();
-      type();
 
   })(jQuery);
   
