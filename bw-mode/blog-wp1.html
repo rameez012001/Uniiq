@@ -27,34 +27,78 @@
     <div class="content" id="blogPage">
         <div class="cursor"></div>
         <div class="dot"></div>
+
+        <div id="ticker">
+            <article>
+                <p>Welcome to Uniiq!We are a creative portfolio showcasing the uniqueness and diversity of our work.</p>
+                <p>Welcome to Uniiq!We are a creative portfolio showcasing the uniqueness and diversity of our work.</p>
+                <p>Welcome to Uniiq!We are a creative portfolio showcasing the uniqueness and diversity of our work.</p>
+                <p>Welcome to Uniiq!We are a creative portfolio showcasing the uniqueness and diversity of our work.</p>
+            </article>
+        </div>
         <!-- Header -->
         <header class="d-flex justify-content-between">
-            <!-- Hamburger -->
-            <div class="menu-icon-wrapper">
-                <div class="menu-icon d-flex flex-column">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul class="left-sidebar">
-                    <li><a href="./home.html"  data-word="Home">Home</a></li>
-                    <li><a href="./about.html" data-word="About">About</a></li>
-                    <li><a href="./portfolio.html" data-word="Portfolio">Portfolio</a></li>
-                    <li><a href="./skills.html" data-word="Skills">Skills</a></li>
-                    <li><a href="./contact.html" data-word="Contact">Contact</a></li>
-                </ul>
-            </div>
+
             <!-- Logo -->
             <div id="logo">
                 <a href="./home.html">
                     <img src="../assets/images/dLogo.png" alt="logo">
                 </a>
             </div>
-            <div class="contact d-flex align-items-center">
-                <i class="iconoir-dribbble"></i>
-                <i class="iconoir-twitter"></i>
-                <i class="iconoir-instagram"></i>                  
+
+            <!-- Desktop Navigation -->
+            <nav class="left-sidebar align-self-center">
+
+                <p><a href="./home.html" data-word="Home">Home</a></p>
+                <span class="line"></span>
+                <p><a href="./about.html" data-word="About">About</a></p>
+                <span class="line"></span>
+                <p><a href="./portfolio.html" data-word="Portfolio">Portfolio</a></p>
+                <span class="line"></span>
+                <p><a href="./skills.html" data-word="Skills">Skills</a></p>
+                <span class="line"></span>
+                <p><a href="./contact.html" data-word="Contact">Contact</a></p>
+
+            </nav>
+
+            <div class="contact align-items-center">
+
+                <a href="#"><i class="iconoir-dribbble"></i></a>
+                <a href="#"><i class="iconoir-twitter"></i></a>
+                <a href="#"><i class="iconoir-instagram"></i></a>
+
             </div>
+
+            <!-- Mobile Hamburger -->
+            <div class="menu-icon-wrapper">
+
+                <div class="menu-icon d-flex flex-column align-items-end">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="mobile-hamburger">
+                    <ul class="left-sidebar">
+                        <p>Menu</p>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
+                        <li><a href="./skills.html">Skills</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                    <div class="social">
+                        <p>Social</p>
+                        <aside>
+                            <a href="#"><i class="iconoir-dribbble"></i></a>
+                            <a href="#"><i class="iconoir-twitter"></i></a>
+                            <a href="#"><i class="iconoir-instagram"></i></a>
+                        </aside>
+                    </div>
+                </div>
+
+            </div>
+
         </header>
          
         <!-- Main -->
@@ -179,6 +223,23 @@
                 </section>
             </div>
         </main>
+        <div id="connect" class="d-flex">
+            <section>
+                <h1 id="hide4">If you want to contact me?</h1>
+                <h1 id="hide5">Let's Work Together</h1>
+                <p id="hide4">Based in New York but available Worldwide. Lets Talk :)</p>
+                <p id="hide5">Available all around the World.</p>
+            </section>
+            <section class="d-flex">
+                <button>themespace@mail.com</button>
+                <aside class="align-self-center">
+                    <a href="#"><i class="iconoir-dribbble"></i></a>
+                    <a href="#"><i class="iconoir-twitter"></i></a>
+                    <a href="#"><i class="iconoir-instagram"></i></a>
+                </aside>
+            </section>
+        </div>
+        
         <!-- Footer -->
          <footer class="d-flex justify-content-between align-items-center">
 
