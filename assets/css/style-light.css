@@ -411,6 +411,7 @@
   }
   /*# Footer */
   .content footer {
+    display: flex;
     margin: 160px 3em 0;
     padding: 30px 0 10px;
     border-top: 1px solid rgba(71, 71, 71, 0.286)
@@ -1354,6 +1355,7 @@
   }
 
   #connect {
+    display: flex;
     margin: 91px 124px 0;
     padding: 45px 30px;
     justify-content: space-between;
@@ -1361,6 +1363,9 @@
     border-radius: 10px;
     border: 1px solid rgba(249, 249, 249, 0.0509803922);
     background-color: rgba(189, 189, 189, 0.2156862745);
+  }
+  #connect.inactive {
+    display: none;
   }
   #connect section h1 {
     color: #2c2c2c;
