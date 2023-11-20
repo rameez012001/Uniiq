@@ -141,9 +141,9 @@ $(document).ready(function() {
           $(document).on('click', '.menu-icon', function() {
               $(this).toggleClass('active');
               $('.mobile-hamburger').toggleClass('active');
-              // $('#logo').toggleClass('inactive');
-              // $('.item-wrapper').toggleClass('inactive');
-              // $('footer').toggleClass('inactive');
+              $('.item-wrapper').toggleClass('inactive');
+              $('#connect').toggleClass('inactive');
+              $('footer').toggleClass('inactive');
           });
       }
 
