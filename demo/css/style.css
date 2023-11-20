@@ -162,6 +162,31 @@
     margin: 0 auto;
     max-width: 1920px;
   }
+
+  .content #ticker {
+    margin: 40px 124px;
+    animation: spin 2s linear;
+    border-radius: 10px;
+    border: 1px solid rgba(62, 62, 62, 0.051);
+    background-color: rgba(189, 189, 189, 0.216);
+  }
+  .content #ticker article {
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .content #ticker p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    display: inline;
+    font-size: 16px;
+    color: rgb(64, 64, 64);
+    overflow: hidden;
+    margin: 0;
+    animation: moveleft 10s infinite;
+    position: relative;
+    left: -50%;
+  }
   /* Header */
   .content header {
     margin: 40px 124px 170px 124px;
@@ -169,31 +194,46 @@
   }
   /* Footer */
   .content footer {
-    display: flex;
-    margin: 100px 0 0;
+    margin: 160px 3em 0;
+    padding: 30px 0 10px;
+    border-top: 1px solid rgba(71, 71, 71, 0.286)
   }
   .content footer.inactive {
     display: none;
   }
-  .content footer #logo img {
-    max-width: 153px;
-  }
-  .content footer #logo svg path {
-    fill: #2c2c2c;
-  }
-  .content footer #logo svg rect {
-    stroke: #2c2c2c;
-  }
-  .content footer p {
-    text-align: center;
-    margin-top: 20px;
-    color: rgba(44, 44, 44, 0.5019607843);
-    font-weight: 600;
-  }
   .content footer p a {
-    color: #2c2c2c !important;
+    color: #2c2c2c;
   }
-  .content footer p a:hover {
+  .content footer > * {
+    padding: 0 20px;
+  }
+  .content footer section {
+    gap: 25px;
+  }
+  .content footer section #hide1::before, .content footer section #hide2::before, .content footer section #hide3::before, .content footer aside #hide1::before, .content footer aside #hide2::before, .content footer aside #hide3::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-10px, -45%);
+    border: 1px solid #D7B065;
+    border-radius: 100%;
+  }
+  .content footer aside {
+    display: none;
+    gap: 25px;
+  }
+  .content footer aside #hide3 {
+    display: none;
+  }
+  .content footer section p, .content footer aside p {
+    text-align: center;
+    color: #2b2b2bb5;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .content footer section a:hover, .content footer aside a:hover {
     text-decoration: underline !important;
   }
   .entry-animation {
@@ -344,11 +384,69 @@
     color: #2c2c2c;
     letter-spacing: 2px;
 }
+#connect {
+  margin: 91px 124px 0;
+  padding: 45px 30px;
+  justify-content: space-between;
+  animation: spin 2s linear;
+  border-radius: 10px;
+  border: 1px solid rgba(249, 249, 249, 0.0509803922);
+  background-color: rgba(189, 189, 189, 0.2156862745);
+}
+#connect section h1 {
+  color: #2c2c2c;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 15px;
+}
+#connect section:last-child {
+  gap: 25px;
+}
+#connect section p {
+  color: #2c2c2c99;
+  font-weight: 500;
+  margin: 0;
+}
+#connect section #hide5 {
+  display: none;
+}
+#connect section button {
+  color: rgba(30, 30, 30, 0.8);
+  padding: 8px 30px;
+  border: none;
+  align-self: center;
+  border-radius: 50px;
+  background-color: rgb(249, 249, 249);
+}
+#connect section aside {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+}
+#connect section aside i {
+  width: 20px;
+  color: #00000080;
+  font-size: 25px;
+  font-weight: 600;
+  transition: 0.2s;
+  vertical-align: middle;
+}
+#connect section aside i:hover {
+  color: #000000;
+  font-size: 28px;
+  font-weight: 600;
+}
 
 @media (max-width: 1440px) {
     .content header {
         margin: 40px 64px 100px;
       }
+    .content #ticker {
+      margin: 20px 64px 0;
+    }
+    .content #connect {
+      margin: 91px 64px 0;
+    }
     #lander main .item-wrapper .grid-box {
         margin: 50px 0;
         gap: 120px 24px;
@@ -356,6 +454,18 @@
     #lander main .item-wrapper .grid-box .items {
         max-width: 500px;
     }
+}
+
+@media (max-width: 1200px) {
+  .content header .contact {
+    visibility: hidden;
+  }
+  .content footer section #hide1 {
+    display: none;
+  }
+  .content #connect section aside {
+    display: none;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -383,6 +493,12 @@
     .content header {
       margin: 40px 34px 170px;
     }
+    .content #ticker {
+      margin: auto 26px;
+    }
+    .content #connect {
+      margin: 80px 26px 0;
+    }
     .content .caption h2 {
         padding: 0 0.3em;
         line-height: 30px;
@@ -393,6 +509,30 @@
     .content header {
         margin: 40px 20px 140px 24px;
       }
+    .content #ticker, .content #connect {
+      margin: 15px 0 0;
+    }
+    .content #connect {
+      margin: 50px 0 0;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .content #connect section #hide4 {
+      display: none;
+    }
+    .content #connect section #hide5 {
+      display: block;
+    }
+    .content footer {
+      flex-direction: column;
+    }
+    .content footer section #hide2 {
+      display: none;
+    }
+    .content footer aside #hide3 {
+      display: block;
+    }
     #lander main .item-wrapper {
       max-width: 700px;
       margin: 0 1em;
